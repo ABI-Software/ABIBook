@@ -6,7 +6,7 @@ This book is a collection of documentation covering software used within the ABI
 Contents:
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
 
    /CAP/index
    /CM/index
