@@ -6,7 +6,7 @@ Cmgui user documentation
 .. toctree::
    :maxdepth: 2
 
-   /migration/index
+   migration/index
    Introduction_to_CMGUI
    CMGUI_architecture
    CMGUI_command_window

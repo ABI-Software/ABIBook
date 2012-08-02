@@ -1,4 +1,6 @@
-﻿CMGUI Fields
+﻿.. _cmgui-fields:
+
+CMGUI Fields
 ============
 
 .. |sub1|  unicode:: U+02081 .. SUBSCRIPT ONE
