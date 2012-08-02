@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Cmgui RTD manual documentation build configuration file, created by
+# ABI Software Book build configuration file, created by
 # sphinx-quickstart on Fri Mar 30 08:33:02 2012.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -164,7 +164,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'CmguiRTDmanualdoc'
+htmlhelp_basename = 'ABIBook'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -183,7 +183,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'CmguiRTDmanual.tex', u'Cmgui RTD manual Documentation',
+  ('index', 'ABIBook.tex', u'ABI Software Book',
    u'Dougal Cowan', 'manual'),
 ]
 
@@ -213,7 +213,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'cmguirtdmanual', u'Cmgui RTD manual Documentation',
+    ('index', 'abibook', u'ABI Software Book',
      [u'Dougal Cowan'], 1)
 ]
 
@@ -227,8 +227,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'CmguiRTDmanual', u'Cmgui RTD manual Documentation',
-   u'Dougal Cowan', 'CmguiRTDmanual', 'One line description of project.',
+  ('index', 'ABIBook', u'ABI Software Book',
+   u'Dougal Cowan', 'ABIBook', 'One line description of project.',
    'Miscellaneous'),
 ]
 
