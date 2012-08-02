@@ -11,7 +11,6 @@ Contents:
    /CAP/index
    /CM/index
    /cmgui/index
-   /cmgui/migration/index
    /MAP/index
    /OpenCMISS/index
    /PMR2/index
