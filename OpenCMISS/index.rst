@@ -7,3 +7,5 @@ OpenCMISS user documentation
    :maxdepth: 2
 
    OpenCMISS-coordinatesystems
+   OpenCMISS-basisfunctions
+   OpenCMISS-regions
