@@ -1,4 +1,4 @@
-.. _material-editor-window:
+.. _CMGUI-material-editor-window:
 
 CMGUI Material Editor Window
 ============================

@@ -1,4 +1,4 @@
-﻿.. _exformat-guide:
+﻿.. _CMGUI-ex-fileformatguide:
 
 The cmgui EX format guide: exnode and exelem files
 ==================================================

@@ -1,4 +1,4 @@
-.. _graphics-window:
+.. _CMGUI-graphics-window:
 
 CMGUI Graphics Window
 =====================

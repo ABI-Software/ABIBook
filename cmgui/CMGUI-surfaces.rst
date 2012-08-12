@@ -1,4 +1,4 @@
-.. _using-surfaces:
+.. _CMGUI-surfaces:
 
 Visualizing element fields using surfaces
 =========================================

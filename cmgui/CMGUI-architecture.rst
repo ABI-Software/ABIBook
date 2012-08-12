@@ -1,4 +1,6 @@
-﻿CMGUI Architecture
+﻿.. _CMGUI-architecture:
+
+CMGUI Architecture
 ==================
 
 Regions and Fields

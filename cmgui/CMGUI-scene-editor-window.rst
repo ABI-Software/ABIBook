@@ -1,4 +1,4 @@
-.. _scene-editor-window:
+.. _CMGUI-scene-editor-window:
 
 CMGUI Scene Editor Window
 =========================

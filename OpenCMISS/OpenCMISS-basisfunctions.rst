@@ -1,4 +1,4 @@
-.. _OpenCMISS-basisfunctions
+.. _OpenCMISS-basisfunctions:
 
 Basis Functions
 ===============

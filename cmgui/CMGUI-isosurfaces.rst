@@ -1,3 +1,5 @@
+.. _CMGUI-isosurfaces:
+
 Visualizing element fields using iso-surfaces
 =============================================
 

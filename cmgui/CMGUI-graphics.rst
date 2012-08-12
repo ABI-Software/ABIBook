@@ -1,4 +1,4 @@
-.. _cmgui-graphics:
+.. _CMGUI-graphics:
 
 graphics in CMGUI
 =================

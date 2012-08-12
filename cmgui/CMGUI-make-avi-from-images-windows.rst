@@ -1,3 +1,5 @@
+.. _CMGUI-make-AVI-from-images-windows:
+
 Creating an AVI from a series of images - Windows
 =================================================
 

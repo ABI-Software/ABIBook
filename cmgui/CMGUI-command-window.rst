@@ -1,4 +1,4 @@
-.. _command-window:
+.. _CMGUI-command-window:
 
 CMGUI Command Window
 --------------------

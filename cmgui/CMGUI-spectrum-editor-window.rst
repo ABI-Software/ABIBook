@@ -1,4 +1,4 @@
-.. _spectrum-editor-window:
+.. _CMGUI-spectrum-editor-window:
 
 cmgui Spectrum Editor Window
 ============================

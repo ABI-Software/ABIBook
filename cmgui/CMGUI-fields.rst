@@ -1,4 +1,4 @@
-﻿.. _cmgui-fields:
+﻿.. _CMGUI-fields:
 
 CMGUI Fields
 ============

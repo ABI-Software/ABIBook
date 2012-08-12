@@ -1,4 +1,4 @@
-.. _cmgui-index:
+.. _CMGUI-index:
 
 Cmgui user documentation
 ========================
@@ -7,19 +7,19 @@ Cmgui user documentation
    :maxdepth: 2
 
    migration/index
-   Introduction_to_CMGUI
-   CMGUI_architecture
-   CMGUI_command_window
-   CMGUI_ex_fileFormatGuide
-   CMGUI_fields
-   CMGUI_glyphs
-   CMGUI_graphics
-   CMGUI_graphics_window
-   CMGUI_isosurfaces
-   CMGUI_lines_cylinders
-   CMGUI_make_AVI_from_images_Windows
-   CMGUI_materialEditor_window
-   CMGUI_sceneEditor_window
-   CMGUI_spectrumEditor_window
-   CMGUI_surfaces
+   CMGUI-introduction
+   CMGUI-architecture
+   CMGUI-command-window
+   CMGUI-ex-file-format-guide
+   CMGUI-fields
+   CMGUI-glyphs
+   CMGUI-graphics
+   CMGUI-graphics-window
+   CMGUI-isosurfaces
+   CMGUI-lines-cylinders
+   CMGUI-make-avi-from-images-windows
+   CMGUI-material-editor-window
+   CMGUI-scene-editor-window
+   CMGUI-spectrum-editor-window
+   CMGUI-surfaces
    mathtest

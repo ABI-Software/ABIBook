@@ -1,4 +1,4 @@
-.. _using-glyphs:
+.. _CMGUI-glyphs:
 
 Visualizing fields at points using glyphs
 =========================================
