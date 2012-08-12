@@ -5,9 +5,9 @@ OpenCMISS concepts
 
 OpenCMISS has the following top level objects.
 
-* Basis Functions
-* Coordinate Systems
-* Regions
-* Problems
+* :ref: `OpenCMISS-basisfunctions`
+* :ref: `OpenCMISS-coordinatesystems`
+* :ref: `OpenCMISS-regions`
+* :ref: `OpenCMISS-problems`
 * Computational environments
 * Base system(Diagnostics, I/O etc.)

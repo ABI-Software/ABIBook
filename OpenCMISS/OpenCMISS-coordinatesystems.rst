@@ -1,4 +1,4 @@
-.. _OpenCMISS-coordinatesystems
+.. _OpenCMISS-coordinatesystems:
 
 Coordinate Systems
 ==================

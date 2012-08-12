@@ -1,4 +1,4 @@
-.. _OpenCMISS-regions
+.. _OpenCMISS-regions:
 
 Regions
 =======
