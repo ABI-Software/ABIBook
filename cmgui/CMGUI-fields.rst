@@ -17,7 +17,7 @@ Consider an object such as a solid cube over which a value like the temperature 
 
 These finite elements have a local coordinate system of limited span, which is called an element chart. In cmiss we commonly use the greek character xi (ξ) with subscript to denote each independent coordinate within an element, hence we will commonly refer to the chart of a given element as its *ξ space*. A 3-D cube element in CMISS/CMGUI has a range of 0 to 1 in each ξ direction, as shown in figure 1A.
 
-.. figure:: /_static/images/xispace_distorted.png
+.. figure:: /cmgui/images/xispace_distorted.png
    :align: center
    
    **Figure 1: Coordinates and ξ space of a 3D element.** A) This shows the unit cube ξ space, where each dimension of the element ranges from 0-1.  It is easy to imagine that the coordinates of this cube could also be 0-1 in the x, y, and z axes.  B) The cube element in this picture has been distorted, such that its coordinates are no longer 0-1 in the x, y, and z axes.  Despite this, the element's ξ values are still 0-1 in each ξ direction.  This cube has a "temperature" field that is rendered as a rainbow spectrum.

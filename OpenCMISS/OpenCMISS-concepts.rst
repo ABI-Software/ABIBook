@@ -11,3 +11,8 @@ OpenCMISS has the following top level objects.
 * :ref:`OpenCMISS-problems`
 * Computational environments
 * Base system(Diagnostics, I/O etc.)
+
+.. figure:: /OpenCMISS/images/OpenCMISS-top-structure.png
+   :align: center
+   
+   ** OpenCMISS top-level structure**
