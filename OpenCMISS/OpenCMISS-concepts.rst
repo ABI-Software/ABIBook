@@ -15,4 +15,4 @@ OpenCMISS has the following top level objects.
 .. figure:: /OpenCMISS/images/OpenCMISS-top-structure.png
    :align: center
    
-   ** OpenCMISS top-level structure**
+   **OpenCMISS top-level structure**
