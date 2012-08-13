@@ -79,6 +79,6 @@ These types of fields can be created via ``gfx define field`` commands or throug
 Fields and visualization
 ------------------------
 
-When creating visualizations, you need to choose which field controls which part of a graphics object.  Coordinates in one, two or three dimensions can be used to create spatial representations.  Texture coordinate fields can be used to position textures.  Orientation or data fields can be used to position glyphs or colour objects such as surfaces.  CMGUI allows an enormous amount of flexibility in how fields can be visualized.  Further information on visualizations is available in other documents such as those detailing :ref:`graphics <cmgui-graphics>`, :ref:`glyphs <using-glyphs>`, or :ref:`surfaces <using-surfaces>`.
+When creating visualizations, you need to choose which field controls which part of a graphics object.  Coordinates in one, two or three dimensions can be used to create spatial representations.  Texture coordinate fields can be used to position textures.  Orientation or data fields can be used to position glyphs or colour objects such as surfaces.  CMGUI allows an enormous amount of flexibility in how fields can be visualized.  Further information on visualizations is available in other documents such as those detailing :ref:`graphics <cmgui-graphics>`, :ref:`glyphs <cmgui-glyphs>`, or :ref:`surfaces <cmgui-surfaces>`.
 
 
