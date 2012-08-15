@@ -3,7 +3,7 @@
 Testing MathJax LaTeX support
 =============================
 
-Just a test.
+Just a test. Also, a cheeky little test of :ref:`pep-3118-update`.
 
 First test
 ----------

@@ -25,7 +25,7 @@ import sys, os
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.mathjax']
+extensions = ['sphinx.ext.mathjax' 'sphinx.ext.intersphinx']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -38,6 +38,12 @@ source_suffix = '.rst'
 
 # The master toctree document.
 master_doc = 'index'
+
+intersphinx_mapping = {
+  'python': ('http://python.readthedocs.org/en/latest/', None),
+  'django': ('http://django.readthedocs.org/en/latest/', None),
+  'sphinx': ('http://sphinx.readthedocs.org/en/latest/', None),
+    }
 
 # General information about the project.
 project = u'ABI Software Book'
