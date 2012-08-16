@@ -10,6 +10,8 @@ Contents:
 
 .. toctree::
    :maxdepth: 1
+   :titlesonly:
+
 
    /CAP/index
    /CM/index
