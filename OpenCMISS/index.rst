@@ -7,8 +7,8 @@ OpenCMISS user documentation
 .. toctree::
    :maxdepth: 2
    
-   /reference/OpenCMISS-concepts
-   /reference/OpenCMISS-coordinatesystems
-   /reference/OpenCMISS-basisfunctions
-   /reference/OpenCMISS-regions
-   /tutorials/OpenCMISS-gettingstarted   
+   reference/OpenCMISS-concepts
+   reference/OpenCMISS-coordinatesystems
+   reference/OpenCMISS-basisfunctions
+   reference/OpenCMISS-regions
+   tutorials/OpenCMISS-gettingstarted   
