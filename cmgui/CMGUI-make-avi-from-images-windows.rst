@@ -44,7 +44,7 @@ Creating a movie from a series of images using VirtualDub is very simple:
 
 VirtualDub will automatically load the entire numbered sequence of images in as movie frames, in the correct order.  This works whether you have a 00001-99999 or a 1-99999 style numbering scheme.  You will now see two "screens" side by side, each displaying the first image in your sequence.  This is the first frame of your movie, which can now be played within VirtualDub.  The two screens display the *input* and the *output*.  The *input* screen shows the movie you loaded, in this case the series of frames from the images.  The *output* screen shows the original movie with any filters (such as resizing, contrast adjustments, sharpening etc) that you have applied to it.
 
-.. figure:: /_static/images/virtualdub1.png
+.. figure:: /cmgui/images/virtualdub1.png
    :figwidth: image
    :align: center
 
@@ -56,13 +56,13 @@ The next step is to set up the compression and codec settings of the movie you a
 
 * Go to the *Video* menu and select *Compression...*. (Ctrl-P)
 
-.. figure:: /_static/images/virtualdub2.png
+.. figure:: /cmgui/images/virtualdub2.png
    :figwidth: image
    :align: center
 
 * Select the *ffdshow Video Codec* from the list of codecs.
 
-.. figure:: /_static/images/virtualdub3.png
+.. figure:: /cmgui/images/virtualdub3.png
    :figwidth: image
    :align: center
    
@@ -74,7 +74,7 @@ The next step is to set up the compression and codec settings of the movie you a
 
 * Click on the *Configure* button.  This will bring up a window with a range of settings for how the codec will be used to compress your movie.
 
-.. figure:: /_static/images/virtualdub4.png
+.. figure:: /cmgui/images/virtualdub4.png
    :figwidth: image
    :align: center
 
@@ -96,7 +96,7 @@ From this settings window you can set up which codec you wish to use to compress
 
 A status window will appear, with some information about the progress of the AVI creation.
 
-.. figure:: /_static/images/virtualdub5.png
+.. figure:: /cmgui/images/virtualdub5.png
    :figwidth: image
    :align: center
 

@@ -11,7 +11,7 @@ Visualizing element fields using lines and cylinders
 
 If you wish to create these lines in the graphics window, use the go to the file menu in CMGUI and select *Read*, then *Node file*.  Read in ``cube.exnode`` from the example a2 directory.  Then using the *Read* and *Elements file* menu options, read in ``cube.exelem`` from the same directory.  If you now create a graphics window (using the *Graphics* menu item *3-D window*) you will see this cube rendered in 1 pixel thick white lines.
 
-.. figure:: /_static/images/basic_cube_lines1.png
+.. figure:: /cmgui/images/basic_cube_lines1.png
    :align: center
 
    **Figure 1: The default graphical setting lines created for a cube mesh.** This mesh was created by reading the ``cube.exnode`` and ``cube.exelem`` files from `example a2`_.  Note that the `example a2`_ com file creates cylinders to visualize the cube mesh.
@@ -50,7 +50,7 @@ In addition to these settings there is a command line setting that can be very u
 **Note:** if no lines appear, you may not have added faces (and lines) to the mesh - try the ``gfx define faces`` command.
 
 
-.. figure:: /_static/images/basic_cube_lines_graphicalsetting1.png
+.. figure:: /cmgui/images/basic_cube_lines_graphicalsetting1.png
    :align: center
 
    **Figure 2: The scene editor settings available for a lines graphical setting.**
