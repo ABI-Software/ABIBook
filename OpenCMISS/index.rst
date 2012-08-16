@@ -1,13 +1,15 @@
 .. _OpenCMISS-index:
 
+============================
 OpenCMISS user documentation
 ============================
 
 .. toctree::
+   :numbered:
    :maxdepth: 2
    
-   OpenCMISS-concepts
-   OpenCMISS-coordinatesystems
-   OpenCMISS-basisfunctions
-   OpenCMISS-regions
-   
+   /reference/OpenCMISS-concepts
+   /reference/OpenCMISS-coordinatesystems
+   /reference/OpenCMISS-basisfunctions
+   /reference/OpenCMISS-regions
+   /tutorials/OpenCMISS-gettingstarted   

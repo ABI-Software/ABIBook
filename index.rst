@@ -1,3 +1,6 @@
+.. _ABIBook-index:
+
+=================
 ABI Software Book
 =================
 
