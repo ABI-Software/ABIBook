@@ -5,7 +5,6 @@ OpenCMISS user documentation
 ============================
 
 .. toctree::
-   :numbered:
    :maxdepth: 2
    
    /reference/OpenCMISS-concepts
