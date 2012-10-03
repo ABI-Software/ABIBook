@@ -14,6 +14,7 @@ Contents:
 
 
    /CAP/index
+   /CellMLAPI/index
    /CM/index
    /cmgui/index
    /MAP/index
