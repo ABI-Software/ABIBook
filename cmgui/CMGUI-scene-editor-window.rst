@@ -12,7 +12,7 @@ The scene editor is used to control how visualizations appear in the graphics wi
 
 The window itself is broken into four main areas; region tree, transformation controls, graphics list, and settings editor (Figure 1).
 
-.. figure:: /_static/images/sceneEditorWindow.png
+.. figure:: /cmgui/images/sceneEditorWindow.png
    :align: center
 
    **Figure 1: The scene editor.**

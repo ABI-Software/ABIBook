@@ -30,12 +30,12 @@ In CMGUI data structures we usually also define the faces of elements as separat
 
 The zero dimensional counterpart to elements and faces are called nodes. There is one set of nodes per region, again with their own unique integer identifiers. Nodes can be considered as a set of points at which fields are defined. When we define field functions over elements (finite element fields) we most commonly store explicit values and derivatives of the field at nodes and interpolate them across the element. To define such fields each element maintains a list of the nodes which contribute to fields in that element, called the local node list. The number and arrangement of nodes depends very much on the basis function used to compute the field value. Linear Lagrange and simplex basis functions are a simple, common case where nodes contain values of the field at the corners of elements, and these are linearly interpolated in the ξ space between. Figure 2 shows the arrangements of faces, lines and nodes (for linear basis) for 3D and 2D elements.
 
-.. figure:: /_static/images/labelled_cube_element.png
+.. figure:: /cmgui/images/labelled_cube_element.png
    :align: center
    
    **Figure 2: How nodes, lines and faces make up a mesh** The simple cube mesh again; nodes (yellow), elements (red), faces (green), and lines (blue) are numbered.  A single cube element requires 8 nodes, 12 lines, and 6 faces.
 
-.. figure:: /_static/images/element_sharing.png
+.. figure:: /cmgui/images/element_sharing.png
    :align: center
    
    **Figure 3: Node, face and line sharing between connected elements** In more complex meshes, connected elements share nodes, lines and faces (shared nodes lines and faces are shown in red).  In panel A, this two-cube mesh has only 12 nodes; 4 of the nodes are shared by both elements.  In panel B, an eight-cube mesh is made up of only 27 nodes - many of the nodes are shared by more than one of the elements.  The central node in this example is shared by all 8 elements.  Field values are continuous across these shared parts.

@@ -4,9 +4,10 @@ Regions
 =======
 
 Regions are one of the primary objects in openCMISS. Regions are hierarchical in nature in that a region can have one parent region and a number of daughter sub-regions. Daughter regions are related in space to parent regions by an origin and an orientation of the regions coordinate system. Daughter regions may only have the same or fewer dimensions as the parent region. There is a global (world) region (number 0) that has the global (world) coordinate system.
+
 region_definition.JPG
 
-Region has the following attributes
+Region has the following attributes:
 
 * User number
 * Finished tag
@@ -27,7 +28,7 @@ Nodes
 
 There are three places storing nodal information. Nodes associated with region defines the nodes identification and the nodes geometric (initial) position.
 
-Node has the following attributes
+Node has the following attributes:
 
 * User number
 * Global number
@@ -79,7 +80,7 @@ Decompositions
 
 Mesh decomposition (partitioning) is used to split a computationally expensive mesh into smaller subdomains (parts) for parallel computing.
 
-Decomposition has the following attributes
+Decomposition has the following attributes:
 
 * User number
 * Global number

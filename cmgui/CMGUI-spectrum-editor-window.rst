@@ -8,7 +8,7 @@ cmgui Spectrum Editor Window
 
 The spectrum editor window is where you define spectra to be applied to graphical elements or objects in the graphics window.  Spectra are used to visualize continuous data ranges within models using colour ranges, and can be applied to the :ref:`graphics <using-graphics>` that have been used to create your visualization.  The window is divided into three basic areas; the spectrum list, the preview panel, and the settings editor (Figure 1).
 
-.. figure:: /_static/images/spectrum_editor_window.png
+.. figure:: /cmgui/images/spectrum_editor_window.png
    :align: center
 
    **Figure 1: The spectrum editor.**

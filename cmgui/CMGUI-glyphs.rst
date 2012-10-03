@@ -9,7 +9,7 @@ Visualizing fields at points using glyphs
 
 Glyphs are graphical objects that are used to represent information at points within a model. These glyphs can be coloured, scaled, and oriented according to the values of chosen fields. Glyphs might be used for something as simple as showing node locations (Figure 1), or something more complex such as showing the strain at points within a deformed mesh. cmgui has a range of glyphs available, for representing different types of point data. This document will explain how to position, scale and orient glyphs in a variety of ways.
 
-.. figure:: /_static/images/glyphs_variety.png
+.. figure:: /cmgui/images/glyphs_variety.png
    :align: center
 
    **Figure 1: Different glyphs placed at the nodes of a cube mesh.**
@@ -26,7 +26,7 @@ The simplest use of a glyph is to visually mark a point, with no direction or sc
 
 Open the *scene editor* and make sure cube is selected in the *scene object list*. You will notice that there are three items in the *graphics list*: *lines*, *node_points*, and *surfaces*. Select the node_points graphics item. You will see in the settings below that these node_points already have glyphs associated with them - in the *Glyph* drop-down menu, the glyphs currently used to display the nodes are *point* glyphs. These are the default glyph, and are by default a single white pixel. Figure 2 shows the scene editor window, with the three areas labelled.
 
-.. figure:: /_static/images/sceneEditor_Glyphs1.png
+.. figure:: /cmgui/images/sceneEditor_Glyphs1.png
    :align: center
    
    **Figure 2: The scene editor.**
@@ -35,7 +35,7 @@ Use the drop-down menu to select another type of glyph for the node points: sele
 
 Final glyph size = b1*b2*b3
 
-.. figure:: /_static/images/glyph_editing_2.png
+.. figure:: /cmgui/images/glyph_editing_2.png
    :align: center
    
    **Figure 3: Changing the glyph and its base size.**
@@ -48,7 +48,7 @@ Scalar glyphs
 
 Scalar glyphs can be used to represent the value of a scalar field at selected points. They have a single component *orientation/scale* field, which we will call *S*. For this case the value of S is used for all three directions of glyph scaling. The size of each glyph dimension (x, y, and z) is determined by the *base size* (which we will call b) plus the *scale factor* (which we will call c) multiplied by the *orientation/scale* field.
 
-.. figure:: /_static/images/glyphScaling_Scalar1.png
+.. figure:: /cmgui/images/glyphScaling_Scalar1.png
    :align: center
 
    **Figure 4: How glyphs are scaled by a scalar orientation/scale field.**
@@ -101,7 +101,7 @@ Variable scale glyphs
 
 Variable scale glyphs use an extra "variable scale" field to give a signed magnitude; this not only multiplies the magnitude of the orientation_scale field (so it is doubly-scaled) but its magnitude provides its "sense". A good example of this would be extension (positive) versus compression (negative) for strain. Negative values of the variable scale field reverse glyphs about their origin along their orientation. There are several special "mirror" glyphs designed specifically for this purpose.
 
-.. figure:: /_static/images/mirror_glyphs.png
+.. figure:: /cmgui/images/mirror_glyphs.png
    :align: center
 
    **Figure 5: Mirror glyphs and glyph reversal using the variable scale field.**   
@@ -131,7 +131,7 @@ All glyphs have a default origin; this is the point which is positioned at the c
 
 By default, glyphs have a 0,0,0 coordinate point (origin) that is logically positioned according to the purpose of the glyph. For directional glyphs, the "long axis" is always the x axis. Spheres, cubes and cylinders have their origin positioned in the spatial centre of a bounding unit cube. Directional glyphs such as arrows have their origin at the base of the arrow, and axis glyphs have their origin at the intersection of the axes.
 
-.. figure:: /_static/images/glyph_centres.png
+.. figure:: /cmgui/images/glyph_centres.png
    :align: center
 
    **Figure 6: Origins of various glyph types within their bounding cubes.**  Origin of each glyph family is indicated by a red dot.
