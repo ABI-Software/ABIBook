@@ -15,4 +15,6 @@ OpenCMISS user documentation
    reference/OpenCMISS-coordinatesystems
    reference/OpenCMISS-basisfunctions
    reference/OpenCMISS-regions
-   tutorials/OpenCMISS-gettingstarted   
+   tutorials/OpenCMISS-gettingstarted
+   tutorials/OpenCMISS-videos
+   

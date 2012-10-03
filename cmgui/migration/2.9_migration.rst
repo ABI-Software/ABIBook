@@ -56,7 +56,7 @@ Another approach is to specify the region on the read command "gfx read node/ele
 
 .. warning::
 
-  Be aware that there are still cases where you can't use regions, so ontinued use of groups will be necessary:
+  Be aware that there are still cases where you can't use regions, so continued use of groups will be necessary:
 
   1. Whenever several element groups share common nodes. Elements can only reference nodes from the same region.
   2. Certain features such as the compose/find_mesh_location fields that do not work inter-region.
