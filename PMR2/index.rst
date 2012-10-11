@@ -12,6 +12,7 @@ If you wish to deploy an instance of the repository software, please read the in
    
    PMR2-introduction
    PMR2-downloading-viewing
-   PMR2-uploading-exposing
+   PMR2-workspaces
+   PMR2-exposing-cellml
    PMR2-installing-the-software
    

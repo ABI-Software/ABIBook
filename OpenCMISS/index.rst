@@ -17,4 +17,11 @@ OpenCMISS user documentation
    reference/OpenCMISS-regions
    tutorials/OpenCMISS-gettingstarted
    tutorials/OpenCMISS-videos
-   
+   examples/Bioelectrics/Bidomain
+   examples/Bioelectrics/Monodomain
+   examples/ClassicalField/AdvectionDiffusion
+   examples/ClassicalField/Diffusion
+   examples/ClassicalField/Hamilton_Jacobi
+   examples/ClassicalField/Helmholtz
+   examples/ClassicalField/Laplace
+   examples/ClassicalField/Poisson

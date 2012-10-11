@@ -12,14 +12,15 @@ Contents:
    :maxdepth: 1
    :titlesonly:
 
-
-   /CAP/index
-   /CellMLAPI/index
-   /CM/index
-   /cmgui/index
-   /MAP/index
-   /OpenCMISS/index
-   /PMR2/index
+   AboutABI/index
+   ABICaseStudies/index
+   CAP/index
+   CellMLAPI/index
+   CM/index
+   cmgui/index
+   MAP/index
+   OpenCMISS/index
+   PMR2/index
 
 
 Indices and tables
