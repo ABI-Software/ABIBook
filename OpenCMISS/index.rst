@@ -23,5 +23,5 @@ OpenCMISS user documentation
    examples/ClassicalField/Diffusion
    examples/ClassicalField/Hamilton_Jacobi
    examples/ClassicalField/Helmholtz
-   examples/ClassicalField/Laplace
+   examples/ClassicalField/Laplace/index
    examples/ClassicalField/Poisson
