@@ -7,7 +7,7 @@ Visualizing element fields using lines and cylinders
 .. _example a4: http://cmiss.bioeng.auckland.ac.nz/development/examples/a/a4/index.html
 
 
-*Lines* and *cylinders* are graphical representations which can be used to visualize 1-D elements in CMGUI - line elements at the edges of 2-D faces or 3-D elements.  In general, lines or cylinders are used to visualize the basic shape of a mesh.  When you load a mesh (exnode and exelem files) into CMGUI, the mesh is by default represented by lines of the default colour and thickness: white lines 1 pixel thick.  This means that a *lines* :ref:`graphic <cmgui-graphics>` is created in the default scene (see the :ref:`scene editor <scene-editor-window>`), with the default settings (Figure 1).  
+*Lines* and *cylinders* are graphical representations which can be used to visualize 1-D elements in CMGUI - line elements at the edges of 2-D faces or 3-D elements.  In general, lines or cylinders are used to visualize the basic shape of a mesh.  When you load a mesh (exnode and exelem files) into CMGUI, the mesh is by default represented by lines of the default colour and thickness: white lines 1 pixel thick.  This means that a *lines* :ref:`graphic <cmgui-graphics>` is created in the default scene (see the :ref:`scene editor <CMGUI-scene-editor-window>`), with the default settings (Figure 1).  
 
 If you wish to create these lines in the graphics window, use the go to the file menu in CMGUI and select *Read*, then *Node file*.  Read in ``cube.exnode`` from the example a2 directory.  Then using the *Read* and *Elements file* menu options, read in ``cube.exelem`` from the same directory.  If you now create a graphics window (using the *Graphics* menu item *3-D window*) you will see this cube rendered in 1 pixel thick white lines.
 
@@ -37,7 +37,7 @@ Lines have relatively few settings for altering their appearance (Figure 2).  Th
   * draw_selected - only selected lines are drawn.
   * draw_unselected - only unselected lines are drawn.
 
-* **Material:** This drop down menu allows you to select which material the lines will be rendered as.  Materials are defined in the :ref:`material editor window <material-editor-window>`.  Note: the material for lines is unshaded.  This means that lines only use the *diffuse* colour for the selected material to draw the lines.  
+* **Material:** This drop down menu allows you to select which material the lines will be rendered as.  Materials are defined in the :ref:`material editor window <CMGUI-material-editor-window>`.  Note: the material for lines is unshaded.  This means that lines only use the *diffuse* colour for the selected material to draw the lines.  
 
 * **Width:** You can enter a value in this box to set the thickness of the lines in pixels.  This width is independent of zoom, and remains constant through any transformation.  Setting this value to 0 results in lines of 1 pixel wide (the default).
 

@@ -3,7 +3,7 @@
 CMGUI Graphics Window
 =====================
 
-The graphics window is where all visualizations set up in the :ref:`scene editor <scene-editor-window>` window are displayed. It also has tools which allow some interactive manipulation of the data being visualized. The window consists of a control panel on the left hand side, and the display area on the left. At the top of the control panel area are a selection of general controls under the "Options" label: view all, save as, and perspective. The view all button will zoom out the viewing area so that all the graphics are visible. The save as option provides the ability to save the viewing area as a raster graphic, such as a png or jpg file. The perspective check box switches convergence on or off in the 3D display.
+The graphics window is where all visualizations set up in the :ref:`scene editor <CMGUI-scene-editor-window>` window are displayed. It also has tools which allow some interactive manipulation of the data being visualized. The window consists of a control panel on the left hand side, and the display area on the left. At the top of the control panel area are a selection of general controls under the "Options" label: view all, save as, and perspective. The view all button will zoom out the viewing area so that all the graphics are visible. The save as option provides the ability to save the viewing area as a raster graphic, such as a png or jpg file. The perspective check box switches convergence on or off in the 3D display.
 
 Immediately underneath the options section are controls for selecting how the 3D display is configured.  The *Layout* drop down list contains a list of display layouts, such as orthogonal or pseudo-3D views.  If an applicable layout is selected, the *up* and *front* controls will become available in order to change the viewpoint.  Many of these layouts contain multiple *scene viewers*, which may be useful in specific situations.  The default layout *simple* consists of a single 3D scene viewer.
 
@@ -28,7 +28,7 @@ The graphics window tools
 
 * **Node Tool**
   
-  The node tool allows the selection and editing of individual nodes from within the graphics window.  Selected nodes will turn red by default - the selected colour of a node is editable via the :ref:`scene editor <scene-editor-window>` window.  There are a range of other options to allow the editing, (moving nodes within the scene viewer) deletion, or creation of nodes.  It is also possible to create 1D, 2D or even 3D (lines, surfaces and volumes) elements using the node tool; this functionality is somewhat experimental and is of limited use in most cases.
+  The node tool allows the selection and editing of individual nodes from within the graphics window.  Selected nodes will turn red by default - the selected colour of a node is editable via the :ref:`scene editor <CMGUI-scene-editor-window>` window.  There are a range of other options to allow the editing, (moving nodes within the scene viewer) deletion, or creation of nodes.  It is also possible to create 1D, 2D or even 3D (lines, surfaces and volumes) elements using the node tool; this functionality is somewhat experimental and is of limited use in most cases.
   
   NOTE: It is somewhat easier to edit nodes (or indeed any of the other editable items) when they are represented by an easily clickable glyph such as a sphere or cube, rather than a point.
 

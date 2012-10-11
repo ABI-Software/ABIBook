@@ -10,7 +10,7 @@ graphics in CMGUI
 General description of graphics
 -------------------------------
 
-graphics are the building blocks used to create any visualization displayed in the CMGUI :ref:`graphics window <graphics-window>`. They are created, edited, re-ordered and deleted from within the :ref:`scene editor <scene-editor-window>`, or via the command line. Most graphics have the following settings in common:
+graphics are the building blocks used to create any visualization displayed in the CMGUI :ref:`graphics window <CMGUI-graphics-window>`. They are created, edited, re-ordered and deleted from within the :ref:`scene editor <scene-editor-window>`, or via the command line. Most graphics have the following settings in common:
 
 * Name:  This allows you to set the name of the graphic.
 
@@ -31,11 +31,11 @@ graphics are the building blocks used to create any visualization displayed in t
   * draw_selected - only selected items are drawn.
   * draw_unselected - only unselected items are drawn.
 
-* Material: This drop-down menu allows you to select which material should be used to render the graphic. Materials are defined and edited in the :ref:`material editor window <material-editor-window`.
+* Material: This drop-down menu allows you to select which material should be used to render the graphic. Materials are defined and edited in the :ref:`material editor window <CMGUI-material-editor-window`.
 
 * Data: This setting has a drop-down menu, allowing you to select which field will be mapped on to the graphic. This enables you to colour the graphic according to the values of some field, for example. The check box also activates the *spectrum* drop-down menu.
 
-* Spectrum: This drop-down menu is used to select which spectrum is to be used to colour the graphical element according to the field selected in the *data* setting. Spectra are edited in the :ref:`spectrum-editor-window <spectrum editor window>`.
+* Spectrum: This drop-down menu is used to select which spectrum is to be used to colour the graphical element according to the field selected in the *data* setting. Spectra are edited in the :ref:`spectrum-editor-window <CMGUI-spectrum editor window>`.
 
 * Selected material: This drop-down menu allows you to set which material will be used to render parts of the graphic which are selected.
 
@@ -44,21 +44,21 @@ The eight types of graphics
 
 * **node_points**
   
-  Node points are used to visualize nodes. You can use :doc:`glyphs <CMGUI_glyphs>` to represent node points. There are a range of built-in glyphs in CMGUI, and it is possible to create custom glyphs as well. *Node points* graphics have the following settings in addition to the common ones listed above:
+  Node points are used to visualize nodes. You can use :doc:`glyphs <CMGUI-glyphs>` to represent node points. There are a range of built-in glyphs in CMGUI, and it is possible to create custom glyphs as well. *Node points* graphics have the following settings in addition to the common ones listed above:
   
   * Glyph: this drop-down menu allows you to choose the glyph that will be rendered at the node points.
   * Offset: this box allows you to offset the origin of the glyph in order to alter its placement with respect to the node point.
   * Base glyph size: This box allows you to enter a size (x,y,z) for the glyph in the same scale as the coordinate system for the region.
   * Orientation/Scale: This check box enables a drop-down menu that allows selection of the field that the glyphs will be oriented and scaled according to.
   * Scale factors:  This box allows you to enter how each dimension scales according to the orientation/scale field value.
-  * Variable scale: This check box enables a drop-down menu that allows selection of the field that acts as the variable scale field. For more information on this and other of the *node points* options, see the document on working with :ref:`glyphs <using-glyphs>`.
+  * Variable scale: This check box enables a drop-down menu that allows selection of the field that acts as the variable scale field. For more information on this and other of the *node points* options, see the document on working with :ref:`glyphs <CMGUI-glyphs>`.
   * Label: use this drop-down menu allows you to add field-value labels to the glyphs.
   
 
 
 * **data_points**
   
-  Data points are used to visualize data points. Like node points, they can be represented using :ref:`glyphs <using-glyphs>`. They have the same settings as *node points*.
+  Data points are used to visualize data points. Like node points, they can be represented using :ref:`glyphs <CMGUI-glyphs>`. They have the same settings as *node points*.
 
 
 * **lines**
@@ -127,7 +127,7 @@ The eight types of graphics
   
   Streamlines are a special graphic for visualizing *vector* fields - for example, a fluid flow solution. They can be used to visualize 3, 6 or 9 component vector fields within a 3 dimensional element. In `example ao`_, streamlines are used to show the fibre and sheet directions in the heart. Streamlines will align along their length according to the first vector of a vector field, and across their "width" (eg the width of the *ribbon* or *rectangle* streamline types) to the second vector. For single vector (3 component) vector fields, the width of the streamlines will align to the curl_ of the vector.
   
-  Note that streamlines can be quite expensive to compute; changes to streamline settings in the :ref:`scene editor <scene-editor-window>` can take several seconds to appear in the 3D window, especially for complex scenes.
+  Note that streamlines can be quite expensive to compute; changes to streamline settings in the :ref:`scene editor <CMGUI-scene-editor-window>` can take several seconds to appear in the 3D window, especially for complex scenes.
 
   Streamlines have the following specific settings:
   
