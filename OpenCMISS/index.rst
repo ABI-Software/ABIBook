@@ -17,6 +17,7 @@ OpenCMISS user documentation
    reference/OpenCMISS-regions
    reference/OpenCMISS-problems
    tutorials/OpenCMISS-gettingstarted
+   tutorials/OpenCMISS-python
    tutorials/OpenCMISS-videos
    examples/Bioelectrics/Bidomain
    examples/Bioelectrics/Monodomain
