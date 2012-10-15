@@ -15,6 +15,7 @@ OpenCMISS user documentation
    reference/OpenCMISS-coordinatesystems
    reference/OpenCMISS-basisfunctions
    reference/OpenCMISS-regions
+   reference/OpenCMISS-problems
    tutorials/OpenCMISS-gettingstarted
    tutorials/OpenCMISS-videos
    examples/Bioelectrics/Bidomain
