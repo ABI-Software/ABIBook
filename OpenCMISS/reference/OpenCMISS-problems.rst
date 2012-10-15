@@ -34,6 +34,8 @@ Solution has the following attributes:
 * Solution mapping(which contains equations sets)
 * Solver pointer
 
+.. _OpenCMISS-problems-solvers:
+
 Solvers
 -------
 
@@ -51,6 +53,8 @@ Solver has the following attributes:
 * Solver matrices
 
 problemSolutionSolver_structure.JPG
+
+.. _OpenCMISS-problems-control_loop:
 
 Control
 -------
