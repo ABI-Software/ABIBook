@@ -32,11 +32,11 @@ graphics are the building blocks used to create any visualization displayed in t
   * draw_selected - only selected items are drawn.
   * draw_unselected - only unselected items are drawn.
 
-* Material: This drop-down menu allows you to select which material should be used to render the graphic. Materials are defined and edited in the :ref:`material editor window <CMGUI-material-editor-window`.
+* Material: This drop-down menu allows you to select which material should be used to render the graphic. Materials are defined and edited in the :ref:`material editor window <CMGUI-material-editor-window>`.
 
 * Data: This setting has a drop-down menu, allowing you to select which field will be mapped on to the graphic. This enables you to colour the graphic according to the values of some field, for example. The check box also activates the *spectrum* drop-down menu.
 
-* Spectrum: This drop-down menu is used to select which spectrum is to be used to colour the graphical element according to the field selected in the *data* setting. Spectra are edited in the :ref:`spectrum-editor-window <CMGUI-spectrum editor window>`.
+* Spectrum: This drop-down menu is used to select which spectrum is to be used to colour the graphical element according to the field selected in the *data* setting. Spectra are edited in the :ref:`spectrum-editor-window <CMGUI-spectrum-editor-window>`.
 
 * Selected material: This drop-down menu allows you to set which material will be used to render parts of the graphic which are selected.
 
