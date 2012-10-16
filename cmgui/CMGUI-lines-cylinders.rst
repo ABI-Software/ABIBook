@@ -1,5 +1,6 @@
 .. _CMGUI-lines-cylinders:
 
+====================================================
 Visualizing element fields using lines and cylinders
 ====================================================
 

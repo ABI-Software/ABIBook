@@ -1,5 +1,6 @@
 .. _CMGUI-make-AVI-from-images-windows:
 
+=================================================
 Creating an AVI from a series of images - Windows
 =================================================
 
@@ -15,7 +16,7 @@ This tutorial will describe a method of compiling a series of images saved from 
 An AVI file is a Windows format - however, it can be played on most computers including those running Mac OS X or Linux.  It can also be uploaded to online video sites such as YouTube.
 
 Software used
--------------
+=============
 
 The following pieces of software are used in this tutorial - click on the name of the software to navigate to a download page for each item:
 
@@ -30,7 +31,7 @@ The following pieces of software are used in this tutorial - click on the name o
 Installation of VirtualDub and FFDShow is a requirement for following this tutorial.  You will need administrator rights on your computer to install FFDShow; VirtualDub is simply unzipped into a directory and run directly.  Camstudio is only required if you wish to experiment with recording the CMGUI `graphics window`_ directly.
 
 Compiling a series of images into a movie
------------------------------------------
+=========================================
 
 When making a movie from a sequence of images, it is important to make sure that the images you created in CMGUI are saved at a usable resolution. It is always best to use familiar resolutions like 512x384, 640x480, 800x600 or 1024x768. Many video formats require specific resolutions to work properly; codecs often are restricted to multiples of 2, 4, or 8 for both the height and width in pixels.
 
@@ -103,7 +104,7 @@ Once the encoding is finished, find your file and double click on it to play it.
 
 
 Convert your movie to another format using WinFF
-------------------------------------------------
+================================================
 
 Sometimes you will want to have your movie in a format other than AVI, or you may wish to further tune the compression and quality of your movie.  For example, using the H.264 codec with an AVI creates a non-standard file; it is usually better to encode an mp4 file using H.264.  WinFF is an extremely useful tool for optimizing the file size or quality of your movies, as well as for converting from AVI to other file formats such as mp4 or mov.
 

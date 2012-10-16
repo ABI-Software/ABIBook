@@ -1,10 +1,11 @@
 ﻿.. _CMGUI-architecture:
 
+==================
 CMGUI Architecture
 ==================
 
 Regions and Fields
-------------------
+==================
 
 The basic structural unit in CMGUI is called a *region* - region is a container for the objects representing a model.  Regions own a set of fields and may contain child regions, thereby allowing a hierarchical model structure.  For example, you may have a "body" region that contains "heart", "lung", and "stomach" regions.  
 
@@ -15,7 +16,7 @@ Each region contains a set of *fields* from which a model is built up.  A field 
 Other examples of fields include fibre orientation in the heart, temperature, pressure, material properties, strain and so on.  In CMGUI you can also define fields that are computed from other fields.  For example, you might define a field called "scaled_coordinates" by scaling coordinates x, y, and z to x, y, and 10z, perhaps to exaggerate the height of topological features.  You might also compute strain from deformed and undeformed coordinates, fibre axis from fibre Euler angles, and so on.
 
 Other Data in CMGUI
--------------------
+===================
 
 The structure of the CMGUI *command data* (that is, the complete set of data used by CMGUI) is divided into a number of *containers* and categories.  Besides the regions which contain fields, there are also the following lists and managers, which contain other data used to create visualizations:
 

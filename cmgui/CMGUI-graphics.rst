@@ -1,6 +1,7 @@
 .. _CMGUI-graphics:
 
-graphics in CMGUI
+=================
+Graphics in CMGUI
 =================
 
 .. _example a7: http://cmiss.bioeng.auckland.ac.nz/development/examples/a/a7/index.html
@@ -8,7 +9,7 @@ graphics in CMGUI
 .. _curl: http://www.math.umn.edu/~nykamp/m2374/readings/divcurl/
 
 General description of graphics
--------------------------------
+===============================
 
 graphics are the building blocks used to create any visualization displayed in the CMGUI :ref:`graphics window <CMGUI-graphics-window>`. They are created, edited, re-ordered and deleted from within the :ref:`scene editor <scene-editor-window>`, or via the command line. Most graphics have the following settings in common:
 
@@ -40,7 +41,7 @@ graphics are the building blocks used to create any visualization displayed in t
 * Selected material: This drop-down menu allows you to set which material will be used to render parts of the graphic which are selected.
 
 The eight types of graphics
----------------------------
+===========================
 
 * **node_points**
   

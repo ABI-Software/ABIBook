@@ -1,5 +1,6 @@
 .. _CMGUI-glyphs:
 
+=========================================
 Visualizing fields at points using glyphs
 =========================================
 
@@ -15,12 +16,12 @@ Glyphs are graphical objects that are used to represent information at points wi
    **Figure 1: Different glyphs placed at the nodes of a cube mesh.**
 
 Adding glyphs to a mesh
------------------------
+=======================
 
 Glyphs are added and edited from within the scene editor. When you select a region in the scene editor, you can create a new graphic for placing glyphs at your points of interest. Glyphs can be added at point, node points, data points, or element points. Element points are points through the interior of an element at a controllable layout and density.
 
 Unscaled glyphs
----------------
+===============
 
 The simplest use of a glyph is to visually mark a point, with no direction or scale information. Unscaled glyphs are simply glyphs for which you have not selected an *orientation/scale* field. This means that they simply appear at the points you specify, at the default orientation, and with the specified the base size. The default base size is 1*1*1. If you want to run through this example, load up `example a1`_ in cmgui and run the entire com file.
 
@@ -44,7 +45,7 @@ This is the most basic use of glyphs - to indicate points such as nodes. Other u
 
 
 Scalar glyphs
--------------
+=============
 
 Scalar glyphs can be used to represent the value of a scalar field at selected points. They have a single component *orientation/scale* field, which we will call *S*. For this case the value of S is used for all three directions of glyph scaling. The size of each glyph dimension (x, y, and z) is determined by the *base size* (which we will call b) plus the *scale factor* (which we will call c) multiplied by the *orientation/scale* field.
 
@@ -58,7 +59,7 @@ Any scale factors that are given a zero value do not add anything to the base si
 
 
 Vector glyphs
--------------
+=============
 
 Glyphs used to represent a single vector most often use a three component *orientation/scale* field, but it is possible to use a two component field for two-dimensional vectors. The alignment of the glyph is determined by the alignment of the vector defined by the field; the glyph's first direction aligns to the vector, and its second and third directions are arbitrarily aligned orthogonal to this.
 
@@ -70,7 +71,7 @@ In most cases, b1 (base size one) is set to zero so that the final length of the
 
 
 Two vector glyphs
------------------
+=================
 
 These are rarely used. They have either four (2D vectors) or six (3D vectors) component *orientation/scale* fields. Vector 1 is defined by the first 2 or 3 components, and vector 2 by the second 2 or 3 components. The glyphs will orient their first direction along vector 1, and their second direction along vector 2. The glyph's direction 3 direction 3 is equal to the cross product of vectors 1 and 2.
 
@@ -84,20 +85,20 @@ Final glyph size = (b1+c1M1)*(b2+c2M2)*(b3+c3M3)
 
 
 Three vector glyphs
--------------------
+===================
 
 Three vector glyphs use a nine component *orientation/scale* field: vector 1 is defined by components 1,2,3, vector 2 by components 4,5,6, and vector 3 by components 7,8,9. The glyph is oriented in directions 1, 2, and 3 by the directions of vectors 1, 2, and 3 respectively. The scaling along the three directions is determined by the magnitude of the three vectors.
 
 Final glyph size = (b1+c1M1)*(b2+c2M2)*(b3+c3M3)
 
 Using the fibre field
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 A special case of three vector glyphs is when you choose a *fibre field* for the *scale/orientation* field.
 This option automatically creates a three vector "fibre axes" field from it together with the coordinate field used by that graphic. This is equivalent to defining a field using the command ``gfx define field NAME fibre_axes``
 
 Variable scale glyphs
----------------------
+=====================
 
 Variable scale glyphs use an extra "variable scale" field to give a signed magnitude; this not only multiplies the magnitude of the orientation_scale field (so it is doubly-scaled) but its magnitude provides its "sense". A good example of this would be extension (positive) versus compression (negative) for strain. Negative values of the variable scale field reverse glyphs about their origin along their orientation. There are several special "mirror" glyphs designed specifically for this purpose.
 
@@ -121,11 +122,11 @@ Final glyph size = (b1+c1M*lambda1)*(b2+c2M*lambda2)*(b3+c3M*lambda3)
 It is most common to use a variable scale field with single vector glyphs, such as in the large strain example.
 
 Additional tricks with glyphs
------------------------------
+=============================
 
 
 Adjusting the glyph offset
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 All glyphs have a default origin; this is the point which is positioned at the chosen point within the graphical representation. This can be edited by entering values in the *offset* value box in the settings editor. This appears next to the glyph drop-down menu.
 
@@ -141,7 +142,7 @@ Using the *offset* value box, you can adjust the position of your selected glyph
 
 
 Using custom glyphs
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 It is possible in cmgui to create your own glyphs from obj model files. An example of this in action is the biplane_ example, where a model of a biplane is used to create a custom glyph.
 

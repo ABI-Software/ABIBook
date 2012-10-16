@@ -1,5 +1,6 @@
 .. _CMGUI-graphics-window:
 
+=====================
 CMGUI Graphics Window
 =====================
 
@@ -12,7 +13,7 @@ Below the layout section is a button labelled "Time Editor".  This opens the tim
 Below this are the 5 "Tools" buttons.  These offer different ways of interacting with the 3D display.
 
 The graphics window tools
--------------------------
+=========================
 
 * **Transformation mode**
 

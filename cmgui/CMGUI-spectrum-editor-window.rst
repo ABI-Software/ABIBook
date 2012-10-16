@@ -1,5 +1,6 @@
 .. _CMGUI-spectrum-editor-window:
 
+============================
 cmgui Spectrum Editor Window
 ============================
 
@@ -17,19 +18,19 @@ It is useful to step through `example a7`_ to get a feel for the use of spectra 
 
 
 Spectrum List
--------------
+=============
 
 The spectrum list shows all the currently defined spectra; it will always contain the *default* spectrum if no others have been defined.  Three buttons at the top of the window allow you to *create*, *delete*, or *rename* spectra.  Just below the list of spectra are some controls that allow you to set some of the general properties of the selected spectrum.  The *autorange* button automatically sets the minimum and maximum values of the selected spectrum, according to the smallest and largest values it has been applied to in the :ref:`scene editor <CMGUI-scene-editor-window>`.  For example, if the default spectrum has been used to colour a temperature field in the default scene, and that field has values ranging from 0 to 100 degrees Celsius, pressing the *autorange* button will set the minimum and maximum values (in the *Spectrum range* settings - see below) of the selected spectrum to 0 and 100 respectively.  If the selected spectrum has been used to colour objects according to more than one field, the *autorange* function will choose the smallest and largest values across all of these fields.  The *from scene* drop-down menu allows you to select the scene from which the spectrum will be auto-ranged.
 
 The *overlay* or *overwrite* options allow you to choose whether a spectrum will completely over-ride any other material settings (*overwrite*), therefore completely colouring the object as the spectrum appears in the preview panel - or whether the spectrum combines with the other material settings of the object so that the final colour is a combination of the spectrum and other material settings (*overlay*).
 
 Preview Panel
--------------
+=============
 
 This panel shows a horizontal bar, coloured using the selected spectrum.  The bar also shows the range that the spectrum is currently set to, using a series of numbered labels.  Clicking in the preview panel changes the number of these labels from 4 to 10 to 2, then cycles through these values.  Currently the preview panel can not display multi-component spectra.
 
 Settings Editor
----------------
+===============
 
 The settings editor is where each spectrum is set up.  It contains a number of controls.
 

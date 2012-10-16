@@ -1,7 +1,8 @@
 .. _CMGUI-command-window:
 
+====================
 CMGUI Command Window
---------------------
+====================
 
 This is the first window that appears when CMGUI is loaded.  It consists of standard menus at the top, and three panels below.  From top to bottom these are the history, command line, and output panels.  The history panel is where all commands that have been executed are displayed.  The second, single-line panel is the command line where commands may be entered directly.  The lowermost panel is the output panel; this displays the text output of commands, error messages, as well as help information.
 

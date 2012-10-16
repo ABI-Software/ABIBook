@@ -1,5 +1,6 @@
 .. _CMGUI-index:
 
+========================
 Cmgui user documentation
 ========================
 

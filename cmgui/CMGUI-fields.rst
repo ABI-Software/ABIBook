@@ -1,5 +1,6 @@
 ﻿.. _CMGUI-fields:
 
+============
 CMGUI Fields
 ============
 
@@ -9,7 +10,7 @@ CMGUI Fields
 .. _manifolds: http://en.wikipedia.org/wiki/Manifold
 
 Fields in CMGUI: finite element models
---------------------------------------
+======================================
 
 CMGUI models are organized into regions, which may contain child regions, so that models can be organized into hierarchies.  The representation of the model within each region is given by *fields*. Much of the power of CMGUI is in its generalized representation and manipulation of fields.  Mathematically, a field is a function returning values at locations within its domain.  Most commonly the values are real numbers, though they may be scalars or multi-component (vectors, tensors etc.).
 
@@ -43,14 +44,14 @@ The zero dimensional counterpart to elements and faces are called nodes. There i
 Getting back to the original statement of what a field is, we can generally state that a domain is a set of 0..N-dimensional manifolds_, i.e. there can be any number of manifolds of any dimension. In CMGUI finite element meshes, nodes supply the point manifolds and elements supply all the higher dimensional manifolds. There is no requirement for the domain to be connected.  CMGUI fields are not limited to returning real numbers; there are fields that can return integers, strings, element-ξ locations and other values.
 
 Computed fields
----------------
+===============
 
 We have now introduced the main building blocks of finite element fields which are just one type of field representation in CMGUI.  In CMGUI we offer a large number of other field types which do not work directly with finite element meshes, but may be based on finite element fields. Most of these are mathematical operators which act on one or more source fields to produce a new field result.
 
 A simple example is the *add* field which adds two other fields together to return a new field. The add field has two source fields as arguments. If you made field C which added finite element field A to finite element field B, the resulting field is defined over the intersection of the domains of field A and field B.
 
 Other types of field
---------------------
+====================
 
 * **Arithmetic and transcendental functions:** Add, subtract, multiply, divide, sum_components, log, power, square root, exp.
 
@@ -77,7 +78,7 @@ Other types of field
 These types of fields can be created via ``gfx define field`` commands or through the API.  Fields are a modular part of the CMGUI application. If a new function is required, it can be added as a field.  To get a list of the computed fields available in CMGUI, enter ``gfx define field ??`` in the command line.
 
 Fields and visualization
-------------------------
+========================
 
 When creating visualizations, you need to choose which field controls which part of a graphics object.  Coordinates in one, two or three dimensions can be used to create spatial representations.  Texture coordinate fields can be used to position textures.  Orientation or data fields can be used to position glyphs or colour objects such as surfaces.  CMGUI allows an enormous amount of flexibility in how fields can be visualized.  Further information on visualizations is available in other documents such as those detailing :ref:`graphics <cmgui-graphics>`, :ref:`glyphs <cmgui-glyphs>`, or :ref:`surfaces <cmgui-surfaces>`.
 
