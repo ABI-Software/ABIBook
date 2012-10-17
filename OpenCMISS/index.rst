@@ -18,6 +18,7 @@ OpenCMISS user documentation
    reference/OpenCMISS-problems
    tutorials/OpenCMISS-gettingstarted
    tutorials/OpenCMISS-python
+   tutorials/OpenCMISS-cellml
    tutorials/OpenCMISS-videos
    examples/Bioelectrics/Bidomain
    examples/Bioelectrics/Monodomain
