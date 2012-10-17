@@ -1,6 +1,9 @@
 .. _OpenCMISS-cellml:
 
-.. highlight:: cellml
+.. highlight:: Fortran
+
+.. the above sets the default highlighting to be Fortran, but the code-blocks can override this so that we can have examples in Fortran, C, and Python.
+
 
 =========================
 Using CellML in OpenCMISS
@@ -34,7 +37,67 @@ With all desired fields set-up appropriately, the user then just needs to add th
 The CellML environment
 ----------------------
 
-Create an environment and import models.
+The OpenCMISS type for the CellML environment is ``CMISSCellMLType``. As with most OpenCMISS types, a user-number is provided to uniquely identify this CellML environment to the user. The basic creation block is given below. 
+
+.. code-block:: Fortran
+
+  ! declare the user number for the CellML environment we want to create
+  INTEGER(CMISSIntg), PARAMETER :: CellMLUserNumber=10
+  ! and the actual handle for the CellML environment
+  TYPE(CMISSCellMLType) :: CellML
+  .
+  .
+  ! We first initialise the CellML environment
+  CALL CMISSCellML_Initialise(CellML,Err)
+  ! and then we are able to trigger the start of creation
+  CALL CMISSCellML_CreateStart(CellMLUserNumber,Region,CellML,Err)
+  
+  ! import models
+  
+  ! flag variables
+  
+  ! terminate the creation process
+  CALL CMISSCellML_CreateFinish(CellML,Err)
+  
+It is important to note that all required models must be imported and all desired variables flagged before terminating the CellML environment creation process. This is because the create finish method will proceed to make use of OpenCMISS(cellml) to instantiate each of the imported CellML models into executable code, and the generation of that executable code requires all knowledge of the flagged variables.
+
+ 
+Models are simply imported into the CellML environment with the code shown below.
+
+.. code-block::
+
+  INTEGER(CMISSIntg) :: modelIndex
+  
+  ! Import the specified model into the CellML environment
+  CALL CMISSCellML_ModelImport(CellML,"model.xml",modelIndex,Err)
+
+In this example, the CellML model ``model.xml`` is imported into the CellML environment and on successful return the variable ``modelIndex`` will be set to the index for this specific model in the CellML environment. The CellML model to import is specified by URL, and can be either absolute (e.g., ``http://example.com/coolest/model/ever.xml``) or relative (e.g., ``coolest/model/ever.xml``). If a relative URL is specified, it will be resolved relative to the current working directory (CWD) of the executed application. (It is anticipated that application developers would use their own logic to provide absolute URLs to define CellML models in OpenCMISS.)
+  
+.. code-block::
+
+  ! Now we have imported all the models we are able to specify which variables from the model we want:
+  !   - to set from this side
+  CALL CMISSCellML_VariableSetAsKnown(CellML,modelIndex,"fast_sodium_current/g_Na ",Err)
+  CALL CMISSCellML_VariableSetAsKnown(CellML,modelIndex,"membrane/IStim",Err)
+  !   - to get from the CellML side (state variables are wanted by default and can not be changed)
+  CALL CMISSCellML_VariableSetAsWanted(CellML,modelIndex,"membrane/i_K1",Err)
+  CALL CMISSCellML_VariableSetAsWanted(CellML,modelIndex,"membrane/i_to",Err)
+  CALL CMISSCellML_VariableSetAsWanted(CellML,modelIndex,"membrane/i_K",Err)
+  CALL CMISSCellML_VariableSetAsWanted(CellML,modelIndex,"membrane/i_K_ATP",Err)
+  CALL CMISSCellML_VariableSetAsWanted(CellML,modelIndex,"membrane/i_Ca_L_K",Err)
+  CALL CMISSCellML_VariableSetAsWanted(CellML,modelIndex,"membrane/i_b_K",Err)
+  CALL CMISSCellML_VariableSetAsWanted(CellML,modelIndex,"membrane/i_NaK",Err)
+  CALL CMISSCellML_VariableSetAsWanted(CellML,modelIndex,"membrane/i_Na",Err)
+  CALL CMISSCellML_VariableSetAsWanted(CellML,modelIndex,"membrane/i_b_Na",Err)
+  CALL CMISSCellML_VariableSetAsWanted(CellML,modelIndex,"membrane/i_Ca_L_Na",Err)
+  CALL CMISSCellML_VariableSetAsWanted(CellML,modelIndex,"membrane/i_NaCa",Err)
+  !   - and override constant parameters without needing to set up fields
+  !> \todo Need to allow parameter values to be overridden for the case when user has non-spatially varying parameter value.
+!  CALL CMISSDiagnosticsSetOff(Err)
+  !Finish the CellML environment
+  CALL CMISSCellML_CreateFinish(CellML,Err)
+
+
 
 Flagging variables
 ------------------
