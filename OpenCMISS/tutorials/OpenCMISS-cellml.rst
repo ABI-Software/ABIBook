@@ -6,7 +6,15 @@
 Using CellML in OpenCMISS
 =========================
 
-In this tutorial we will walk through how to make use of CellML models in OpenCMISS.
+The aim of this tutorial is to give the user a bit of help in using CellML models in OpenCMISS. `OpenCMISS(cellml)`_ is the code that provides the mapping from OpenCMISS(cm) (Fortran) to the `CellML API`_ (C++). The API exposed by the OpenCMISS(cellml) library is then wrapped by the OpenCMISS(cm) API, with documentation available in the OpenCMISS `programmer documentation`_. The programmer documentation provides the reference documentation for the OpenCMISS(cm) routines which are described in this tutorial. The `monodomain example`_ from the OpenCMISS examples repository provides a good demonstration of OpenCMISS+CellML.
+
+.. _OpenCMISS(cellml): https://github.com/OpenCMISS/cellml
+
+.. _CellML API: http://cellml-api.sourceforge.net
+
+.. _programmer documentation: http://cmiss.bioeng.auckland.ac.nz/OpenCMISS/doc/programmer/
+
+.. _monodomain example: https://github.com/OpenCMISS/examples/blob/master/Bioelectrics/Monodomain/src/MonodomainExample.f90
 
 Getting Started
 ---------------
@@ -32,7 +40,6 @@ by following the instructions in the `programmer documentation`_,
 we can now access all the OpenCMISS functions, classes and constants under
 the ``CMISS`` namespace.
 
-.. _programmer documentation: http://cmiss.bioeng.auckland.ac.nz/OpenCMISS/doc/programmer/
 
 Create a Coordinate System
 --------------------------
