@@ -60,11 +60,10 @@ The OpenCMISS type for the CellML environment is ``CMISSCellMLType``. As with mo
   CALL CMISSCellML_CreateFinish(CellML,Err)
   
 It is important to note that all required models must be imported and all desired variables flagged before terminating the CellML environment creation process. This is because the create finish method will proceed to make use of OpenCMISS(cellml) to instantiate each of the imported CellML models into executable code, and the generation of that executable code requires all knowledge of the flagged variables.
-
  
 Models are simply imported into the CellML environment with the code shown below.
 
-.. code-block::
+.. code-block:: Fortran
 
   INTEGER(CMISSIntg) :: modelIndex
   
@@ -73,7 +72,7 @@ Models are simply imported into the CellML environment with the code shown below
 
 In this example, the CellML model ``model.xml`` is imported into the CellML environment and on successful return the variable ``modelIndex`` will be set to the index for this specific model in the CellML environment. The CellML model to import is specified by URL, and can be either absolute (e.g., ``http://example.com/coolest/model/ever.xml``) or relative (e.g., ``coolest/model/ever.xml``). If a relative URL is specified, it will be resolved relative to the current working directory (CWD) of the executed application. (It is anticipated that application developers would use their own logic to provide absolute URLs to define CellML models in OpenCMISS.)
   
-.. code-block::
+.. code-block:: Fortran
 
   ! Now we have imported all the models we are able to specify which variables from the model we want:
   !   - to set from this side
