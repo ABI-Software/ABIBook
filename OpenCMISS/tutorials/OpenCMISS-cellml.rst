@@ -39,7 +39,7 @@ The CellML environment
 
 The OpenCMISS type for the CellML environment is ``CMISSCellMLType``. As with most OpenCMISS types, a user-number is provided to uniquely identify this CellML environment to the user. The basic creation block is given below. 
 
-.. code-block::
+.. code-block:: fortran
 
   ! declare the user number for the CellML environment we want to create
   INTEGER(CMISSIntg), PARAMETER :: CellMLUserNumber=10
