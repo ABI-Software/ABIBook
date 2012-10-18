@@ -77,7 +77,7 @@ Flagging variables
 
 As mentioned above, all variables of interest in the imported CellML models must be flagged prior to terminating the CellML environment creation process. Variables in CellML models can be flagged as either *known* or *wanted*. Flagging variables in a model will inform OpenCMISS(cellml) that the given variable(s) need to be available for use by OpenCMISS(cm), and hence the executable code generated when the models are instantiated is required to provide this access. The process for flagging variables is shown below.
 
-.. code-block:: Fortran
+.. code-block:: fortran
 
   ! Flag a variable as known
   CALL CMISSCellML_VariableSetAsKnown(CellML,modelIndex,"fast_sodium_current/g_Na ",Err)
