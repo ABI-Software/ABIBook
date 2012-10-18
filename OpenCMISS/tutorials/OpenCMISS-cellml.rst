@@ -45,8 +45,7 @@ The OpenCMISS type for the CellML environment is ``CMISSCellMLType``. As with mo
   INTEGER(CMISSIntg), PARAMETER :: CellMLUserNumber=10
   ! and the actual handle for the CellML environment
   TYPE(CMISSCellMLType) :: CellML
-  .
-  .
+
   ! We first initialise the CellML environment
   CALL CMISSCellML_Initialise(CellML,Err)
   ! and then we are able to trigger the start of creation
