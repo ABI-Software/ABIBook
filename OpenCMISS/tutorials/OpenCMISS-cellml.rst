@@ -61,7 +61,7 @@ The OpenCMISS type for the CellML environment is ``CMISSCellMLType``. As with mo
   
 It is important to note that all required models must be imported and all desired variables flagged before terminating the CellML environment creation process. This is because the create finish method will proceed to make use of OpenCMISS(cellml) to instantiate each of the imported CellML models into executable code, and the generation of that executable code requires all knowledge of the flagged variables.
  
-Models are simply imported into the CellML environment with the code shown below.
+Models are imported into the CellML environment with the code shown below.
 
 .. code-block:: Fortran
 
@@ -71,35 +71,49 @@ Models are simply imported into the CellML environment with the code shown below
   CALL CMISSCellML_ModelImport(CellML,"model.xml",modelIndex,Err)
 
 In this example, the CellML model ``model.xml`` is imported into the CellML environment and on successful return the variable ``modelIndex`` will be set to the index for this specific model in the CellML environment. The CellML model to import is specified by URL, and can be either absolute (e.g., ``http://example.com/coolest/model/ever.xml``) or relative (e.g., ``coolest/model/ever.xml``). If a relative URL is specified, it will be resolved relative to the current working directory (CWD) of the executed application. (It is anticipated that application developers would use their own logic to provide absolute URLs to define CellML models in OpenCMISS.)
-  
-.. code-block:: Fortran
-
-  ! Now we have imported all the models we are able to specify which variables from the model we want:
-  !   - to set from this side
-  CALL CMISSCellML_VariableSetAsKnown(CellML,modelIndex,"fast_sodium_current/g_Na ",Err)
-  CALL CMISSCellML_VariableSetAsKnown(CellML,modelIndex,"membrane/IStim",Err)
-  !   - to get from the CellML side (state variables are wanted by default and can not be changed)
-  CALL CMISSCellML_VariableSetAsWanted(CellML,modelIndex,"membrane/i_K1",Err)
-  CALL CMISSCellML_VariableSetAsWanted(CellML,modelIndex,"membrane/i_to",Err)
-  CALL CMISSCellML_VariableSetAsWanted(CellML,modelIndex,"membrane/i_K",Err)
-  CALL CMISSCellML_VariableSetAsWanted(CellML,modelIndex,"membrane/i_K_ATP",Err)
-  CALL CMISSCellML_VariableSetAsWanted(CellML,modelIndex,"membrane/i_Ca_L_K",Err)
-  CALL CMISSCellML_VariableSetAsWanted(CellML,modelIndex,"membrane/i_b_K",Err)
-  CALL CMISSCellML_VariableSetAsWanted(CellML,modelIndex,"membrane/i_NaK",Err)
-  CALL CMISSCellML_VariableSetAsWanted(CellML,modelIndex,"membrane/i_Na",Err)
-  CALL CMISSCellML_VariableSetAsWanted(CellML,modelIndex,"membrane/i_b_Na",Err)
-  CALL CMISSCellML_VariableSetAsWanted(CellML,modelIndex,"membrane/i_Ca_L_Na",Err)
-  CALL CMISSCellML_VariableSetAsWanted(CellML,modelIndex,"membrane/i_NaCa",Err)
-  !   - and override constant parameters without needing to set up fields
-  !> \todo Need to allow parameter values to be overridden for the case when user has non-spatially varying parameter value.
-!  CALL CMISSDiagnosticsSetOff(Err)
-  !Finish the CellML environment
-  CALL CMISSCellML_CreateFinish(CellML,Err)
-
-
 
 Flagging variables
 ------------------
+
+As mentioned above, all variables of interest in the imported CellML models must be flagged prior to terminating the CellML environment creation process. Variables in CellML models can be flagged as either *known* or *wanted*. Flagging variables in a model will inform OpenCMISS(cellml) that the given variable(s) need to be available for use by OpenCMISS(cm), and hence the executable code generated when the models are instantiated is required to provide this access. The process for flagging variables is shown below.
+
+.. code-block:: Fortran
+
+  ! Flag a variable as known
+  CALL CMISSCellML_VariableSetAsKnown(CellML,modelIndex,"fast_sodium_current/g_Na ",Err)
+  ! Flag a variable as wanted
+  CALL CMISSCellML_VariableSetAsWanted(CellML,modelIndex,"membrane/i_K1",Err)
+
+Details on how to identify specific variables in a CelLML model are given below. The ``modelIndex`` should be the index of the desired model in the CellML environment, as returned by the model import described above.
+
+Flagging a variable as *known* indicates that the OpenCMISS user wants to control the value of the specified variable, thus taking ownership of the variable from the CellML model. Currently, only CONSTANT variables in CellML models can be flagged as known (see the `Variable Evaluation Types`_ in the CellML API documentation). This is typically used when parameters in the CellML model are to have their values defined by OpenCMISS fields.
+
+Flagging a variable as *wanted* indicates that the OpenCMISS user wants to obtain the value of the specified variable from the CellLML model. Currently, CONSTANT, PSEUDOSTATE_VARIABLE, and ALGEBRAIC variables in CellML models can be flagged as wanted ((see the `Variable Evaluation Types`_ in the CellML API documentation). In order to be able to save the state of CellML models during integration steps, all state variables in models are automatically flagged as wanted. Depending on how the CellML model is being applied in the OpenCMISS simulation, variables that are considered CONSTANT by the CelLML API will actually be the variables of interest to the OpenCMISS user - commonly the case for mechanical constitutive relationships where the *wanted* strain energy components are algebraically related to the *known* strain components.
+
+.. _Variable Evaluation Types: http://cellml-api.sourceforge.net/1.12/namespacecellml__services.html#a572d2854ecc95d68471347241a678c8f
+
+Identifying CellML variables
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+When identifying variables from CellML models in OpenCMISS, the convention is to address them with a string consisting of the variable's name and the name of the parent component, as demonstrated below.
+
+.. code-block:: xml
+
+  <model ...>
+    .
+    .
+    <component name="membrane">
+      <variable name="i_K1" .../>
+      <variable name="i_stimulus" .../>
+      .
+      .
+    </component>
+    <component name="temperature">
+      <variable name="temperature" units="K" initial_value="310.0" public_interface="out"/>
+    </component>
+    .
+    .
+  </model>
 
 What is meant by known and wanted; mention that only top-level variables can be addressed; anything else?
 
