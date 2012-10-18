@@ -95,27 +95,33 @@ Flagging a variable as *wanted* indicates that the OpenCMISS user wants to obtai
 Identifying CellML variables
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-When identifying variables from CellML models in OpenCMISS, the convention is to address them with a string consisting of the variable's name and the name of the parent component, as demonstrated below.
+When identifying variables from CellML models in OpenCMISS, the convention is to address them with a string consisting of the variable's name and the name of the parent component. Given the following (invalid!) CellML model,
 
 .. code-block:: xml
 
-  <model ...>
-    .
-    .
+  <model>
+    <import href="http://models.cellml.org/bob/model.xml">
+      <component name="imported_component" component_ref="source_component"/>
+    </import>
     <component name="membrane">
-      <variable name="i_K1" .../>
-      <variable name="i_stimulus" .../>
-      .
-      .
+      <variable name="i_K1"/>
+      <variable name="i_stimulus"/>
+      <variable name="T"/>
     </component>
     <component name="temperature">
       <variable name="temperature" units="K" initial_value="310.0" public_interface="out"/>
     </component>
-    .
-    .
+    <connection>
+      <map_components component_1="membrane" component_2="temperature"/>
+      <map_variables variable_1="T" variable_2="temperature"/>
+    </connection>
   </model>
 
-What is meant by known and wanted; mention that only top-level variables can be addressed; anything else?
+the ``i_K1`` variable in the ``membrane`` component is identified with the string ``membrane/i_K1``. Similarly, ``membrane/i_stimulus`` identifies the stimulus current, ``membrane/T`` identifies the temperature variable in the membrane component, and ``temperature/temperature`` identifies the temperature variable in the temperature component. Due to the connection between the temperature variables in the membrane and temperature components, ``membrane/T`` and ``temperature/temperature`` can be treated interchangeably. (Internally, OpenCMISS(cellml) will always resolve variable references to the `source variable`_ and hence ``membrane/T`` will resolve to ``temperature/temperature``.) Given the rules for naming CellML components and variables, these identifier strings are guaranteed to be unique for a specified model.
+ 
+Using this method to identify variables in CellML models, it is not possible to address variables which are not described in the top-level model being imported into the OpenCMISS CellML environment. For example, the above CellML model imports the component `source_component` from the model `http://models.cellml.org/bob/model.xml` but the variables in that component are not available to the OpenCMISS user unless they are connected to variables in the model (i.e., there are connections that map the component ``imported_component`` to the component ``membrane`` or ``temperature`` in the above model).
+
+.. _source variable: http://cellml-api.sourceforge.net/1.12/interfacecellml__api_1_1_cell_m_l_variable.html#a205169a627dc9ff691897cacc6119b1c
 
 Mapping between variables and fields
 ------------------------------------
