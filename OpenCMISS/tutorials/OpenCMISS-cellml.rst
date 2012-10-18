@@ -1,6 +1,6 @@
 .. _OpenCMISS-cellml:
 
-.. highlight:: Fortran
+.. highlight:: fortran
 
 .. the above sets the default highlighting to be Fortran, but the code-blocks can override this so that we can have examples in Fortran, C, and Python.
 
@@ -39,7 +39,7 @@ The CellML environment
 
 The OpenCMISS type for the CellML environment is ``CMISSCellMLType``. As with most OpenCMISS types, a user-number is provided to uniquely identify this CellML environment to the user. The basic creation block is given below. 
 
-.. code-block:: Fortran
+.. code-block::
 
   ! declare the user number for the CellML environment we want to create
   INTEGER(CMISSIntg), PARAMETER :: CellMLUserNumber=10
@@ -63,7 +63,7 @@ It is important to note that all required models must be imported and all desire
  
 Models are imported into the CellML environment with the code shown below.
 
-.. code-block:: Fortran
+.. code-block:: fortran
 
   INTEGER(CMISSIntg) :: modelIndex
   
