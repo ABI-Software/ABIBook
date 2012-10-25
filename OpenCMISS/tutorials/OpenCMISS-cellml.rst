@@ -125,7 +125,68 @@ Using this method to identify variables in CellML models, it is not possible to 
 Mapping between variables and fields
 ------------------------------------
 
-More explanation on the process of mapping variables between CellML models and OpenCMISS fields.
+*TODO: This section needs some checking and filling out!*
+
+CellML model variables which have been flagged (see above) are able to be mapped to components of OpenCMISS fields. CellML variables which are mapped from OpenCMISS field components will have their value updated from the field at each DOF prior to evaluation of the CellML model. OpenCMISS field components which are mapped from CellML variables will trigger evaluation of the CellML model(s) associated with the requested DOF.
+
+The basic mapping process is as follows.
+
+.. code-block:: fortran
+
+  ! Start the creation of CellML <--> OpenCMISS field maps
+  CALL CMISSCellML_FieldMapsCreateStart(CellML,Err)
+  
+  ! and set up the field variable component <--> CellML model variable mappings.
+  
+  ! Map the first component of the dependent field to the membrane potential in the CellML model 
+  CALL CMISSCellML_CreateFieldToCellMLMap(CellML,DependentField,CMISS_FIELD_U_VARIABLE_TYPE,1,CMISS_FIELD_VALUES_SET_TYPE, &
+    & modelIndex,"membrane/Vm",CMISS_FIELD_VALUES_SET_TYPE,Err)
+
+  ! and the reverse mapping
+  CALL CMISSCellML_CreateCellMLToFieldMap(CellML,modelIndex,"membrane/Vm",CMISS_FIELD_VALUES_SET_TYPE, &
+    & DependentField,CMISS_FIELD_U_VARIABLE_TYPE,1,CMISS_FIELD_VALUES_SET_TYPE,Err)
+
+  ! Finish the creation of CellML <--> OpenCMISS field maps
+  CALL CMISSCellML_FieldMapsCreateFinish(CellML,Err)
+  
+For a mechanical constitutive application, the mapping may look more like
+
+.. code-block:: fortran
+
+  !Start the creation of CellML <--> OpenCMISS field maps
+  CALL CMISSCellML_FieldMapsCreateStart(CellML,Err)
+  !Now we can set up the field variable component <--> CellML model variable mappings.
+  !Map the strain components from OpenCMISS fields to the CellML model
+  CALL CMISSCellML_CreateFieldToCellMLMap(CellML,DependentField,CMISS_FIELD_U1_VARIABLE_TYPE,1,CMISS_FIELD_VALUES_SET_TYPE, &
+    & MooneyRivlinModelIndex,"equations/E11",CMISS_FIELD_VALUES_SET_TYPE,Err)
+  CALL CMISSCellML_CreateFieldToCellMLMap(CellML,DependentField,CMISS_FIELD_U1_VARIABLE_TYPE,2,CMISS_FIELD_VALUES_SET_TYPE, &
+    & MooneyRivlinModelIndex,"equations/E12",CMISS_FIELD_VALUES_SET_TYPE,Err)
+  CALL CMISSCellML_CreateFieldToCellMLMap(CellML,DependentField,CMISS_FIELD_U1_VARIABLE_TYPE,3,CMISS_FIELD_VALUES_SET_TYPE, &
+    & MooneyRivlinModelIndex,"equations/E13",CMISS_FIELD_VALUES_SET_TYPE,Err)
+  CALL CMISSCellML_CreateFieldToCellMLMap(CellML,DependentField,CMISS_FIELD_U1_VARIABLE_TYPE,4,CMISS_FIELD_VALUES_SET_TYPE, &
+    & MooneyRivlinModelIndex,"equations/E22",CMISS_FIELD_VALUES_SET_TYPE,Err)
+  CALL CMISSCellML_CreateFieldToCellMLMap(CellML,DependentField,CMISS_FIELD_U1_VARIABLE_TYPE,5,CMISS_FIELD_VALUES_SET_TYPE, &
+    & MooneyRivlinModelIndex,"equations/E23",CMISS_FIELD_VALUES_SET_TYPE,Err)
+  CALL CMISSCellML_CreateFieldToCellMLMap(CellML,DependentField,CMISS_FIELD_U1_VARIABLE_TYPE,6,CMISS_FIELD_VALUES_SET_TYPE, &
+    & MooneyRivlinModelIndex,"equations/E33",CMISS_FIELD_VALUES_SET_TYPE,Err)
+
+  ! Map the material parameters - if any
+
+  ! Map the stress components from the CellML model to the OpenCMISS dependent field
+  CALL CMISSCellML_CreateCellMLToFieldMap(CellML,MooneyRivlinModelIndex,"equations/Tdev11",CMISS_FIELD_VALUES_SET_TYPE, &
+    & DependentField,CMISS_FIELD_U2_VARIABLE_TYPE,1,CMISS_FIELD_VALUES_SET_TYPE,Err)
+  CALL CMISSCellML_CreateCellMLToFieldMap(CellML,MooneyRivlinModelIndex,"equations/Tdev12",CMISS_FIELD_VALUES_SET_TYPE, &
+    & DependentField,CMISS_FIELD_U2_VARIABLE_TYPE,2,CMISS_FIELD_VALUES_SET_TYPE,Err)
+  CALL CMISSCellML_CreateCellMLToFieldMap(CellML,MooneyRivlinModelIndex,"equations/Tdev13",CMISS_FIELD_VALUES_SET_TYPE, &
+    & DependentField,CMISS_FIELD_U2_VARIABLE_TYPE,3,CMISS_FIELD_VALUES_SET_TYPE,Err)
+  CALL CMISSCellML_CreateCellMLToFieldMap(CellML,MooneyRivlinModelIndex,"equations/Tdev22",CMISS_FIELD_VALUES_SET_TYPE, &
+    & DependentField,CMISS_FIELD_U2_VARIABLE_TYPE,4,CMISS_FIELD_VALUES_SET_TYPE,Err)
+  CALL CMISSCellML_CreateCellMLToFieldMap(CellML,MooneyRivlinModelIndex,"equations/Tdev23",CMISS_FIELD_VALUES_SET_TYPE, &
+    & DependentField,CMISS_FIELD_U2_VARIABLE_TYPE,5,CMISS_FIELD_VALUES_SET_TYPE,Err)
+  CALL CMISSCellML_CreateCellMLToFieldMap(CellML,MooneyRivlinModelIndex,"equations/Tdev33",CMISS_FIELD_VALUES_SET_TYPE, &
+    & DependentField,CMISS_FIELD_U2_VARIABLE_TYPE,6,CMISS_FIELD_VALUES_SET_TYPE,Err)
+  !Finish the creation of CellML <--> OpenCMISS field maps
+  CALL CMISSCellML_FieldMapsCreateFinish(CellML,Err)
 
 CellML fields
 -------------
