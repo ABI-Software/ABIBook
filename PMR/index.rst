@@ -9,7 +9,7 @@ The documentation found here is mainly aimed towards providing information to us
 If you wish to deploy an instance of the repository software, please read the installation guide.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    
    PMR-introduction
    PMR-downloading-viewing
