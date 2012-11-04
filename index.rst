@@ -20,7 +20,7 @@ Contents:
    cmgui/index
    MAP/index
    OpenCMISS/index
-   PMR2/index
+   PMR/index
 
 
 Indices and tables
