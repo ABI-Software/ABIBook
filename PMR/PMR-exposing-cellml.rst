@@ -99,7 +99,7 @@ In order to make the exposure visible and searchable, you will need to publish i
 .. figure:: /PMR/images/PMR-exposurepublish.png
    :align: center
    
-   **Publish your exposure to make it visible to others.* 
+   **Publish your exposure to make it visible to others.**
 
    
    
