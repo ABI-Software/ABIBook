@@ -11,7 +11,10 @@ The CellML repository is powered by software called Physiome Model Repository (P
 
 ::
 
-  Brief mention of the equivalent command line versions of the TortoiseHg actions will also be mentioned, so that these ideas can also be used without a graphical client, and on Linux and similar systems. These will be denoted by grayed boxes like this.
+  Brief mention of the equivalent command line versions of the TortoiseHg
+  actions will also be mentioned, so that these ideas can also be used without
+  a graphical client, and on Linux and similar systems. These will be denoted
+  by grayed boxes like this.
 
 This tutorial requires you to have:
 
@@ -38,7 +41,7 @@ Working with the repository web interface
 
 This part of the tutorial will teach you how to find models in the CellML model repository `(http://models.physiomeproject.org) <http://models.physiomeproject.org>`_, how to view a range of information about those models, and how to download models. The first page in the repository consists of basic navigation, a link to the main model listing, a search box at the top right, and a list of model category links as shown below.
 
-.. figure:: /images/pmr-tut1-mainscreen.png
+.. figure:: /images/PMR-tut1-mainscreen.png
    :align: center
 
    The front page of the Physiome model repository.
@@ -55,7 +58,7 @@ Searching the repository
 
 You can search for the model that you wish to work on by entering a search term in the box at the top right of the page. Many of the models in the repository are named by the first author and publication date of the paper, so good search query might be something like "goldbeter 1991". A list of the results of your search will probably contain both workspaces and exposures - you will need to click on the workspace of the model you wish to work on. Workspaces can be identified because their links are pale blue and have no details line following the clickable link. In the following screenshot, the first two results are workspaces, and the remainder are exposures.
 
-.. figure:: /images/pmr-tut1-searchresults.png
+.. figure:: /images/PMR-tut1-searchresults.png
    :align: center
 
    A search results listing on the CellML repository site.
@@ -132,3 +135,13 @@ Committing changes
 ------------------
 
 If you are using TortoiseHg, bring up the shell menu for the altered file and select :menuselection:`TortoiseHg --> Hg Commit`. A window will appear showing details of the changes you are about to commit, and prompting for a commit message. Every time you commit changes, you should enter a useful commit message with information about what changes have been made. In this instance, something like "Removed the paragraph about validation errors from the documentation" is appropriate.
+
+Click on the Commit button at the far left of the toolbar. The icon overlay for the file will now change to a green tick, indicating that changes to the file have been committed.
+
+.. figure:: /images/PMR-tut1-commitchanges.png
+   :align: center
+
+   Committing changes using the TortoiseHg interface.
+
+**Command line equivalent**::
+   hg commit -m "Removed the paragraph about validation errors from the documentation"
