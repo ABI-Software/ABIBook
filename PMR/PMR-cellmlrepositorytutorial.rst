@@ -70,11 +70,11 @@ This part of the tutorial will teach you how to clone a workspace from the model
 Registering an account and logging in
 -------------------------------------
 
-First, navigate to the CellML model repository at `http://models.cellml.org <http://models.cellml.org>`_. 
+First, navigate to the staging CellML model repository at `http://184.169.251.126 <http://184.169.251.126>`_.
 
 In order to make changes to models in the CellML repository, you must first register for an account. The "Log in" and "Register" links can be found near the top right corner of the page. Your account will have the appropriate access privileges so that you can push any changes you have made to a model back into the repository.
 
-Click on the Register link near the top right, and fill in the registration form. Enter your username and desired password. You can now log in to the repository. This username and password are also the credentials you use to interact with the repository via Mercurial. Note that compared to registering for the real CellML repository, this process is somewhat streamlined for the purposes of this tutorial – normally there is a validation step involved.
+Click on the Register link near the top right, and fill in the registration form. Enter your username and desired password. You can now log in to the repository. This username and password are also the credentials you use to interact with the repository via Mercurial. Note that compared to registering for the permanent CellML repository, this process is somewhat streamlined for the purposes of this tutorial – normally there is a validation step involved.
 
 Once logged in to the repository, you will notice that there is a new link in the navigation bar, My Workspaces. This is where all the workspaces you create later on will be listed. The Log in and Register links are also replaced by your username and a Log out link.
 
@@ -88,7 +88,47 @@ Mercurial username configuration
 
    You only need to do this once.
 
+**Steps for TortoiseHg:**
 
+* Right click on any file or folder in Windows Explorer, and select :menuselection:`TortoiseHg --> Global Settings`.
+* Select *Commit* and then enter your name followed by your e-mail address in "angle brackets" (i.e. less-than "<" and greater-than ">").  Actually, you can enter anything you want here, but this is the accepted best practice.  Note that this information becomes visible publicly if the PMR2 instance that you push you changes to is public.
 
+**Steps for command line:**
 
+* Edit the config text file:
+   * Per repository : ``<repo>\.hg\hgrc``
+   * System-wide for Linux: ``%USERPROFILE%\.hgrc``
+   * System-wide for Windows: ``%USERPROFILE%\mercurial.ini``
 
+* Add the following entry::
+
+   [ui]
+   username = Firstname Lastname <firstname.lastname@example.net>
+
+Forking an existing workspace
+-----------------------------
+
+.. important::
+   It is essential to use a Mercurial client to obtain models from the repository for editing. The Mercurial client is not only able to keep track of all the changes you make (allowing you to back-track if you make any errors), but using a Mercurial client is the only way to add any changes you have made back into the repository.
+
+For this tutorial, we will *fork* an existing workspace. This provides you with a new workspace of your own, containing a copy of all the files in the workspace you forked, including their complete history. This is equivalent pushing the cloned contents of an existing workspace into a new workspace you have created.
+
+Forking a workspace can be done using the Physiome model repository web interface. The first step is to find the workspace you wish to fork. We will use the Beeler, Reuter 1977 workspace which can be found by entering ``beeler reuter`` into the search box at the top right corner of the page. Click on the top result, which will take you to the exposure page for the Beeler Reuter 1977 model.
+
+Stuff about forking
+
+**After the fork**
+
+You can now clone your new workspace to your local drive, using the same method as shown before for the Beeler Reuter 1977 workspace. This now completes the process of getting your own full-access copy of the existing Beeler Reuter model for editing.
+
+Making changes to workspace contents
+------------------------------------
+
+Your cloned workspace is now ready for you to edit the model file and make a commit each time you want to save the changes you have made. As an example, open the model file in Notepad++ and remove the paragraph which describes validation errors from the documentation section, as shown below:
+
+Save the file. If you are using TortoiseHg, you will notice that the icon has changed to a red cross. This indicates that the file now has uncommitted changes. 
+
+Committing changes
+------------------
+
+If you are using TortoiseHg, bring up the shell menu for the altered file and select :menuselection:`TortoiseHg --> Hg Commit`. A window will appear showing details of the changes you are about to commit, and prompting for a commit message. Every time you commit changes, you should enter a useful commit message with information about what changes have been made. In this instance, something like "Removed the paragraph about validation errors from the documentation" is appropriate.
