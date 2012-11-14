@@ -74,7 +74,7 @@ The wizard shows a *subgroup* for each CellML file to be included in the exposur
    * Documentation file - select the HTML file created to document the model
    * View generator - select HTML annotator option
 * Basic Model Curation
-   * Curation flags - you may select flags according to the status of the model
+   * Curation flags - CellML model repository curators may select flags according to the status of the model
 * License and Citation
    * File/Citation format - select CellML RDF metadata to automatically generate a citation page using the model RDF
    * License - select Creative Commons Attributions 3.0 Unported

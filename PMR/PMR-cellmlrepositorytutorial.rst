@@ -73,11 +73,14 @@ This part of the tutorial will teach you how to clone a workspace from the model
 Registering an account and logging in
 -------------------------------------
 
-First, navigate to the staging CellML model repository at `http://184.169.251.126 <http://184.169.251.126>`_.
+First, navigate to the CellML model repository at `http://models.cellml.org<http://models.cellml.org>`_.
 
-In order to make changes to models in the CellML repository, you must first register for an account. The "Log in" and "Register" links can be found near the top right corner of the page. Your account will have the appropriate access privileges so that you can push any changes you have made to a model back into the repository.
+In order to make changes to models in the CellML repository, you must first register for an account. The *Log in* and *Register* links can be found near the top right corner of the page. Your account will have the appropriate access privileges so that you can push any changes you have made to a model back into the repository.
 
-Click on the Register link near the top right, and fill in the registration form. Enter your username and desired password. You can now log in to the repository. This username and password are also the credentials you use to interact with the repository via Mercurial. Note that compared to registering for the permanent CellML repository, this process is somewhat streamlined for the purposes of this tutorial – normally there is a validation step involved.
+Click on the Register link near the top right, and fill in the registration form. Enter your username and desired password. After completing the email validation step, you can now log in to the repository. 
+
+.. note::
+   This username and password are also the credentials you use to interact with the repository via Mercurial.
 
 Once logged in to the repository, you will notice that there is a new link in the navigation bar, My Workspaces. This is where all the workspaces you create later on will be listed. The Log in and Register links are also replaced by your username and a Log out link.
 
@@ -99,9 +102,9 @@ Mercurial username configuration
 **Steps for command line:**
 
 * Edit the config text file:
-   * Per repository : ``<repo>\.hg\hgrc``
-   * System-wide for Linux: ``%USERPROFILE%\.hgrc``
-   * System-wide for Windows: ``%USERPROFILE%\mercurial.ini``
+   * For per repository settings, the file in the repository: ``<repo>\.hg\hgrc``
+   * System-wide settings for Linux: ``%USERPROFILE%\.hgrc``
+   * System-wide settings for Windows: ``%USERPROFILE%\mercurial.ini``
 
 * Add the following entry::
 
@@ -118,7 +121,14 @@ For this tutorial, we will *fork* an existing workspace. This provides you with 
 
 Forking a workspace can be done using the Physiome model repository web interface. The first step is to find the workspace you wish to fork. We will use the Beeler, Reuter 1977 workspace which can be found by entering ``beeler reuter`` into the search box at the top right corner of the page. Click on the top result, which will take you to the exposure page for the Beeler Reuter 1977 model.
 
-Stuff about forking
+Now click on the *fork* option in the toolbar, as shown below.
+
+.. figure:: /images/PMR-fork1.png
+   :align: center
+
+You will be asked to create a new ID for the workspace. Typically this is something like the existing workspace name plus initials, some text tag that indicates the purpose of the fork, or some other short addition to the original name. I creaked a fork called ``beeler_reuter_1977_djc``, for example.
+
+
 
 **After the fork**
 
@@ -129,7 +139,10 @@ Making changes to workspace contents
 
 Your cloned workspace is now ready for you to edit the model file and make a commit each time you want to save the changes you have made. As an example, open the model file in Notepad++ and remove the paragraph which describes validation errors from the documentation section, as shown below:
 
-Save the file. If you are using TortoiseHg, you will notice that the icon has changed to a red cross. This indicates that the file now has uncommitted changes. 
+.. figure:: /images/PMR-tut1-editcellmlfile.png
+   :align: center
+
+Save the file. If you are using TortoiseHg, you will notice that the icon overlay has changed to a red exclamation mark. This indicates that the file now has uncommitted changes. 
 
 Committing changes
 ------------------
@@ -141,7 +154,18 @@ Click on the Commit button at the far left of the toolbar. The icon overlay for 
 .. figure:: /images/PMR-tut1-commitchanges.png
    :align: center
 
-   Committing changes using the TortoiseHg interface.
-
 **Command line equivalent**::
    hg commit -m "Removed the paragraph about validation errors from the documentation"
+
+Pushing changes to the repository
+---------------------------------
+
+Your cloned workspace on your local machine now has a small history of changes which you wish to *push* into the repository.
+
+Right click on your workspace folder in Windows explorer, and select :menuselection:`TortoiseHg --> Hg Synchronize` from the shell menu. This will bring up a window from which you can manage changes to the workspace in the repository. Click on the Push button in the toolbar, and enter your username and password when prompted.
+
+**Command line equivalent** ::
+   hg push
+   
+   
+

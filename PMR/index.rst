@@ -12,8 +12,9 @@ If you wish to deploy an instance of the repository software, please read the in
    :maxdepth: 1
    
    PMR-introduction
-   PMR-downloading-viewing
    PMR-concepts
+   PMR-webinterfacereference
+   PMR-downloading-viewing
    PMR-exposing-cellml
    PMR-cellmlrepositorytutorial
    PMR-installing-the-software
