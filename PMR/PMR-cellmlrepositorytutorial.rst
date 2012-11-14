@@ -41,7 +41,7 @@ Working with the repository web interface
 
 This part of the tutorial will teach you how to find models in the CellML model repository `(http://models.physiomeproject.org) <http://models.physiomeproject.org>`_, how to view a range of information about those models, and how to download models. The first page in the repository consists of basic navigation, a link to the main model listing, a search box at the top right, and a list of model category links as shown below.
 
-.. figure:: /images/PMR-tut1-mainscreen.png
+.. figure:: /PMR/images/PMR-tut1-mainscreen.png
    :align: center
 
    The front page of the Physiome model repository.
@@ -58,7 +58,7 @@ Searching the repository
 
 You can search for the model that you wish to work on by entering a search term in the box at the top right of the page. Many of the models in the repository are named by the first author and publication date of the paper, so good search query might be something like "goldbeter 1991". A list of the results of your search will probably contain both workspaces and exposures - you will need to click on the workspace of the model you wish to work on. Workspaces can be identified because their links are pale blue and have no details line following the clickable link. In the following screenshot, the first two results are workspaces, and the remainder are exposures.
 
-.. figure:: /images/PMR-tut1-searchresults.png
+.. figure:: /PMR/images/PMR-tut1-searchresults.png
    :align: center
 
    A search results listing on the CellML repository site.
@@ -123,7 +123,7 @@ Forking a workspace can be done using the Physiome model repository web interfac
 
 Now click on the *fork* option in the toolbar, as shown below.
 
-.. figure:: /images/PMR-fork1.png
+.. figure:: /PMR/images/PMR-fork1.png
    :align: center
 
 You will be asked to create a new ID for the workspace. Typically this is something like the existing workspace name plus initials, some text tag that indicates the purpose of the fork, or some other short addition to the original name. I creaked a fork called ``beeler_reuter_1977_djc``, for example.
@@ -139,7 +139,7 @@ Making changes to workspace contents
 
 Your cloned workspace is now ready for you to edit the model file and make a commit each time you want to save the changes you have made. As an example, open the model file in Notepad++ and remove the paragraph which describes validation errors from the documentation section, as shown below:
 
-.. figure:: /images/PMR-tut1-editcellmlfile.png
+.. figure:: /PMR/images/PMR-tut1-editcellmlfile.png
    :align: center
 
 Save the file. If you are using TortoiseHg, you will notice that the icon overlay has changed to a red exclamation mark. This indicates that the file now has uncommitted changes. 
@@ -151,7 +151,7 @@ If you are using TortoiseHg, bring up the shell menu for the altered file and se
 
 Click on the Commit button at the far left of the toolbar. The icon overlay for the file will now change to a green tick, indicating that changes to the file have been committed.
 
-.. figure:: /images/PMR-tut1-commitchanges.png
+.. figure:: /PMR/images/PMR-tut1-commitchanges.png
    :align: center
 
 **Command line equivalent**::
