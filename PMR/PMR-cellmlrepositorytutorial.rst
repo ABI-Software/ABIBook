@@ -164,8 +164,17 @@ Your cloned workspace on your local machine now has a small history of changes w
 
 Right click on your workspace folder in Windows explorer, and select :menuselection:`TortoiseHg --> Hg Synchronize` from the shell menu. This will bring up a window from which you can manage changes to the workspace in the repository. Click on the Push button in the toolbar, and enter your username and password when prompted.
 
+.. figure:: /PMR/images/PMR-tut1-pushchanges.png
+   :align: center
+
 **Command line equivalent** ::
+
    hg push
    
-   
+Now navigate to your workspace and click on the history toolbar button. This will show entries under the Most recent changes, complete with the commit messages you entered for each commit, as shown below:
+
+.. figure:: /PMR/images/PMR-tut1-newhistoryentry.png
+   :align: center
+
+
 
