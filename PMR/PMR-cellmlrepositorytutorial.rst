@@ -119,7 +119,7 @@ Forking an existing workspace
 
 For this tutorial, we will *fork* an existing workspace. This provides you with a new workspace of your own, containing a copy of all the files in the workspace you forked, including their complete history. This is equivalent pushing the cloned contents of an existing workspace into a new workspace you have created.
 
-Forking a workspace can be done using the Physiome model repository web interface. The first step is to find the workspace you wish to fork. We will use the Beeler, Reuter 1977 workspace which can be found by entering ``beeler reuter`` into the search box at the top right corner of the page. Click on the top result, which will take you to the exposure page for the Beeler Reuter 1977 model.
+Forking a workspace can be done using the Physiome model repository web interface. The first step is to find the workspace you wish to fork. We will use the Beeler, Reuter 1977 workspace which can be found by entering ``beeler reuter`` into the search box at the top right corner of the page. Click on the top result, which will take you to the :term:exposure page for the Beeler Reuter 1977 model.
 
 Now click on the *fork* option in the toolbar, as shown below.
 
@@ -176,5 +176,35 @@ Now navigate to your workspace and click on the history toolbar button. This wil
 .. figure:: /PMR/images/PMR-tut1-newhistoryentry.png
    :align: center
 
+Creating exposures
+==================
 
 
+   
+   
+Making an exposure using "roll-over"
+====================================
+
+As explained earlier, an :term:exposure aims to bring a particular revision to the attention of users who are browsing and searching the repository.
+
+There are two ways of making an exposure. "Rolling over" an exposure is the method used when a workspace already has an existing exposure, and the updates to the workspace have not fundamentally changed the structure of the workspace.  This means that all the information used in making the previous exposure is still valid for making a new exposure of a more recent revision of the workspace. Strictly speaking, an exposure can be rolled over to an older revision as well, but this is not the usual usage.
+
+.. note::
+   A forked workspace contains all of the revision history of the workspace it was created from, but does not contain any of the exposures that existed for the original workspace. You will always need to create an exposure from scratch in forked repositories.
+
+From the view page of your workspace, select "exposure rollover".
+
+.. figure:: /PMR/images/PMR-tut1-rolloverbutton.png
+   :align: center
+
+The exposure rollover button takes you to a list of revisions of the workspace, with existing exposures on the right hand side, and revision ids on the left. Each revision id has a radio button, used to select the revision you wish to create a new rolled over exposure for. Each existing exposure also has a radio button, used to select the exposure you wish to base your new one on. The most common use case is to select the latest exposure and the latest revision, and then click the *Migrate* button at the bottom of the list.
+
+.. figure:: /PMR/images/PMR-tut1-rolloverlist.png
+   :align: center
+
+The new exposure will be created and displayed. When a new exposure is created, it is initially put in the *private* state. This means that only the user who created it or other users with appropriate permissions can see it, and it will not appear in search results or model listings. In order to publish the exposure, you will need to select *submit for publication* from the *state* menu.
+
+.. figure:: /PMR/images/PMR-tut1-submitforpublication.png
+   :align: center
+
+The state will change to "pending review". The administrator or curators of the repository will then review and publish the exposure, as well as expiring the old exposure.
