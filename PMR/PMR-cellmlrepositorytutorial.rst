@@ -28,10 +28,10 @@ PMR concepts
 
 PMR and the CellML model repository use a certain amount of jargon - some is specific to the repository software, and some is related to distributed version control systems (DVCSs). Below are basic explanations of some of these terms as they apply to the repository.
 
-Workspace
+term:`Workspace`
   A container (much like a folder or directory on your computer) to hold the files that make up a model, as well as any other files such as documentation or metadata, etc. In practical terms, each workspace is a Mercurial repository.
 
-Exposure
+:term:`Exposure`
   An exposure is a publically viewable presentation of a particular revision of a model. An exposure can present one or many files from your workspace, along with documentation and other information about your model.
 
 The Mercurial DVCS has a range of terms that are useful to know, and definitions of these terms can be found in the Mercurial glossary: http://mercurial.selenic.com/wiki/Glossary. 
@@ -73,7 +73,7 @@ This part of the tutorial will teach you how to clone a workspace from the model
 Registering an account and logging in
 -------------------------------------
 
-First, navigate to the CellML model repository at `http://models.cellml.org<http://models.cellml.org>`_.
+First, navigate to the CellML model repository at `http://models.cellml.org <http://models.cellml.org>`_.
 
 In order to make changes to models in the CellML repository, you must first register for an account. The *Log in* and *Register* links can be found near the top right corner of the page. Your account will have the appropriate access privileges so that you can push any changes you have made to a model back into the repository.
 
@@ -119,7 +119,7 @@ Forking an existing workspace
 
 For this tutorial, we will *fork* an existing workspace. This provides you with a new workspace of your own, containing a copy of all the files in the workspace you forked, including their complete history. This is equivalent pushing the cloned contents of an existing workspace into a new workspace you have created.
 
-Forking a workspace can be done using the Physiome model repository web interface. The first step is to find the workspace you wish to fork. We will use the Beeler, Reuter 1977 workspace which can be found by entering ``beeler reuter`` into the search box at the top right corner of the page. Click on the top result, which will take you to the :term:exposure page for the Beeler Reuter 1977 model.
+Forking a workspace can be done using the Physiome model repository web interface. The first step is to find the workspace you wish to fork. We will use the Beeler, Reuter 1977 workspace which can be found by entering ``beeler reuter`` into the search box at the top right corner of the page. Click on the top result, which will take you to the :term:`exposure` page for the Beeler Reuter 1977 model.
 
 Now click on the *fork* option in the toolbar, as shown below.
 
@@ -185,7 +185,7 @@ Creating exposures
 Making an exposure using "roll-over"
 ====================================
 
-As explained earlier, an :term:exposure aims to bring a particular revision to the attention of users who are browsing and searching the repository.
+As explained earlier, an :term:`exposure` aims to bring a particular revision to the attention of users who are browsing and searching the repository.
 
 There are two ways of making an exposure. "Rolling over" an exposure is the method used when a workspace already has an existing exposure, and the updates to the workspace have not fundamentally changed the structure of the workspace.  This means that all the information used in making the previous exposure is still valid for making a new exposure of a more recent revision of the workspace. Strictly speaking, an exposure can be rolled over to an older revision as well, but this is not the usual usage.
 
