@@ -28,7 +28,7 @@ PMR concepts
 
 PMR and the CellML model repository use a certain amount of jargon - some is specific to the repository software, and some is related to distributed version control systems (DVCSs). Below are basic explanations of some of these terms as they apply to the repository.
 
-term:`Workspace`
+:term:`Workspace`
   A container (much like a folder or directory on your computer) to hold the files that make up a model, as well as any other files such as documentation or metadata, etc. In practical terms, each workspace is a Mercurial repository.
 
 :term:`Exposure`
@@ -39,7 +39,7 @@ The Mercurial DVCS has a range of terms that are useful to know, and definitions
 Working with the repository web interface
 =========================================
 
-This part of the tutorial will teach you how to find models in the CellML model repository `(http://models.physiomeproject.org) <http://models.physiomeproject.org>`_, how to view a range of information about those models, and how to download models. The first page in the repository consists of basic navigation, a link to the main model listing, a search box at the top right, and a list of model category links as shown below.
+This part of the tutorial will teach you how to find models in the Physiome model repository `(http://models.physiomeproject.org) <http://models.physiomeproject.org>`_, how to view a range of information about those models, and how to download models. The first page in the repository consists of basic navigation, a link to the main model listing, a search box at the top right, and a list of model category links as shown below.
 
 .. figure:: /PMR/images/PMR-tut1-mainscreen.png
    :align: center
@@ -61,7 +61,7 @@ You can search for the model that you wish to work on by entering a search term 
 .. figure:: /PMR/images/PMR-tut1-searchresults.png
    :align: center
 
-   A search results listing on the CellML repository site.
+   A search results listing on the Physiome Model Repository site.
 
 Click on an exposure result to view information about the model and to get links for downloading or simulating the model. Click on workspaces to see the contents of the model workspace and the revision history of the model.
 
@@ -73,7 +73,7 @@ This part of the tutorial will teach you how to clone a workspace from the model
 Registering an account and logging in
 -------------------------------------
 
-First, navigate to the CellML model repository at `http://models.cellml.org <http://models.cellml.org>`_.
+First, navigate to the staging instance of the Physiome model repository at `http://184.169.251.126/welcome <http://184.169.251.126/welcome>`_.
 
 In order to make changes to models in the CellML repository, you must first register for an account. The *Log in* and *Register* links can be found near the top right corner of the page. Your account will have the appropriate access privileges so that you can push any changes you have made to a model back into the repository.
 
