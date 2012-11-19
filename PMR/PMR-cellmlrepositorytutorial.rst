@@ -18,10 +18,10 @@ The CellML repository is powered by software called Physiome Model Repository (P
 
 This tutorial requires you to have:
 
-* A Mercurial client such as TortoiseHg or Mercurial installed
-* OpenCell
-* A text editor such as Notepad++ or gedit
-* User registration on the Physiome model repository site
+* A Mercurial client such as `TortoiseHg <http://tortoisehg.bitbucket.org/>`_ or `Mercurial <http://mercurial.selenic.com/>`_ installed
+* The `OpenCell <http://www.cellml.org/tools/opencell>`_ CellML modelling environment
+* A text editor such as `Notepad++ <http://notepad-plus-plus.org/>`_ or `gedit <http://projects.gnome.org/gedit/>`_
+* User registration on the Physiome model repository_ site
 
 PMR concepts
 ============
@@ -211,3 +211,6 @@ The new exposure will be created and displayed. When a new exposure is created, 
    :align: center
 
 The state will change to "pending review". The administrator or curators of the repository will then review and publish the exposure, as well as expiring the old exposure.
+
+
+.. _Physiome model repository: http://models.physiomeproject.org
