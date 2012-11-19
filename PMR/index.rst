@@ -15,6 +15,7 @@ If you wish to deploy an instance of the repository software, please read the in
    PMR-webinterfacereference
    PMR-downloading-viewing
    PMR-exposing-cellml
+   PMR-exposing-fieldml
    PMR-cellmlrepositorytutorial
    PMR-installing-the-software
    PMR-glossary

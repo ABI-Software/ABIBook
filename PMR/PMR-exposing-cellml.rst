@@ -4,7 +4,7 @@
 Creating CellML exposures
 =========================
 
-CellML models in PMR are presented through *exposures*. An exposure is a view of a particular revision of a workspace, and is quite flexible in terms of what it can present. A workspace may contain one or more models, and any number of models may be presented in a single exposure. Exposures generally take the form of some documentation about the model(s), a range of ways of looking at the model(s) or their metadata, and links to download the model(s). 
+CellML models in PMR are presented through *exposures*. An :term:`exposure` is a view of a particular revision of a workspace, and is quite flexible in terms of what it can present. A workspace may contain one or more models, and any number of models may be presented in a single exposure. Exposures generally take the form of some documentation about the model(s), a range of ways of looking at the model(s) or their metadata, and links to download the model(s). 
 
 The example below shows the main exposure page for the Bondarenko *et al.* 2004 workspace. This workspace contains two models, which can be viewed via the **Navigation** pane on the right hand side of the page.
 
@@ -29,7 +29,7 @@ Creating standard CellML exposures
 
 .. note:: This tutorial assumes that you have logged in to the `model repository`_ and have sufficient privileges in the workspace you wish to expose.
 
-In this example I will use a *fork* of the the Beeler Reuter 1977 workspace. Creating a *fork* of a workspace creates a *clone* of that workspace that you own, and can push changes to. You can *fork* any publicly available workspace in the Physiome model repository. For more information on this feature of PMR, refer to the information on features or collaboration.
+In this example I will use a :term:`*fork*` of the the Beeler Reuter 1977 workspace. Creating a *fork* of a workspace creates a *clone* of that workspace that you own, and can push changes to. You can *fork* any publicly available workspace in the Physiome model repository. For more information on this feature of PMR, refer to the information on features or collaboration.
 
 Choose the revision to expose
 -----------------------------

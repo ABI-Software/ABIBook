@@ -23,5 +23,3 @@ PMR glossary
 
    Synchronize
       Used to pull the contents or changes from other Mercurial repositories into a workspace via a URI.
-
-

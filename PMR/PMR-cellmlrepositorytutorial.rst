@@ -36,6 +36,9 @@ PMR and the CellML model repository use a certain amount of jargon - some is spe
 
 The Mercurial DVCS has a range of terms that are useful to know, and definitions of these terms can be found in the Mercurial glossary: http://mercurial.selenic.com/wiki/Glossary. 
 
+.. index::
+   single: PMR web interface
+
 Working with the repository web interface
 =========================================
 
