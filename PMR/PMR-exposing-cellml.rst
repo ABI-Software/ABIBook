@@ -29,14 +29,14 @@ Creating standard CellML exposures
 
 .. note:: This tutorial assumes that you have logged in to the `model repository`_ and have sufficient privileges in the workspace you wish to expose.
 
-In this example I will use a :term:`*fork*` of the the Beeler Reuter 1977 workspace. Creating a *fork* of a workspace creates a *clone* of that workspace that you own, and can push changes to. You can *fork* any publicly available workspace in the Physiome model repository. For more information on this feature of PMR, refer to the information on features or collaboration.
+In this example I will use a :term:`fork` of the the Beeler Reuter 1977 workspace. Creating a *fork* of a workspace creates a *clone* of that workspace that you own, and can push changes to. You can *fork* any publicly available workspace in the Physiome model repository. For more information on this feature of PMR, refer to the information on features or collaboration.
 
 Choose the revision to expose
 -----------------------------
 
 As an exposure is created to present a particular revision of a workspace, the first thing to do is to navigate to that revision. To do this, first find the workspace - if this is your own workspace, you can click on the *My Workspaces* button in the navigation bar of the repository and find the workspace of interest in the listing displayed. After navigating to your workspace, click on the *history* button in the menu bar.
 
-.. note:: In order to create an exposure of a workspace, the workspace must be *published*. You will either need to have sufficient privileges on the repository site to publish your own workspace, or you will have to submit your workspace for publication and await review.
+.. note:: In order to create an exposure of a workspace, the workspace must be *published*. You will either need to have sufficient privileges on the repository site to publish your own workspace, or you will have to submit your workspace for publication and await review. It is not currently possible to create exposures in private workspaces.
 
 .. figure:: /PMR/images/PMR-workspacehistory.png
    :align: center
@@ -88,7 +88,7 @@ The wizard shows a *subgroup* for each CellML file to be included in the exposur
    
    **Selecting options for the model file subgroup**   
 
-After selecting the subgroup options, you need to click the *Update* button to set the chosen options for the exposure builder.
+After selecting the subgroup options, you need to click the *Update* button to set the chosen options for the exposure builder. If you do not update the subgroup, the options you selected will be replaced by the default options when you click *Build*.
    
 For exposures where you wish to expose multiple models, click on the *Add file* button at this stage to create another subgroup. You can then use this to set up all the same options listed above for the additional model file. Remember to click *Update* when you have completed selecting the options for each subgroup before adding another subgroup.
    
@@ -101,7 +101,16 @@ In order to make the exposure visible and searchable, you will need to publish i
    
    **Publish your exposure to make it visible to others.**
 
-   
+Other types of exposure
+=======================
+
+Because the exposure builder uses HTML documentation, it is possible to create customized types of exposure that differ from the standard type shown above. For example, you might want to create an exposure that simply documents and provides links to models in a PMR workspace that are encoded in languages other than CellML. You can also use the HTML documentation to provide tutorials or other documents, with resources stored in the workspace and linked to from the HTML.
+
+**Examples of other exposure types:**
+
+* `Andre's Hodgkin & Huxley CellML tutorial <http://models.cellml.org/e/e1>`_
+* `Testing nested SED-ML proposals with CellML <http://models.cellml.org/e/c2>`_
+* `Aslanidi *et al.* cardiac models encoded in C <http://models.cellml.org/e/ca>`_
    
 .. _model repository: http://models.cellml.org
 .. _example HTML: http://models.cellml.org/workspace/beeler_reuter_1977/file/fdd29a005ffcf9a72d7ef2479cafb864ea1e887a/beeler_reuter_1977_documentation.html
