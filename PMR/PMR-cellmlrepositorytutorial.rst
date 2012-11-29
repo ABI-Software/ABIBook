@@ -4,6 +4,8 @@
 CellML Model Repository tutorial
 ================================
 
+.. sectionauthor:: Randall Britten, Dougal Cowan
+
 About this tutorial
 ===================
 
@@ -21,7 +23,7 @@ This tutorial requires you to have:
 * A Mercurial client such as `TortoiseHg <http://tortoisehg.bitbucket.org/>`_ or `Mercurial <http://mercurial.selenic.com/>`_ installed
 * The `OpenCell <http://www.cellml.org/tools/opencell>`_ CellML modelling environment
 * A text editor such as `Notepad++ <http://notepad-plus-plus.org/>`_ or `gedit <http://projects.gnome.org/gedit/>`_
-* User registration on the Physiome model repository_ site
+* User registration on the `Physiome model repository`_ site
 
 PMR concepts
 ============
@@ -109,7 +111,7 @@ Mercurial username configuration
    * System-wide settings for Linux: ``%USERPROFILE%\.hgrc``
    * System-wide settings for Windows: ``%USERPROFILE%\mercurial.ini``
 
-* Add the following entry::
+* Add the following entry::good range
 
    [ui]
    username = Firstname Lastname <firstname.lastname@example.net>
@@ -182,8 +184,7 @@ Now navigate to your workspace and click on the history toolbar button. This wil
 Creating exposures
 ==================
 
-
-   
+How to create an exposure - separate document?
    
 Making an exposure using "roll-over"
 ====================================
