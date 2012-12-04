@@ -34,7 +34,7 @@ PMR and the CellML model repository use a certain amount of jargon - some is spe
   A container (much like a folder or directory on your computer) to hold the files that make up a model, as well as any other files such as documentation or metadata, etc. In practical terms, each workspace is a Mercurial repository.
 
 :term:`Exposure`
-  An exposure is a publically viewable presentation of a particular revision of a model. An exposure can present one or many files from your workspace, along with documentation and other information about your model.
+  An exposure is a publicly viewable presentation of a particular revision of a model. An exposure can present one or many files from your workspace, along with documentation and other information about your model.
 
 The Mercurial DVCS has a range of terms that are useful to know, and definitions of these terms can be found in the Mercurial glossary: http://mercurial.selenic.com/wiki/Glossary. 
 
@@ -55,6 +55,12 @@ Model listings
 --------------
 
 Clicking on the main model listing or any of the category listings will take you to a page displaying a list of exposed models in that category. Click on electrophysiology for example, and a list of over 100 exposed models in that category will be displayed, as shown here.
+
+.. figure:: /PMR/images/PMR-tut1-modellistings.png
+   :align: center
+
+   A list of models in the electrophysiology category.
+
 
 Clicking on an item in the list will take you to the exposure page for that model.
 
@@ -79,6 +85,12 @@ Registering an account and logging in
 -------------------------------------
 
 First, navigate to the staging instance of the Physiome model repository at `http://184.169.251.126/welcome <http://184.169.251.126/welcome>`_.
+
+.. sidebar:: The staging instance
+
+   The staging instance of the repository is a mirror of the main repository site found at http://models.physiomeproject.org, running the latest development version of the PMR2 software.
+   
+   Any changes you make to the contents of the staging instance are not permanent, and will be overwritten with the contents of the main repository whenever the staging instance is upgraded to the latest PMR2 release. For this reason, you can feel free to experiment and make mistakes when pushing to the staging instance.
 
 In order to make changes to models in the CellML repository, you must first register for an account. The *Log in* and *Register* links can be found near the top right corner of the page. Your account will have the appropriate access privileges so that you can push any changes you have made to a model back into the repository.
 
@@ -111,18 +123,20 @@ Mercurial username configuration
    * System-wide settings for Linux: ``%USERPROFILE%\.hgrc``
    * System-wide settings for Windows: ``%USERPROFILE%\mercurial.ini``
 
-* Add the following entry::good range
+* Add the following entry::
 
    [ui]
    username = Firstname Lastname <firstname.lastname@example.net>
 
-Forking an existing workspace
+.. _tut1forkingaworkspace:
+   
+Forking an existing workspace 
 -----------------------------
 
 .. important::
    It is essential to use a Mercurial client to obtain models from the repository for editing. The Mercurial client is not only able to keep track of all the changes you make (allowing you to back-track if you make any errors), but using a Mercurial client is the only way to add any changes you have made back into the repository.
 
-For this tutorial, we will *fork* an existing workspace. This provides you with a new workspace of your own, containing a copy of all the files in the workspace you forked, including their complete history. This is equivalent pushing the cloned contents of an existing workspace into a new workspace you have created.
+For this tutorial we will *fork* an existing workspace. This creates new workspace owned by you, containing a copy of all the files in the workspace you forked including their complete history. This is equivalent to cloning the workspace, creating a new workspace for yourself, and then pushing the contents of the cloned workspace into your new workspace.
 
 Forking a workspace can be done using the Physiome model repository web interface. The first step is to find the workspace you wish to fork. We will use the Beeler, Reuter 1977 workspace which can be found by entering ``beeler reuter`` into the search box at the top right corner of the page. Click on the top result, which will take you to the :term:`exposure` page for the Beeler Reuter 1977 model.
 
@@ -131,13 +145,30 @@ Now click on the *fork* option in the toolbar, as shown below.
 .. figure:: /PMR/images/PMR-fork1.png
    :align: center
 
-You will be asked to create a new ID for the workspace. Typically this is something like the existing workspace name plus initials, some text tag that indicates the purpose of the fork, or some other short addition to the original name. I creaked a fork called ``beeler_reuter_1977_djc``, for example.
+You will be asked to create a new ID for the workspace. Typically this is something like the existing workspace name plus initials, a text tag that indicates the purpose of the fork, or some other short addition to the original name. Create a fork called``beeler_reuter_1977_tut``. You will then be shown the page for your forked workspace.
 
+Cloning your forked workspace
+-----------------------------
 
+In order to make changes to your workspace, you have to :term:`clone` it to your own computer. In order to do this, copy the URI for mercurial clone/pull/push as shown below:
 
-**After the fork**
+.. figure:: /PMR/images/PMR-tut1-cloneurl.png
+   :align: center
+   
+   Copying the URI for cloning your workspace.
+   
+In Windows explorer, find the folder where you want to create the clone of the workspace. Then right click to bring up the context menu, and select :menuselection:`TortoiseHG --> Clone` as shown below:
 
-You can now clone your new workspace to your local drive, using the same method as shown before for the Beeler Reuter 1977 workspace. This now completes the process of getting your own full-access copy of the existing Beeler Reuter model for editing.
+.. figure:: /PMR/images/PMR-tut1-tortoisehgclone.png
+   :align: center
+   
+Paste the copied URL into the *Source:* area and then click the *Clone* button. This will create a folder called ``beeler_reuter_1977_tut`` that contains all the files and history of your forked workspace. The folder will be created inside the folder in which you instigated the clone command.
+
+**Command line equivalent** ::
+
+   hg clone [URI]
+   
+The repository will be cloned within the current directory of your command line window.
 
 Making changes to workspace contents
 ------------------------------------
@@ -159,7 +190,8 @@ Click on the Commit button at the far left of the toolbar. The icon overlay for 
 .. figure:: /PMR/images/PMR-tut1-commitchanges.png
    :align: center
 
-**Command line equivalent**::
+**Command line equivalent** ::
+
    hg commit -m "Removed the paragraph about validation errors from the documentation"
 
 Pushing changes to the repository

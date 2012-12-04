@@ -6,21 +6,23 @@ Creating CellML exposures
 
 CellML models in PMR are presented through *exposures*. An :term:`exposure` is a view of a particular revision of a workspace, and is quite flexible in terms of what it can present. A workspace may contain one or more models, and any number of models may be presented in a single exposure. Exposures generally take the form of some documentation about the model(s), a range of ways of looking at the model(s) or their metadata, and links to download the model(s). 
 
-The example below shows the main exposure page for the Bondarenko *et al.* 2004 workspace. This workspace contains two models, which can be viewed via the **Navigation** pane on the right hand side of the page.
+The example below shows the main exposure page for the Bondarenko *et al.* 2004 workspace. This workspace contains two models, which can be viewed via the *Navigation* pane on the right hand side of the page. 
 
 .. figure:: /PMR/images/PMR-exposureeg1.png
    :align: center
    
    **Example of an exposure page**
 
-If you click on one of the model navigation links, it will take you to the page for that particular model. Note that most exposures contain a single model.
+If you click on one of the model navigation links, it will take you to the page for that particular model. Exposures most often present a single model, although they can present any number of models, each with its own documentation and views.
    
 .. figure:: /PMR/images/PMR-exposureeg2.png
    :align: center
    
    **Example of a model exposure page**
    
-Most of the CellML exposures in the repository are currently of this type, with a main documentation page containing navigation links to the model or models themselves. The model pages then contain links that enable the user to do things like view the model equations, look at the citation information, or run the model as an interactive session using the OpenCell application.
+Most of the CellML exposures in the repository are currently of this type, with a main documentation page containing navigation links to the model or models themselves.
+
+The model pages have links that enable the user to do things like view the model equations, look at the citation information, or run the model as an interactive session using the OpenCell application. These links are found in the pane titled *Views available* on the right hand side of the page.
 
 This tutorial contains instructions on how to create one of these standard CellML exposures, as well as information about how to create other alternative types of exposure.
 
@@ -29,7 +31,7 @@ Creating standard CellML exposures
 
 .. note:: This tutorial assumes that you have logged in to the `model repository`_ and have sufficient privileges in the workspace you wish to expose.
 
-In this example I will use a :term:`fork` of the the Beeler Reuter 1977 workspace. Creating a *fork* of a workspace creates a *clone* of that workspace that you own, and can push changes to. You can *fork* any publicly available workspace in the Physiome model repository. For more information on this feature of PMR, refer to the information on features or collaboration.
+In this example I will use a :term:`fork` of the the Beeler Reuter 1977 workspace. Creating a *fork* of a workspace creates a *clone* of that workspace that you own, and can push changes to. You can *fork* any publicly available workspace in the Physiome model repository. For more information on this feature of PMR, refer to the information on features or collaboration, or see the :ref:`relevant section of the tutorial <tut1forkingaworkspace>`.
 
 Choose the revision to expose
 -----------------------------
@@ -110,7 +112,7 @@ Because the exposure builder uses HTML documentation, it is possible to create c
 
 * `Andre's Hodgkin & Huxley CellML tutorial <http://models.cellml.org/e/e1>`_
 * `Testing nested SED-ML proposals with CellML <http://models.cellml.org/e/c2>`_
-* `Aslanidi *et al.* cardiac models encoded in C <http://models.cellml.org/e/ca>`_
+* `Aslanidi et al. cardiac models encoded in C <http://models.cellml.org/e/ca>`_
    
 .. _model repository: http://models.cellml.org
 .. _example HTML: http://models.cellml.org/workspace/beeler_reuter_1977/file/fdd29a005ffcf9a72d7ef2479cafb864ea1e887a/beeler_reuter_1977_documentation.html
