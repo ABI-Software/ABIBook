@@ -6,7 +6,7 @@ Creating FieldML exposures
 
 .. sectionauthor:: Dougal Cowan
 
-FieldML models in the Physiome Model Repository are presented through :term:`exposure`s.  A FieldML exposure has some similarities to a CellML exposure - usually consisting of a main documentation page with some information about the model, accompanied by a range of different views of the model data and or metadata. FieldML exposures also allow the real-time three-dimensional display of model meshes within the browser through the use of the `Zinc plugin <http://www.cmiss.org/cmgui/zinc>`_.
+FieldML models in the Physiome Model Repository are presented through :term:`exposures`.  A FieldML exposure has some similarities to a CellML exposure - usually consisting of a main documentation page with some information about the model, accompanied by a range of different views of the model data and or metadata. FieldML exposures also allow the real-time three-dimensional display of model meshes within the browser through the use of the `Zinc plugin <http://www.cmiss.org/cmgui/zinc>`_.
 
 The example screenshots below show the main documentation page view and the 3D visualization provided by the Zinc viewer.
 
