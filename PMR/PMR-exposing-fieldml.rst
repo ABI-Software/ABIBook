@@ -28,55 +28,61 @@ Creating the exposure files
 To create a FieldML exposure, the following files will need to be stored in a workspace in PMR:
 
 * The FieldML model file(s)
-* An RDF file containing metadata about the model, and specifying the JSON file to be used for the visualization
-* The JSON file that specifies the Zinc viewer visualization settings
-* Optionally, documentation (HTML) and images (PNG, JPG etc) 
+* An RDF file containing metadata about the model, and specifying the JSON file to be used for the visualization.
+* The JSON file that specifies the Zinc viewer visualization settings.
+* Optionally, documentation (HTML) and images (PNG, JPG etc).
 
-Example of the RDF file from Laminar Structure of the Heart workspace:
+The following example RDF file from comes from the `Laminar Structure of the Heart workspace <http://models.fieldml.org/workspace/heart>`_ in the FieldML repository:
 
 .. code-block:: xml
    :linenos:
-
+   
    <?xml version="1.0" encoding="utf-8"?>
    <rdf:RDF
-       xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-       xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-       xmlns:dc="http://purl.org/dc/elements/1.1/"
-       xmlns:dcterms="http://purl.org/dc/terms/"
-       xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#"
-       xmlns:pmr2="http://namespace.physiomeproject.org/pmr2#">
-     <rdf:Description rdf:about="">
-       <dc:title>
-         Laminar structure of the Heart: A mathematical model.
-       </dc:title>
-       <dc:creator>
-         <rdf:Seq>
-           <rdf:li>LeGrice, I.J.</rdf:li>
-           <rdf:li>Hunter, P.J.</rdf:li>
-           <rdf:li>Smaill, B.H.</rdf:li>
-         </rdf:Seq>
-       </dc:creator>
-       <dcterms:bibliographicCitation>
-         American Journal of Physiology 272: H2466-H2476, 1997.
-       </dcterms:bibliographicCitation>
-       <dcterms:isPartOf rdf:resource="info:pmid/9176318"/>
-       <pmr2:annotation rdf:parseType="Resource">
-         <pmr2:type 
-             rdf:resource="http://namespace.physiomeproject.org/pmr2/note#json_zinc_viewer"/>
-         <pmr2:fields>
-           <rdf:Bag>
-             <rdf:li rdf:parseType="Resource">
-               <pmr2:field rdf:parseType="Resource">
-                 <pmr2:key>json</pmr2:key>
-                 <pmr2:value>heart.json</pmr2:value>
-               </pmr2:field>
-             </rdf:li>
-           </rdf:Bag>
-         </pmr2:fields>
-       </pmr2:annotation>
-     </rdf:Description>
+         xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#"
+         xmlns:pmr2="http://namespace.physiomeproject.org/pmr2#">
+      <rdf:Description rdf:about="">
+         <dc:title>
+               Laminar structure of the Heart: A mathematical model.
+         </dc:title>
+         <dc:creator>
+            <rdf:Seq>
+               <rdf:li>LeGrice, I.J.</rdf:li>
+               <rdf:li>Hunter, P.J.</rdf:li>
+               <rdf:li>Smaill, B.H.</rdf:li>
+            </rdf:Seq>
+         </dc:creator>
+         <dcterms:bibliographicCitation>
+               American Journal of Physiology 272: H2466-H2476, 1997.
+         </dcterms:bibliographicCitation>
+         <dcterms:isPartOf rdf:resource="info:pmid/9176318"/>
+         <pmr2:annotation rdf:parseType="Resource">
+            <pmr2:type 
+                  rdf:resource="http://namespace.physiomeproject.org/pmr2/note#json_zinc_viewer"/>
+            <pmr2:fields>
+               <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                     <pmr2:field rdf:parseType="Resource">
+                        <pmr2:key>json</pmr2:key>
+                        <pmr2:value>heart.json</pmr2:value>
+                     </pmr2:field>
+                  </rdf:li>
+               </rdf:Bag>
+            </pmr2:fields>
+         </pmr2:annotation>
+      </rdf:Description>
    </rdf:RDF>
 
+This file provides citation metadata and a reference to the resource that specifies the Zinc viewer JSON file which will be used to describe the 3D visualisation of the FieldML model. The file breaks down into three main sections:
+
+* Lines 3-8, namespaces used.
+* Lines 10-23, citation metadata.
+* Lines 24-37, resource description. Used to specify the JSON file that specifies the visualisation.
+   
 Example of the JSON file from Laminar Structure of the Heart workspace:
 
 .. code-block:: js
