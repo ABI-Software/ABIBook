@@ -182,8 +182,7 @@ Now navigate to your workspace and click on the history toolbar button. This wil
 Creating exposures
 ==================
 
-
-   
+See the documents on creating CellML or FieldML exposures.
    
 Making an exposure using "roll-over"
 ====================================
