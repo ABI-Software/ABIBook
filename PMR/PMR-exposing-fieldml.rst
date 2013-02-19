@@ -28,8 +28,8 @@ Creating the exposure files
 To create a FieldML exposure, the following files will need to be stored in a workspace in PMR:
 
 * The FieldML model file(s)
-* An RDF file containing metadata about the model, and specifying the JSON file to be used for the visualization.
-* The JSON file that specifies the Zinc viewer visualization settings.
+* An RDF file containing metadata about the model, and specifying the JSON file to be used to specify the visualization.
+* The JSON file that specifies the Zinc viewer visualization.
 * Optionally, documentation (HTML) and images (PNG, JPG etc).
 
 The following example RDF file from comes from the `Laminar Structure of the Heart workspace <http://models.fieldml.org/workspace/heart>`_ in the FieldML repository:
@@ -83,7 +83,7 @@ This file provides citation metadata and a reference to the resource that specif
 * Lines 10-23, citation metadata.
 * Lines 24-37, resource description. Used to specify the JSON file that specifies the visualisation.
    
-Example of the JSON file from Laminar Structure of the Heart workspace:
+Example of the JSON file from the same (Laminar Structure of the Heart) workspace:
 
 .. code-block:: js
    :linenos:
@@ -137,3 +137,9 @@ Example of the JSON file from Laminar Structure of the Heart workspace:
            }
       ]
    }
+   
+* Lines 2-8, sets up the camera or viewpoint for the initial Zinc viewer display.
+* Lines 12-18, specifies the FieldML model files
+* Lines 19-41, set up the actual visualisations of the mesh - in this case, two different surfaces and a set of lines.
+* Lines 42-46, specify global visualisation settings.
+   * elementDiscretization - specifies how detailed the representation of elements is.

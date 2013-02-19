@@ -61,13 +61,12 @@ Clicking on the main model listing or any of the category listings will take you
 
    A list of models in the electrophysiology category.
 
-
 Clicking on an item in the list will take you to the exposure page for that model.
 
 Searching the repository
 ------------------------
 
-You can search for the model that you wish to work on by entering a search term in the box at the top right of the page. Many of the models in the repository are named by the first author and publication date of the paper, so good search query might be something like "goldbeter 1991". A list of the results of your search will probably contain both workspaces and exposures - you will need to click on the workspace of the model you wish to work on. Workspaces can be identified because their links are pale blue and have no details line following the clickable link. In the following screenshot, the first two results are workspaces, and the remainder are exposures.
+You can search for the model that you wish to work on by entering a search term in the box at the top right of the page. Many of the models in the repository are named by the first author and publication date of the paper, so a good search query might be something like `goldbeter 1991`. A list of the results of your search will probably contain both workspaces and exposures - you will need to click on the workspace of the model you wish to work on. Workspaces can be identified because their links are pale blue and have no details line following the clickable link. In the following screenshot, the first two results are workspaces, and the remainder are exposures.
 
 .. figure:: /PMR/images/PMR-tut1-searchresults.png
    :align: center
@@ -85,12 +84,11 @@ Registering an account and logging in
 -------------------------------------
 
 First, navigate to the staging instance of the Physiome model repository at `http://184.169.251.126/welcome <http://184.169.251.126/welcome>`_.
-
-.. sidebar:: The staging instance
+.. note:: The staging instance
 
    The staging instance of the repository is a mirror of the main repository site found at http://models.physiomeproject.org, running the latest development version of the PMR2 software.
    
-   Any changes you make to the contents of the staging instance are not permanent, and will be overwritten with the contents of the main repository whenever the staging instance is upgraded to the latest PMR2 release. For this reason, you can feel free to experiment and make mistakes when pushing to the staging instance.
+   Any changes you make to the contents of the staging instance are not permanent, and will be overwritten with the contents of the main repository whenever the staging instance is upgraded to the latest PMR2 release. For this reason, you can feel free to experiment and make mistakes when pushing to the staging instance. 
 
 In order to make changes to models in the CellML repository, you must first register for an account. The *Log in* and *Register* links can be found near the top right corner of the page. Your account will have the appropriate access privileges so that you can push any changes you have made to a model back into the repository.
 

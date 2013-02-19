@@ -32,4 +32,4 @@ PMR glossary
 
    Workspace
    Workspaces
-      A Mercurial repository hosted on the Physiome Model Repository. This is essentially a folder or directory in which files are stored, with the added feature of being version controlled by the distributed version control system called Mercurial_. 
+      A Mercurial repository hosted on the Physiome Model Repository. This is essentially a folder or directory in which files are stored, with the added feature of being version controlled by the distributed version control system called `Mercurial <http://mercurial.selenic.com/>`_. 

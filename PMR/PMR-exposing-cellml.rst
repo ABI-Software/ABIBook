@@ -4,7 +4,9 @@
 Creating CellML exposures
 =========================
 
-CellML models in PMR are presented through *exposures*. An :term:`exposure` is a view of a particular revision of a workspace, and is quite flexible in terms of what it can present. A workspace may contain one or more models, and any number of models may be presented in a single exposure. Exposures generally take the form of some documentation about the model(s), a range of ways of looking at the model(s) or their metadata, and links to download the model(s). 
+.. sectionauthor:: Dougal Cowan
+
+CellML models in the Physiome Model Repository are presented through *exposures*. An :term:`exposure` is a view of a particular revision of a workspace, and is quite flexible in terms of what it can present. A workspace may contain one or more models, and any number of models may be presented in a single exposure. Exposures generally take the form of some documentation about the model(s), a range of ways of looking at the model(s) or their metadata, and links to download the model(s). 
 
 The example below shows the main exposure page for the Bondarenko *et al.* 2004 workspace. This workspace contains two models, which can be viewed via the *Navigation* pane on the right hand side of the page. 
 

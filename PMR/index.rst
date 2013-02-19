@@ -17,6 +17,7 @@ If you wish to deploy an instance of the repository software, please see the bui
    PMR-cellmlrepositorytutorial
    PMR-exposing-cellml
    PMR-exposing-fieldml
+   PMR-using-SED-ML
    PMR-installing-the-software
    PMR-glossary
 
