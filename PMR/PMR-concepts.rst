@@ -26,6 +26,7 @@ PMR glossary
       A copy of the workspace which includes all the original version history, but is owned by the user who created the fork.
 
    Synchronize
-      Used to pull the contents or changes from other Mercurial repositories into a workspace via a URI.
+      Used to pull the contents or changes from other Mercurial_ repositories into a workspace via a URI.
 
 
+.. _Mercurial: http://mercurial.selenic.com/
