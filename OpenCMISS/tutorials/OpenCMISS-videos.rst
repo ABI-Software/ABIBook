@@ -42,6 +42,17 @@ Chris Bradley
 17 August 2012
 Nancy Yan
 
+.. raw:: html
+
+   <embed src="http://mediastore.auckland.ac.nz/assets/jwplayer51/player.swf"
+   width="640"
+   height="480"
+   bgcolor="undefined"
+   allowscriptaccess="always"
+   allowfullscreen="true"
+   flashvars="provider=rtmp&amp;streamer=rtmp://vip-ltrp-flash.auckland.ac.nz/vod/&amp;file=/uploaded/02-2013/BD88F22C8E6644C18247325BD455E2A1.mp4&amp;image=/assets/uoa.jpg&amp;bufferlength=5&amp;screencolor=FFFFFF"
+   />
+
 **Bidomain tutorial**
 
 **
