@@ -28,4 +28,3 @@ This documentation is current for cmgui version 2.9.0.
    CMGUI-scene-editor-window
    CMGUI-spectrum-editor-window
    CMGUI-surfaces
-   mathtest
