@@ -46,6 +46,6 @@ CMGUI is quite a large application so the executable has been archived (tarred) 
 
    tar -xf filename.tar.gz.
 
-On Windows you will need `7Zip <http://www.7-zip.org/>`_ or something similar to unzip the file. You should now be able to run CMGUI by either clicking on the executable or by changing into the directory it is located in and then typing ./ followed by the name of the executable at the command prompt, eg. ``./CMGUI-wx``. This will bring up the CMGUI command window interface.
+On Windows you will need `7Zip <http://www.7-zip.org/>`_ or something similar to unzip the file. You should now be able to run CMGUI by either clicking on the executable or by changing into the directory it is located in and then typing ``./`` followed by the name of the executable at the command prompt, eg. ``./CMGUI-wx``. This will bring up the CMGUI command window interface.
 
 For convenience it is a good idea to place the directory containing CMGUI into your PATH environmental variable. That way you will be able to run CMGUI without having to be in the directory that contains the executable. To do this on a Linux system you can specify your PATH variable in your .profile file. On Windows you can edit your PATH variable by right clicking on my computer and then selecting: properties, advanced, environment variables. Ask your local system administrator if you do not know how to edit the PATH variable for your operating system.
