@@ -1,8 +1,5 @@
 .. _PMR-exposing-cellml:
 
-.. index::
-   single: exposure
-
 =========================
 Creating CellML exposures
 =========================
