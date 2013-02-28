@@ -9,7 +9,7 @@ This documentation provides an overview of the functionality of the cmgui applic
 This documentation is current for cmgui version 2.9.0.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    migration/index
    CMGUI-introduction
