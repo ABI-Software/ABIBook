@@ -143,3 +143,32 @@ Example of the JSON file from the same (Laminar Structure of the Heart) workspac
 * Lines 19-41, set up the actual visualisations of the mesh - in this case, two different surfaces and a set of lines.
 * Lines 42-46, specify global visualisation settings.
    * elementDiscretization - specifies how detailed the representation of elements is.
+
+Creating the exposure in the Physiome Model Repository
+======================================================
+
+First you will need to create a workspace to put your model in, following the process outlined in the document on working with workspaces.
+
+* Upload your FieldML model files and Zinc viewer specification files.
+* Find revision of workspace you wish to expose and create exposure
+
+Exposure wizard procedure
+-------------------------
+
+View generator as per CellML; select HTML annotator and HTML doc file
+
+New exposure file entry: select .rdf file and select FieldML (JSON) type. Click *Add*.
+
+Documentation file - same as above
+Curation flags - none (should be removed?)
+No other settings
+
+Click *Update*.
+
+Click *Build*.
+
+To see the 3D visualisation, you will need to have the latest Zinc plugin installed. (link)
+
+
+
+
