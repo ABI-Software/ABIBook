@@ -13,6 +13,7 @@ This documentation is current for cmgui version 2.9.0.
 
    migration/index
    CMGUI-introduction
+   CMGUI-gettingstarted
    CMGUI-architecture
    CMGUI-command-window
    CMGUI-ex-file-format-guide
