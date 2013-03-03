@@ -40,7 +40,7 @@ Note that Zinc is compiled as a separate application from CMGUI. You do NOT have
 Installation
 ============
 
-CMGUI is currently available for download for a wide variety of platforms. You can download the appropriate executable for your operating system `from the release centre <http://www.cmiss.org/ReleaseCenter/CMGUI>`_.
+CMGUI is currently available for download for a wide variety of platforms. You can download the appropriate executable for your operating system `from the release centre <http://www.cmiss.org/ReleaseCenter/cmgui>`_.
 
 CMGUI is quite a large application so the executable has been archived (tarred) and compressed (zipped) to make it faster to download. Once you have downloaded the executable all you need to do is untar and unzip it and it is ready to run. On Linux you can untar and unzip the tar.gz file with the command::
 
