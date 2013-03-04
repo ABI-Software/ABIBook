@@ -142,7 +142,12 @@ Example of the JSON file from the same (Laminar Structure of the Heart) workspac
 * Lines 12-18, specifies the FieldML model files
 * Lines 19-41, set up the actual visualisations of the mesh - in this case, two different surfaces and a set of lines.
 * Lines 42-46, specify global visualisation settings.
-   * elementDiscretization - specifies how detailed the representation of elements is.
+
+For more information on these settings, please see the cmgui documentation.
+
+.. note::
+   The specifics of these RDF and JSON files are a work in progress, and are likely to change with each new version of the Zinc viewer plugin or the PMR2 software.
+
 
 Creating the exposure in the Physiome Model Repository
 ======================================================
@@ -167,7 +172,7 @@ Click *Update*.
 
 Click *Build*.
 
-To see the 3D visualisation, you will need to have the latest Zinc plugin installed. (link)
+To see the 3D visualisation, you will need to have the `latest Zinc plugin <http://www.cmiss.org/ReleaseCenter/zinc/releases>`_ installed.
 
 
 
