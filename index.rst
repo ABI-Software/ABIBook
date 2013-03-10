@@ -18,10 +18,13 @@ Contents:
    CellMLAPI/index
    CM/index
    cmgui/index
-   MAP/index
    OpenCMISS/index
    PMR/index
 
+.. todo::
+   
+   Add back the MAP client section when the application is ready for testing.
+   Update all screenshots to Windows 7 (Or OS-X, or latest Ubuntu, as appropriate).
 
 Indices and tables
 ==================

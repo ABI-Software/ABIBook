@@ -20,4 +20,10 @@ If you wish to deploy an instance of the repository software, please see the `bu
    PMR-installing-the-software
    PMR-glossary
 
+   
+.. todo::
+
+   Update all PMR documentation to reflect workspace ID changes and user workspace changes, if they go ahead.
+
+
 .. _buildout repository: https://github.com/PMR2/pmr2.buildout
