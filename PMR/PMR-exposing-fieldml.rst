@@ -20,8 +20,6 @@ The example screenshots below show the main documentation page view and the 3D v
    
    The main Zinc viewer view of the same FieldML exposure
 
-This is a paragraph
-
 Creating the exposure files
 ===========================
 
@@ -146,7 +144,7 @@ Example of the JSON file from the same (Laminar Structure of the Heart) workspac
 For more information on these settings, please see the cmgui documentation.
 
 .. note::
-   The specifics of these RDF and JSON files are a work in progress, and are likely to change with each new version of the Zinc viewer plugin or the PMR2 software.
+   The specifics of these RDF and JSON files are a work in progress, and may change with each new version of the Zinc viewer plugin or the PMR2 software.
 
 
 Creating the exposure in the Physiome Model Repository
