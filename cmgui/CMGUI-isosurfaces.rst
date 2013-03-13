@@ -9,7 +9,7 @@ Visualizing element fields using iso-surfaces
 
 *Iso-surfaces* are graphical representations used to visualize 3D or 2D objects that connect every point where the value of a certain field is the same. This idea is analogous to the contour lines on a map, where a line connects every point of a certain height. In 3D this means that a surface connects every point of a certain value.  An example of this is in `example a7`_ where an iso-surface is used to show the surface where every point is at 100 degrees Celsius. For a simpler example, `example a2`_ shows the creation of an iso-surface at x=0.5 within the simple cube mesh.
 
-As with surfaces_, the detail level of iso-surfaces is determined by the selected *tessellation* setting in *settings editor* area of the :ref:`scene editor <CMGUI-scene-editor-window>` (Figure 2).  Iso-surfaces are drawn to connect points on the edges of the sub-element divisions where the iso-scalar matches the chosen value.  With an *tessellation* setting of 1, an iso-surface will only connect points on the line edges of the element.
+As with :ref:`surfaces <CMGUI-surfaces.rst>`, the detail level of iso-surfaces is determined by the selected *tessellation* setting in *settings editor* area of the :ref:`scene editor <CMGUI-scene-editor-window>` (Figure 2).  Iso-surfaces are drawn to connect points on the edges of the sub-element divisions where the iso-scalar matches the chosen value.  With an *tessellation* setting of 1, an iso-surface will only connect points on the line edges of the element.
 
 |
 
