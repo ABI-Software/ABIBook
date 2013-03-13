@@ -23,7 +23,7 @@ PMR glossary
       A copy of the workspace which includes all the original version history, but is owned by the user who created the fork.
 
    Synchronize
-      Used to pull the contents or changes from other Mercurial repositories into a workspace via a URI.
+      Used to pull the contents or changes from other :term:`Mercurial` repositories into a workspace via a URI.
 
    User folder
       A folder on the Physiome Model Repository, created automatically when you register your user-name, which is used to store all of your workspaces. 
@@ -32,4 +32,7 @@ PMR glossary
 
    Workspace
    Workspaces
-      A Mercurial repository hosted on the Physiome Model Repository. This is essentially a folder or directory in which files are stored, with the added feature of being version controlled by the distributed version control system called `Mercurial <http://mercurial.selenic.com/>`_. 
+      A `Mercurial` repository hosted on the Physiome Model Repository. This is essentially a folder or directory in which files are stored, with the added feature of being version controlled by the distributed version control system called `Mercurial <http://mercurial.selenic.com/>`_. 
+
+   Mercurial
+      `Mercurial <http://mercurial.selenic.com/>`_.  is a distributed version control system, used by the Physiome Model Repository software to maintain a history of changes to files in :term:`workspaces`.

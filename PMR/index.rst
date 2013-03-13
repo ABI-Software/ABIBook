@@ -18,6 +18,7 @@ If you wish to deploy an instance of the repository software, please see the `bu
    PMR-exposing-fieldml
    PMR-using-SED-ML
    PMR-installing-the-software
+   PMR-cellmlcuration
    PMR-glossary
 
    
