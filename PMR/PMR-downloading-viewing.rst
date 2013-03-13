@@ -29,8 +29,8 @@ If your search is yielding too many results, you may either try to narrow it dow
 
 Once you have found the model you are interested in, there are several ways you can view or download it.
 
-Viewing models
-==============
+Viewing models via the respository web interface
+================================================
 
 The most common use of the Physiome Model Repository web interface is probably to view information about models found on exposure pages, and to then download the models from these pages for simulation in a CellML supporting application.
 
