@@ -64,5 +64,5 @@ The OpenCell session that is loaded when clicking on the Simulate using OpenCell
 .. figure:: /PMR/images/PMR-sessionexample1.png
    :align: center
    
-   An OpenCell session. Objects such as membrane channels in the diagram can be clicked on, sitching on and off the graph traces displaying their values.
+   An OpenCell session. Objects such as membrane channels in the diagram can be clicked - this will toggle the graph traces displaying the values for those objects.
    
