@@ -11,7 +11,7 @@ Creating an AVI from a series of images - Windows
 .. _CamStudio: http://camstudio.org/
 .. _graphics window: http://www.cmiss.org/cmgui/wiki/UsingCMGUITheGraphicsWindow
 
-This tutorial will describe a method of compiling a series of images saved from CMGUI into an AVI format movie file on the Windows operating system.  There are other methods, but the one described here can be achieved easily, with free software, and produces excellent and highly customizable results.
+This tutorial will describe a method of compiling a series of images saved from CMGUI into an AVI format movie file on the Windows operating system.  There are other methods, but the one described here can be achieved easily using free software, and produces excellent, highly customizable results.
 
 An AVI file is a Windows format - however, it can be played on most computers including those running Mac OS X or Linux.  It can also be uploaded to online video sites such as YouTube.
 
@@ -33,7 +33,7 @@ Installation of VirtualDub and FFDShow is a requirement for following this tutor
 Compiling a series of images into a movie
 =========================================
 
-When making a movie from a sequence of images, it is important to make sure that the images you created in CMGUI are saved at a usable resolution. It is always best to use familiar resolutions like 512x384, 640x480, 800x600 or 1024x768. Many video formats require specific resolutions to work properly; codecs often are restricted to multiples of 2, 4, or 8 for both the height and width in pixels.
+When making a movie from a sequence of images, it is important to make sure that the images you created in CMGUI are saved at a usable resolution. It is always best to use familiar resolutions like 800x600, 1024x768, or 1920x1080. Many video formats require specific resolutions to work properly; codecs often are restricted to multiples of 2, 4, or 8 for both the height and width in pixels.
 
 Creating a movie from a series of images using VirtualDub is very simple:
 
@@ -102,13 +102,31 @@ A status window will appear, with some information about the progress of the AVI
 
 Once the encoding is finished, find your file and double click on it to play it.  Check the file size, and the quality of the movie.  If the file is too big, change the codec settings to use a lower bitrate and save it again.  If the movie is poor quality, set the bitrate higher and try again. 1000 kbps gives a good quality 640x480 movie in MPEG-4 encoding, with file sizes of about 7 megabytes per minute.  With H264 encoding, bitrates as low as 300kbps can give remarkably good results at 640x480 depending on the content of the movie.
 
+Creating a movie from images using FFMPEG
+-----------------------------------------
+
+An alternative to using Virtualdub is to use the command line tool `FFMPEG <http://www.ffmpeg.org/>`_. This is a powerful, open source tool that can perform a large number of video-related tasks. Documentation for FFMPEG can be found `on the project website <http://www.ffmpeg.org/ffmpeg.html>`_.
+
+An example command line for creating a movie from image files using FFMPEG is::
+
+   ffmpeg -f image2 -i image%d.jpg output.mpg
+   
+For more information, please refer to the documentation linked to above.
+
+Converting your movie to other formats
+======================================
+
+Sometimes you will want to have your movie in a format other than AVI, or you may wish to further tune the compression and quality of your movie.  For example, using the H.264 codec with an AVI creates a non-standard file; it is usually better to encode an mp4 file using H.264.
+
+Converting to mp4 using Handbrake
+---------------------------------
+
+Handbrake is an open source video converter that is very fast and effective for converting videos to MP4 format. Using H.264, the output of these conversions
 
 Convert your movie to another format using WinFF
-================================================
+------------------------------------------------
 
-Sometimes you will want to have your movie in a format other than AVI, or you may wish to further tune the compression and quality of your movie.  For example, using the H.264 codec with an AVI creates a non-standard file; it is usually better to encode an mp4 file using H.264.  WinFF is an extremely useful tool for optimizing the file size or quality of your movies, as well as for converting from AVI to other file formats such as mp4 or mov.
-
-When converting using WinFF, it is useful to have an uncompressed movie file to work with.  To create an uncompressed AVI from VirtualDub, select the *Uncompressed RGB/YCbCr* codec when creating the AVI file as detailed above.  
+WinFF is a useful tool for optimizing the file size or quality of your movies, as well as for converting from AVI to other file formats such as mp4 or mov. When converting using WinFF, it is useful to have an uncompressed movie file to work with.  To create an uncompressed AVI from VirtualDub, select the *Uncompressed RGB/YCbCr* codec when creating the AVI file as detailed above.  
 
 The following steps detail how to encode an H.264 codec mp4 file from an AVI:
 
