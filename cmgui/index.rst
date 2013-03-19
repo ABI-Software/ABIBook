@@ -16,7 +16,6 @@ This documentation is current for cmgui version 2.9.0.
    CMGUI-introduction
    CMGUI-architecture
    CMGUI-command-window
-   CMGUI-ex-file-format-guide
    CMGUI-fields
    CMGUI-glyphs
    CMGUI-graphics
@@ -28,3 +27,4 @@ This documentation is current for cmgui version 2.9.0.
    CMGUI-scene-editor-window
    CMGUI-spectrum-editor-window
    CMGUI-surfaces
+   CMGUI-ex-file-format-guide
