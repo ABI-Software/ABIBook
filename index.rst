@@ -14,19 +14,17 @@ Contents:
 
    AboutABI/index
    ABICaseStudies/index
-   CAP/index
    CellMLAPI/index
-   CM/index
    cmgui/index
    OpenCMISS/index
    PMR/index
 
 .. todo::
-   Add back the MAP client section when the application is ready for testing.
-   Update all screenshots to Windows 7 (Or OS-X, or latest Ubuntu, as appropriate).
-   Change names of OpenCMISS and cmgui to OpenCMISS Iron and OpenCMISS Zinc.
-   Finalise content for About ABI section; avoid overlap with ABI website but provide links.
-   
+   * Add back the MAP client section when the application is ready for testing.
+   * Update all screenshots to Windows 7 (Or OS-X, or latest Ubuntu, as appropriate).
+   * Change names of OpenCMISS and cmgui to OpenCMISS Iron and OpenCMISS Zinc.
+   * Finalise content for About ABI section; avoid overlap with ABI website but provide links.
+   * Populate CellML API section
 
 Indices and tables
 ==================
