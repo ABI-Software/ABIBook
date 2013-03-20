@@ -19,6 +19,7 @@ OpenCMISS user documentation
    tutorials/OpenCMISS-gettingstarted
    tutorials/OpenCMISS-python
    tutorials/OpenCMISS-videos
+   tutorials/OpenCMISS-git
    examples/Bioelectrics/Bidomain
    examples/Bioelectrics/Monodomain
    examples/ClassicalField/AdvectionDiffusion
@@ -27,7 +28,3 @@ OpenCMISS user documentation
    examples/ClassicalField/Helmholtz
    examples/ClassicalField/Laplace/index
    examples/ClassicalField/Poisson
-   
-For developers, there is a :ref:`tutorial on using git <abi_git_tutorial:ABI Summer Tutorial: Version Control With Git>` available.
-
-test: :ref:`comparison manual <python:comparisons>`
