@@ -27,3 +27,5 @@ OpenCMISS user documentation
    examples/ClassicalField/Helmholtz
    examples/ClassicalField/Laplace/index
    examples/ClassicalField/Poisson
+   
+For developers, there is a `tutorial on using git <abi_git_tutorial:ABI Summer Tutorial: Version Control With Git>`_.

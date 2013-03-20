@@ -43,6 +43,8 @@ intersphinx_mapping = {
   'python': ('http://python.readthedocs.org/en/latest/', None),
   'django': ('http://django.readthedocs.org/en/latest/', None),
   'sphinx': ('http://sphinx.readthedocs.org/en/latest/', None),
+  'abi_git_tutorial': ('http://abi_git_tutorial.readthedocs.org/en/latest/', None),
+  
     }
 
 # General information about the project.
