@@ -22,9 +22,9 @@ This documentation is current for cmgui version 2.9.0.
    CMGUI-graphics-window
    CMGUI-isosurfaces
    CMGUI-lines-cylinders
-   CMGUI-make-avi-from-images-windows
    CMGUI-material-editor-window
    CMGUI-scene-editor-window
    CMGUI-spectrum-editor-window
    CMGUI-surfaces
+   CMGUI-make-avi-from-images-windows
    CMGUI-ex-file-format-guide
