@@ -28,4 +28,4 @@ OpenCMISS user documentation
    examples/ClassicalField/Laplace/index
    examples/ClassicalField/Poisson
    
-For developers, there is a `tutorial on using git <abi_git_tutorial:ABI Summer Tutorial: Version Control With Git>`_.
+For developers, there is a :ref:`tutorial on using git <abi_git_tutorial:ABI Summer Tutorial: Version Control With Git>` available.
