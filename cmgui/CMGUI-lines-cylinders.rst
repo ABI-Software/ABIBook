@@ -17,11 +17,12 @@ If you wish to create these lines in the graphics window, use the go to the file
 
    **Figure 1: The default graphical setting lines created for a cube mesh.** This mesh was created by reading the ``cube.exnode`` and ``cube.exelem`` files from `example a2`_.  Note that the `example a2`_ com file creates cylinders to visualize the cube mesh.
 
-| 
+.. _cmgui-lines-settings:
+
+Settings for lines
+==================
 
 Two default scene settings are important for lines and cylinders. In the scene editor, the selected *tessellation* controls the number of line segments used to draw each line.  The *Circle discretization* value is used to control how many sides are used to draw each cylinder.  Higher numbers will give "rounder" looking cylinders (Figure 2).
-
-| 
 
 Lines have relatively few settings for altering their appearance (Figure 2).  The following settings are available for lines:
 
@@ -56,7 +57,10 @@ In addition to these settings there is a command line setting that can be very u
 
    **Figure 2: The scene editor settings available for a lines graphical setting.**
 
-| 
+.. _cmgui-cylinders-settings:   
+
+Settings for cylinders
+======================
 
 *Cylinders* are very similar to lines, with a few additional parameters.  A cylinders graphical setting will draw cylinders along all the same elements that a lines graphical setting would.  Cylinders are different to lines in that they have a size relative to the mesh - therefore they scale with zooming just like other objects that have an actual "size" in the scene.  The number of "faces" that are used to display cylinders is set under the *General settings* under *Circle dicretization*.  The higher the number, the more circular the cylinders will appear.  The default setting is for six sides.  Cylinders have the following settings in addition to those for lines:
 
