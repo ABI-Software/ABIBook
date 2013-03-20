@@ -146,5 +146,4 @@ The new exposure will be created and displayed. When a new exposure is created, 
 
 The state will change to "pending review". The administrator or curators of the repository will then review and publish the exposure, as well as expiring the old exposure.
 
-
 .. _Physiome model repository: http://models.physiomeproject.org
