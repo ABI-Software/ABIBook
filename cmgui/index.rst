@@ -30,3 +30,6 @@ This documentation is current for cmgui version 2.9.0.
    CMGUI-ex-file-format-guide
 
 There are a number of `examples <http://cmiss.bioeng.auckland.ac.nz/development/examples/a/index_thumbs.html>`_ which you can use to familiarise yourself with the functions and capabilities of cmgui.
+
+.. todo::
+   Add some useful command examples to command window doc - eg. "saving" graphics
