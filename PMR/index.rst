@@ -17,6 +17,7 @@ If you wish to deploy an instance of the repository software, please see the `bu
    PMR-exposing-cellml
    PMR-exposing-fieldml
    PMR-using-SED-ML
+   PMR-embeddedworkspaces
    PMR-installing-the-software
    PMR-cellmlcuration
    PMR-glossary
@@ -24,7 +25,8 @@ If you wish to deploy an instance of the repository software, please see the `bu
    
 .. todo::
 
-   Update all PMR documentation to reflect workspace ID changes and user workspace changes, if they go ahead.
-
+   * Update all PMR documentation to reflect workspace ID changes and user workspace changes, if they go ahead. 
+   * Get embedded workspaces doc written.
+   * Get some best practice docs written.
 
 .. _buildout repository: https://github.com/PMR2/pmr2.buildout

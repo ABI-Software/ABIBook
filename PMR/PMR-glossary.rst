@@ -35,4 +35,4 @@ PMR glossary
       A `Mercurial` repository hosted on the Physiome Model Repository. This is essentially a folder or directory in which files are stored, with the added feature of being version controlled by the distributed version control system called `Mercurial <http://mercurial.selenic.com/>`_. 
 
    Mercurial
-      `Mercurial <http://mercurial.selenic.com/>`_.  is a distributed version control system, used by the Physiome Model Repository software to maintain a history of changes to files in :term:`workspaces`.
+      `Mercurial <http://mercurial.selenic.com/>`_ is a distributed version control system, used by the Physiome Model Repository software to maintain a history of changes to files in :term:`workspaces`.
