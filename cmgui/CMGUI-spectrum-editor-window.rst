@@ -1,7 +1,7 @@
 .. _CMGUI-spectrum-editor-window:
 
 ============================
-cmgui Spectrum Editor Window
+CMGUI Spectrum Editor Window
 ============================
 
 .. _example a7: http://cmiss.bioeng.auckland.ac.nz/development/examples/a/a7/index.html

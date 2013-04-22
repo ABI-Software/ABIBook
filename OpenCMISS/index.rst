@@ -8,8 +8,6 @@ OpenCMISS user documentation
    :maxdepth: 2
    :titlesonly:
    :numbered:
-
-
    
    reference/OpenCMISS-concepts
    reference/OpenCMISS-coordinatesystems

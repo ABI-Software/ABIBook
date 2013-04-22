@@ -1,8 +1,11 @@
 ﻿.. _ABIBook-TODO:
 
-==============================
-Things to be done for the book
-==============================
+========================
+Documentation to do list
+========================
+
+General
+=======
 
 .. todo::
    * Add back the MAP client section when the application is ready for testing.
@@ -11,5 +14,8 @@ Things to be done for the book
    * Finalise content for About ABI section; avoid overlap with ABI website but provide links.
    * Populate CellML API section
    * Add many more references (``.. _like-this:``) to docs for cross-referencing.
+
+Within sections
+===============
    
 .. todolist::
