@@ -9,3 +9,16 @@ This is the first window that appears when CMGUI is loaded.  It consists of stan
 The history and output areas have scrollbars that allow you to view all of the contents of these panels.  In the case of the history panel, this enables you to scroll back and click on commands - clicking on a command in the history panel will enter that command into the command line.  This command can then be edited and executed.  In the case of lengthy commands, this can save a lot of typing.  Double-clicking on a command in the history window will execute it immediately.
 
 The output panel is where any text output from commands or error messages appears.  If something is not working in CMGUI, this panel is the first place to look for a reason.  This panel also displays the help information when you execute a command with the ? or ?? argument.
+
+Useful commands
+===============
+
+To "save" a set of material settings::
+
+   gfx list material commands
+
+Copy the resulting text and save it as a text file. You can use this to save any parts of the visualisation you have created - simply type::
+
+   gfx list ?
+
+To get a list of the objects that can be listed with this command.

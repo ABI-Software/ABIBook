@@ -8,8 +8,6 @@ OpenCMISS user documentation
    :maxdepth: 2
    :titlesonly:
    :numbered:
-
-
    
    reference/OpenCMISS-concepts
    reference/OpenCMISS-coordinatesystems
@@ -20,6 +18,7 @@ OpenCMISS user documentation
    tutorials/OpenCMISS-python
    tutorials/OpenCMISS-cellml
    tutorials/OpenCMISS-videos
+   tutorials/OpenCMISS-git
    examples/Bioelectrics/Bidomain
    examples/Bioelectrics/Monodomain
    examples/ClassicalField/AdvectionDiffusion

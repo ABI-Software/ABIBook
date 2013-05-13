@@ -14,15 +14,14 @@ Contents:
 
    AboutABI/index
    ABICaseStudies/index
-   CAP/index
    CellMLAPI/index
-   CM/index
    cmgui/index
-   MAP/index
    OpenCMISS/index
-   PMR2/index
+   PMR/index
+   ABIBook-TODO
 
 
+   
 Indices and tables
 ==================
 

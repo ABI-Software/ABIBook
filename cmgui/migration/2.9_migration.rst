@@ -1,8 +1,8 @@
-===============================
-Migrating to upcoming Cmgui 2.9
-===============================
+======================
+Migrating to Cmgui 2.9
+======================
 
-For the upcoming Cmgui 2.9 release, pre-released within the ABI, significant changes have been made to the way 'groups' are handled. We have also removed the automatic creation of default lines on reading a model.
+In the 2.9.0 release, significant changes have been made to the way 'groups' are handled. We have also removed the automatic creation of default lines on reading a model.
 
 While we've taken every effort to minimise the impact of the changes, usually by making commands do the nearest equivalent behaviour, some breaks are unavoidable. So if your command files are not working as before, please try to see why in the following explanation, but if that doesn't help, see the Cmgui development team. As always, if you find what looks like a bug in the software, please report it on our tracker.
 

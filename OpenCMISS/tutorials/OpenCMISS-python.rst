@@ -6,6 +6,8 @@
 Using OpenCMISS from Python
 ===========================
 
+.. sectionauthor:: Adam Reeve
+
 In this tutorial we will walk through how to solve Laplace's equation on
 a 2D geometry using the Python bindings to OpenCMISS.
 
