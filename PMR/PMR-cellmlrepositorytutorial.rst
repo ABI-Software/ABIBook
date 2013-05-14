@@ -4,12 +4,12 @@
 CellML Model Repository tutorial
 ================================
 
-.. sectionauthor:: Randall Britten, Dougal Cowan
+.. sectionauthor:: David Nickerson, Randall Britten, Dougal Cowan
 
 About this tutorial
 ===================
 
-The CellML repository is powered by software called Physiome Model Repository (PMR). PMR currently relies on the distributed version control system Mercurial (Hg), which allows the repository to maintain a complete history of all changes made to every file it contains. This tutorial demonstrates how to work with the repository using TortoiseHg, which provides a Windows explorer integrated system for working with Mercurial repositories.
+The CellML model repository is an instance of the Physiome Model Repository (PMR) customised for CellML models. PMR currently relies on the distributed version control system Mercurial (Hg), which allows the repository to maintain a complete history of all changes made to every file it contains. This tutorial demonstrates how to work with the repository using TortoiseHg, which provides a Windows explorer integrated system for working with Mercurial repositories.
 
 ::
 
@@ -128,7 +128,7 @@ Mercurial username configuration
 
 .. _tut1forkingaworkspace:
    
-Forking an existing workspace 
+Forking an existing workspace
 -----------------------------
 
 .. important::
