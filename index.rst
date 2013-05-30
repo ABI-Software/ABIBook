@@ -16,6 +16,7 @@ Contents:
    ABICaseStudies/index
    CellMLAPI/index
    cmgui/index
+   OpenCOR/index
    OpenCMISS/index
    PMR/index
    ABIBook-TODO
