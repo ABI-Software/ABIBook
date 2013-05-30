@@ -37,7 +37,7 @@ source_suffix = '.rst'
 #source_encoding = 'utf-8-sig'
 
 # The master toctree document.
-master_doc = 'index'
+master_doc = 'tutorial-index'
 
 intersphinx_mapping = {
   'python': ('http://python.readthedocs.org/en/latest/', None),
