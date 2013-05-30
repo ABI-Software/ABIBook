@@ -12,13 +12,11 @@ Contents:
    :maxdepth: 1
    :titlesonly:
 
-   AboutABI/index
-   ABICaseStudies/index
-   CellMLAPI/index
-   cmgui/index
-   OpenCOR/index
-   OpenCMISS/index
    PMR/index
+   OpenCOR/index
+   MAP/index
+   cmgui/index
+   OpenCMISS/index
    ABIBook-TODO
 
 
