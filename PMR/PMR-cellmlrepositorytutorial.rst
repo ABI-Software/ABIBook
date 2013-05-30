@@ -4,26 +4,25 @@
 CellML Model Repository tutorial
 ================================
 
-.. sectionauthor:: Randall Britten, Dougal Cowan
+.. sectionauthor:: David Nickerson, Randall Britten, Dougal Cowan
 
 About this tutorial
 ===================
 
-The CellML repository is powered by software called Physiome Model Repository (PMR). PMR currently relies on the distributed version control system Mercurial (Hg), which allows the repository to maintain a complete history of all changes made to every file it contains. This tutorial demonstrates how to work with the repository using TortoiseHg, which provides a Windows explorer integrated system for working with Mercurial repositories.
+The CellML model repository is an instance of the Physiome Model Repository (PMR) customised for CellML models. PMR currently relies on the distributed version control system Mercurial (Hg), which allows the repository to maintain a complete history of all changes made to every file it contains. This tutorial demonstrates how to work with the repository using TortoiseHg, which provides a Windows explorer integrated system for working with Mercurial repositories.
 
 ::
 
   Brief mention of the equivalent command line versions of the TortoiseHg
   actions will also be mentioned, so that these ideas can also be used without
   a graphical client, and on Linux and similar systems. These will be denoted
-  by grayed boxes like this.
+  by boxes like this.
 
 This tutorial requires you to have:
 
 * A Mercurial client such as `TortoiseHg <http://tortoisehg.bitbucket.org/>`_ or `Mercurial <http://mercurial.selenic.com/>`_ installed
 * The `OpenCell <http://www.cellml.org/tools/opencell>`_ CellML modelling environment
 * A text editor such as `Notepad++ <http://notepad-plus-plus.org/>`_ or `gedit <http://projects.gnome.org/gedit/>`_
-* User registration on the `Physiome model repository`_ site
 
 PMR concepts
 ============
@@ -84,8 +83,8 @@ Registering an account and logging in
 -------------------------------------
 
 First, navigate to the staging instance of the Physiome model repository at `http://184.169.251.126/welcome <http://184.169.251.126/welcome>`_.
-.. note:: The staging instance
 
+.. note:: 
    The staging instance of the repository is a mirror of the main repository site found at http://models.physiomeproject.org, running the latest development version of the PMR2 software.
    
    Any changes you make to the contents of the staging instance are not permanent, and will be overwritten with the contents of the main repository whenever the staging instance is upgraded to the latest PMR2 release. For this reason, you can feel free to experiment and make mistakes when pushing to the staging instance. 
@@ -128,7 +127,7 @@ Mercurial username configuration
 
 .. _tut1forkingaworkspace:
    
-Forking an existing workspace 
+Forking an existing workspace
 -----------------------------
 
 .. important::
@@ -136,7 +135,7 @@ Forking an existing workspace
 
 For this tutorial we will *fork* an existing workspace. This creates new workspace owned by you, containing a copy of all the files in the workspace you forked including their complete history. This is equivalent to cloning the workspace, creating a new workspace for yourself, and then pushing the contents of the cloned workspace into your new workspace.
 
-Forking a workspace can be done using the Physiome model repository web interface. The first step is to find the workspace you wish to fork. We will use the Beeler, Reuter 1977 workspace which can be found by entering ``beeler reuter`` into the search box at the top right corner of the page. Click on the top result, which will take you to the :term:`workspace` page for the Beeler Reuter 1977 model.
+Forking a workspace can be done using the Physiome model repository web interface. The first step is to find the workspace you wish to fork. We will use the Beeler, Reuter 1977 :term:`workspace` which can be found at: `http://184.169.251.126/workspace/beeler_reuter_1977 <http://184.169.251.126/workspace/beeler_reuter_1977>`_.
 
 Now click on the *fork* option in the toolbar, as shown below.
 
