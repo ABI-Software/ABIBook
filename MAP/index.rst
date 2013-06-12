@@ -1,15 +1,12 @@
 .. _MAP-index:
 
-=============================
-MAP client user documentation
-=============================
+==========
+MAP Client
+==========
 
 .. toctree::
    :maxdepth: 2
    
-   MAP-introduction
-   MAP-segmentation
-
 .. todo::
 
    * This entire section.
