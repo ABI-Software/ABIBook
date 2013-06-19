@@ -14,7 +14,7 @@ Contents:
 
    PMR/index
    OpenCOR <OpenCOR/feature-demonstration/index>
-   MAP/index
+   MAP <MAP/feature-demonstration/index>
    EMBC13 Tutorial <tutorials/embc13/index>
    relatedSoftware
    ABIBook-TODO
