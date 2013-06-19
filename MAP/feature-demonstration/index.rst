@@ -11,7 +11,7 @@ MAP Features Demonstration
 .. _github project: https://github.com/mapclient-plugins
 .. _physiome: http://physiomeproject.org/zinclibrary
 .. _pyside: https://pypi.python.org/pypi/PySide
-.. _project downloads: https//launchpad.net/mapclient/download
+.. _project downloads: https://launchpad.net/mapclient/download
 
 .. note::
    `MAP`_ is currently under active development, and this document will be updated to reflect any changes to the software or new features that are added. You can follow the development of MAP at the `launchpad project`_.
@@ -39,6 +39,7 @@ When you first load MAP, it will look something like this:
 
 .. figure:: /MAP/feature-demonstration/images/blank_MAP_1.png
    :align: center
+   :width: 80%
 
 In the main window we can see three distinct areas that make up the workflow management side of the software.  These three areas are the menu bar (at the top), the step box (on the left) that contains steps that you can use to create your workflow and the workflow canvas (on the right) for constructing a workflow.
 
