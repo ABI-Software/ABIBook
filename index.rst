@@ -13,7 +13,7 @@ Contents:
    :titlesonly:
 
    PMR/index
-   OpenCOR <OpenCOR/feature-demonstration/index>
+   OpenCOR/index
    MAP <MAP/feature-demonstration/index>
    EMBC13 Tutorial <tutorials/embc13/index>
    relatedSoftware
