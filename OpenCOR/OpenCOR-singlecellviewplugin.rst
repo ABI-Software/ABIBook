@@ -4,7 +4,7 @@
 Single cell view plugin
 =======================
 
-The SingleCellView plugin can be used to run CellML models which consists of either a system of `ordinary differential equations <http://en.wikipedia.org/wiki/Ordinary_differential_equation>`_ (ODEs) or `differential algebraic equations <http://en.wikipedia.org/wiki/Differential_algebraic_equation>`_ (DAEs). The system may be `non-linear <https://en.wikipedia.org/wiki/Nonlinear_system>`_.
+The **SingleCellView** plugin can be used to run CellML models which consists of either a system of `ordinary differential equations <http://en.wikipedia.org/wiki/Ordinary_differential_equation>`_ (ODEs) or `differential algebraic equations <http://en.wikipedia.org/wiki/Differential_algebraic_equation>`_ (DAEs). The system may be `non-linear <https://en.wikipedia.org/wiki/Nonlinear_system>`_.
 
 Open a CellML file
 ------------------
@@ -63,7 +63,7 @@ The view consists of two main parts, the first of which allows you to customise 
 Simulate an ODE model
 ---------------------
 
-To simulate a model, you need to provide some information about the simulation itself, i.e. its starting point, ending point and point interval. Then, you need to specify the solver that you want to use. The solvers available to you will depend on which solver :ref:`plugins <OpenCOR-pluginapproach>` you selected, as well as on the type of your model (i.e. ODE or DAE). In the present case, we are dealing with an ODE model and all the solver plugins are selected, so OpenCOR offers `CVODE <https://computation.llnl.gov/casc/sundials/description/description.html#descr_cvode>`_, forward `Euler <http://en.wikipedia.org/wiki/Euler_method>`_, `Heun <http://en.wikipedia.org/wiki/Heun's_method>`_, `Midpoint <http://en.wikipedia.org/wiki/Midpoint_method>`_, and second- and fourth-order `Runge-Kutta <http://en.wikipedia.org/wiki/Runge-Kutta_methods>`_ as possible solvers for our model.
+To simulate a model, you need to provide some information about the simulation itself, i.e. its starting point, ending point and point interval. Then, you need to specify the solver that you want to use. The solvers available to you will depend on which solver :ref:`plugins <OpenCOR-pluginapproach>` you selected, as well as on the type of your model (i.e. ODE or DAE). In the present case, we are dealing with an ODE model and all the solver plugins are selected, so OpenCOR offers `CVODE <http://computation.llnl.gov/casc/sundials/description/description.html#descr_cvode>`_, forward `Euler <http://en.wikipedia.org/wiki/Euler_method>`_, `Heun <http://en.wikipedia.org/wiki/Heun's_method>`_, `Midpoint <http://en.wikipedia.org/wiki/Midpoint_method>`_, and second- and fourth-order `Runge-Kutta <http://en.wikipedia.org/wiki/Runge-Kutta_methods>`_ as possible solvers for our model.
 
 .. image:: /OpenCOR/images/SingleCellViewScreenshot03.png
     :align: center
@@ -124,7 +124,7 @@ If we want, we could export *all* the simulation data to a comma-separated value
 Simulate a DAE model
 --------------------
 
-To simulate a DAE model is similar to simulating an ODE model, except that OpenCOR only offers one DAE solver (`IDA <https://computation.llnl.gov/casc/sundials/description/description.html#descr_ida>`_) at this stage:
+To simulate a DAE model is similar to simulating an ODE model, except that OpenCOR only offers one DAE solver (`IDA <http://computation.llnl.gov/casc/sundials/description/description.html#descr_ida>`_) at this stage:
 
 .. image:: /OpenCOR/images/SingleCellViewScreenshot10.png
     :align: center

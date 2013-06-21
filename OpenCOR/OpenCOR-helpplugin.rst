@@ -4,7 +4,7 @@
 Help plugin
 ===========
 
-The Help plugin provides some user documentation which looks as follows:
+The **Help** plugin provides some user documentation which looks as follows:
 
 .. image:: /OpenCOR/images/HelpScreenshot01.png
     :align: center

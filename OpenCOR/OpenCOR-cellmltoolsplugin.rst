@@ -4,7 +4,7 @@
 CellML tools plugin
 ===================
 
-The **CellMLTools** plugin consists of various CellML-related tools which can be accessed through the ``Tools`` menu.
+The **CellMLTools** plugin consists of various `CellML <http://www.cellml.org/>`_-related tools which can be accessed through the ``Tools`` menu.
 
 CellML File Export To...
 ------------------------

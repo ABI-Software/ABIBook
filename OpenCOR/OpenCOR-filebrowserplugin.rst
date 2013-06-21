@@ -4,7 +4,7 @@
 File browser plugin
 ===================
 
-The FileBrowser plugin offers a convenient way to access your physical files, remembering the folder or file which was selected when you last ran OpenCOR. By default, it will start with your home directory:
+The **FileBrowser** plugin offers a convenient way to access your physical files, remembering the folder or file which was selected when you last ran OpenCOR. By default, it will start with your home directory:
 
 .. image:: /OpenCOR/images/FileBrowserScreenshot01.png
     :align: center

@@ -4,7 +4,7 @@
 File organiser plugin
 =====================
 
-The FileOrganiser plugin allows you to organise your files virtually, i.e. independently of where they are physically located. Your virtual environment is remembered from one session to another and is, by default, empty:
+The **FileOrganiser** plugin allows you to organise your files virtually, i.e. independently of where they are physically located. Your virtual environment is remembered from one session to another and is, by default, empty:
 
 .. image:: /OpenCOR/images/FileOrganiserScreenshot01.png
     :align: center
