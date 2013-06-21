@@ -38,4 +38,4 @@ Below the transformation and general settings buttons is the *graphics list*.  T
 Settings editor
 ===============
 
-Below the *graphics list* is the *settings editor* where each graphical setting can be edited.  When a graphical setting is selected from the list, all of its editable properties appear in this area.  The range of editable properties will vary depending on the type of :ref:`graphics <using-graphics>` currently selected.
+Below the *graphics list* is the *settings editor* where each graphical setting can be edited.  When a graphical setting is selected from the list, all of its editable properties appear in this area.  The range of editable properties will vary depending on the type of :ref:`graphics <CMGUI-graphics>` currently selected.

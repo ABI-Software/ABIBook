@@ -54,5 +54,3 @@ Nancy Yan
    />
 
 **Bidomain tutorial**
-
-**

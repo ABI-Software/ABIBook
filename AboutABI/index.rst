@@ -14,4 +14,4 @@ Contents:
    :numbered:
    
    AboutABI-resources
-   AboutABI-researchgroups
+   AboutABI-researchGroups

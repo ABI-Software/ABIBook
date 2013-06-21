@@ -1,8 +1,10 @@
+.. _OpenCOR-index:
+
 =======
 OpenCOR
 =======
 
-`OpenCOR <http://www.opencor.ws/>`_ is an `open source <http://opencor.ws/user/licensing.html>`_, cross-platform and `CellML <http://www.cellml.org/>`_-based modelling environment. The following documentation refers to `this <x.y.z>`_ version of OpenCOR, for which supported platforms can be found :doc:`here <OpenCOR-supportedplatforms>`.
+`OpenCOR <http://www.opencor.ws/>`_ is an `open source <http://opencor.ws/user/licensing.html>`_, cross-platform and `CellML <http://www.cellml.org/>`_-based modelling environment. The following documentation refers to `this <x.y.z>`_ version of OpenCOR, for which supported platforms can be found :ref:`here <OpenCOR-supportedplatforms>`.
 
 .. todo::
 
@@ -16,7 +18,7 @@ OpenCOR provides two types of user interfaces:
     OpenCOR-cli
     OpenCOR-gui
 
-The GUI version of OpenCOR relies on a :doc:`plugin approach <OpenCOR-pluginapproach>`:
+The GUI version of OpenCOR relies on a :ref:`plugin approach <OpenCOR-pluginapproach>`:
 
 .. toctree::
     :maxdepth: 1

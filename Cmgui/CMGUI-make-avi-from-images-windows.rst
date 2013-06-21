@@ -103,7 +103,7 @@ Once the encoding is finished, find your file and double click on it to play it.
 Creating a movie from images using FFMPEG
 -----------------------------------------
 
-An alternative to using Virtualdub is to use the command line tool `FFMPEG`_. This is a powerful, open source tool that can perform a large number of video-related tasks. `Documentation for FFMPEG`_ can be found on the project website.
+An alternative to using Virtualdub is to use the command line tool `FFMPEG2`_. This is a powerful, open source tool that can perform a large number of video-related tasks. `Documentation for FFMPEG`_ can be found on the project website.
 
 An example command line for creating a movie from image files using FFMPEG is::
 
@@ -144,6 +144,6 @@ The following steps detail how to encode an H.264 codec mp4 file from an AVI:
 
 By default, WinFF will create the converted movie file in your My Documents folder.  You may choose a different desination folder for the converted movie by entering a different path in the *Output Folder* text box.
 
-.. _FFMPEG: http://www.ffmpeg.org/
+.. _FFMPEG2: http://www.ffmpeg.org/
 .. _Documentation for FFMPEG: http://www.ffmpeg.org/ffmpeg.html
 .. _Handbrake: http://handbrake.fr/

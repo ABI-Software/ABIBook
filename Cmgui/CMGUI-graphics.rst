@@ -11,7 +11,7 @@ Graphics in CMGUI
 General description of graphics
 ===============================
 
-graphics are the building blocks used to create any visualization displayed in the CMGUI :ref:`graphics window <CMGUI-graphics-window>`. They are created, edited, re-ordered and deleted from within the :ref:`scene editor <scene-editor-window>`, or via the command line. Most graphics have the following settings in common:
+graphics are the building blocks used to create any visualization displayed in the CMGUI :ref:`graphics window <CMGUI-graphics-window>`. They are created, edited, re-ordered and deleted from within the :ref:`scene editor <CMGUI-scene-editor-window>`, or via the command line. Most graphics have the following settings in common:
 
 * Name:  This allows you to set the name of the graphic.
 

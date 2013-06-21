@@ -18,7 +18,7 @@ If you wish to deploy an instance of the repository software, PMR2, please see t
    PMR-exposing-fieldml
    PMR-using-SED-ML
    PMR-embeddedworkspaces
-   PMR-installing-the-software
+.. PMR-installing-the-software
    PMR-cellmlcuration
    PMR-glossary
 

@@ -28,3 +28,23 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
+.. The below is to avoid warnings about the listed document(s)
+.. not being included in any toctree
+
+.. toctree::
+   :hidden:
+
+   ABICaseStudies/index
+   AboutABI/index
+   CAP/index
+   CM/index
+   CellMLAPI/index
+   Cmgui/CMGUI-exporting-ipfiles
+   Cmgui/mathtest
+   MAP/index
+   PMR/PMR-bestpractice-embeddedworkspaces
+   PMR/PMR-cellmlcuration
+   PMR/PMR-glossary
+   PMR/PMR-webinterfacereference
+   PMR/PMR-workingwithworkspaces
+

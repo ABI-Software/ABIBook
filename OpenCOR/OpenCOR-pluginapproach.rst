@@ -1,3 +1,5 @@
+.. _OpenCOR-pluginapproach:
+
 ===============
 Plugin approach
 ===============

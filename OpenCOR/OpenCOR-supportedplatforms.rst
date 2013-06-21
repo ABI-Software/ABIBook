@@ -1,3 +1,5 @@
+.. _OpenCOR-supportedplatforms:
+
 ===================
 Supported platforms
 ===================
