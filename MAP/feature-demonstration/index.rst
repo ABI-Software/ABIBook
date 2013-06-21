@@ -28,7 +28,7 @@ In order to go through this demonstration, you will need;
 .. todo::
    Need to consolidate downloads somewhere convenient and maybe make a workspace in the repository for the demonstration models.
 
-Install MAP, and get the MAP plugins.  See notes on MAP-install-setup_.
+Install MAP, and get the MAP plugins.  See notes on `MAP-install-setup`_.
 
 In this demonstration we will cover the features of MAP.  We will start with a quick tour and then create a new workflow that will help us segment a region of interest from a stack of images.
 
@@ -39,6 +39,7 @@ When you first load MAP, it will look something like this:
 
 .. figure:: /MAP/feature-demonstration/images/blank_MAP_1.png
    :align: center
+   :width: 75%
 
 In the main window we can see three distinct areas that make up the workflow management side of the software.  These three areas are the menu bar (at the top), the step box (on the left) that contains steps that you can use to create your workflow and the workflow canvas (on the right) for constructing a workflow.
 
@@ -94,7 +95,7 @@ If you want the PMR tool to have access to privileged information (your non-publ
 
 .. figure:: /MAP/feature-demonstration/images/PMRTool_1.png
    :align: center
-
+   :width: 25%
   
 
 
