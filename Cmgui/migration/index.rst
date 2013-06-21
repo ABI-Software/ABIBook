@@ -11,6 +11,6 @@ Changes in recent versions
 
 .. toctree::
    :maxdepth: 2
-   
+
    2.8_Changes
    2.9_migration

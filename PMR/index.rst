@@ -10,7 +10,7 @@ If you wish to deploy an instance of the repository software, PMR2, please see t
 
 .. toctree::
    :maxdepth: 1
-   
+
    PMR-introduction
    PMR-downloading-viewing
    PMR-cellmlrepositorytutorial
@@ -18,14 +18,14 @@ If you wish to deploy an instance of the repository software, PMR2, please see t
    PMR-exposing-fieldml
    PMR-using-SED-ML
    PMR-embeddedworkspaces
-   PMR-installing-the-software
+.. PMR-installing-the-software
    PMR-cellmlcuration
    PMR-glossary
 
-   
+
 .. todo::
 
-   * Update all PMR documentation to reflect workspace ID changes and user workspace changes, if they go ahead. 
+   * Update all PMR documentation to reflect workspace ID changes and user workspace changes, if they go ahead.
    * Get embedded workspaces doc written.
    * Get some best practice docs written.
 

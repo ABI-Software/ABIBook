@@ -36,7 +36,7 @@ The format has been around for many years and has several exacting rules which c
 
 Fortunately, cmgui import commands ("gfx read node/element/data") report the line number in the file at which the first errant text is located (do not confuse this with line element numbers). Unfortunately the actual problem may be earlier: if the previous block was incomplete then the first text of the next block, however correct, will be complained about as not matching the tokens and data expected for the previous block.
 
-Regions 
+Regions
 -------
 
 The EX format defines fields, nodes, elements and groups (sets of nodes and elements) within regions. These objects belong to their respective region and are independent of similarly identified objects in other regions.
@@ -49,7 +49,7 @@ Examples::
 
  ! The root region for this file:
  Region: /
-  
+
  ! Region "joe" within region "bob":
  Region: /bob/joe
 
@@ -104,13 +104,13 @@ Comments
 
 Since Cmgui version 2.6 EX files containing comments are now able to be read. Comment lines begin with ! (exclamation mark character) and may only be placed in parts of the file where a Region, Group, Shape, Node, Element, Values or #Field header keyword is permitted. Putting comments anywhere else will result in obscure errors or undefined behaviour!
 
-Comments are useful for adding source details or copyright/license information to your files, or to document parts of the file. Cmgui ignores the comment lines: they will not be rewritten when exporting an EX file. 
+Comments are useful for adding source details or copyright/license information to your files, or to document parts of the file. Cmgui ignores the comment lines: they will not be rewritten when exporting an EX file.
 
 Some example comments preceding other keywords::
 
  ! Copyright (C) 2009 The Author
  Region: /heart
-  
+
  ! This following node is the apex of the heart:
  ! It has 10 versions of all nodal parameters
  Node: 13
@@ -202,11 +202,11 @@ The following snippet from example a/a3 shows the nodal parameters held at the a
   #Fields=2
    1) coordinates, coordinate, prolate spheroidal, focus=0.3525E+02, #Components=3
     lambda. Value index=1,#Derivatives=3 (d/ds1,d/ds2,d2/ds1ds2)
-    mu. Value index=5, #Derivatives=0  
+    mu. Value index=5, #Derivatives=0
     theta. Value index=6,#Derivatives=0, #Versions=10
    2) fibres, anatomical, fibre, #Components=3
     fibre angle. Value index=16, #Derivatives=1 (d/ds1)
-    imbrication angle. Value index=18, #Derivatives= 0  
+    imbrication angle. Value index=18, #Derivatives= 0
     sheet angle. Value index=19, #Derivatives=3 (d/ds1,d/ds2,d2/ds1ds2)
   Node: 13
     0.984480E+00   0.000000E+00   0.000000E+00   0.000000E+00
@@ -296,7 +296,7 @@ Up to three dimensions, the most important shape descriptions are::
 
 Pairs of dimensions can also be linked into polygon shapes; see example a/element_types.
 
-The shape description works by describing the span of the space along each xi direction for its dimension. The simplest cases are the line shapes: "line*line*line" indicates the outer or tensor product of three line shapes, thus describing a cube. 
+The shape description works by describing the span of the space along each xi direction for its dimension. The simplest cases are the line shapes: "line*line*line" indicates the outer or tensor product of three line shapes, thus describing a cube.
 If the shape description is omitted then line shape is assumed for all dimensions. Simplex shapes, used for triangles and tetrahedra, cannot be simply described by an outer product and must be tied to another dimension; in the EX format the tied dimension is written in brackets after the first simplex coordinate, and for 3 or higher dimensional simplices all linked dimensions must be listed as shown for the tetrahedron shape.
 
 The cmgui shape description is extensible to 4 dimensions or higher, for example the following denotes a 4-dimensional shape with a simplex across dimensions 1 and 2, and an unrelated simplex on dimensions 3 and 4::
@@ -475,7 +475,7 @@ Following are 8 sets of three lines each indicating the index of the node in the
   1.  #Values=1
    Value indices:     1
    Scale factor indices:   0
-   
+
 As mentioned earlier, the nodes listed in the mapping section must always follow a set order, increasing in xi1 fastest, then xi2, then xi3, etc. to match the order of the basis functions procedurally generated from the basis description.
 
 *	At the end of the example is the definition of element "0 0 1" which lists the nodes 1 to 8.
@@ -538,7 +538,7 @@ The above example is not ready to be fully visualised in cmgui because it contai
      0 0    12
   Shape.  Dimension=3
    Element:     1 0 0
-     Faces: 
+     Faces:
      0     1 0
      0     2 0
      0     3 0
@@ -605,7 +605,7 @@ The following tricky example collapses a square element to a triangle by using t
        Value indices:     1
        Scale factor indices:   0
   Element:     1 0 0
-     Faces: 
+     Faces:
      0 0 1
      0 0 2
      0 0 3
@@ -802,7 +802,7 @@ At the more complex end of the scale is this excerpt from the prolate heart mode
        Value indices:     1   2   3   4
        Scale factor indices:  85  86  87  88
    Element:            1 0 0
-     Faces: 
+     Faces:
      0     1 0
      0     2 0
      0     3 0

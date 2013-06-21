@@ -7,7 +7,7 @@ CMGUI Architecture
 Regions and Fields
 ==================
 
-The basic structural unit in CMGUI is called a *region* - region is a container for the objects representing a model.  Regions own a set of fields and may contain child regions, thereby allowing a hierarchical model structure.  For example, you may have a "body" region that contains "heart", "lung", and "stomach" regions.  
+The basic structural unit in CMGUI is called a *region* - region is a container for the objects representing a model.  Regions own a set of fields and may contain child regions, thereby allowing a hierarchical model structure.  For example, you may have a "body" region that contains "heart", "lung", and "stomach" regions.
 
 When you start CMGUI, a *root region* exists; this is an empty space into which other regions are loaded.  When you load in exnode and exelem files, a new region will be created in the *root region* named for the group declared in the files.  For example, if you were to load in heart.exnode and heart.exelem files which declare a group "heart" (via the line ``Group name: heart``), a new region called "heart" would be created containing all the nodes, elements and fields defined in these files.
 
@@ -26,7 +26,7 @@ The structure of the CMGUI *command data* (that is, the complete set of data use
 
 * Texture manager - contains a list of textures that can be used in material definitions or volume renderings, etc.  Textures are 2D or 3D images.
 
-* Spectrum manager - contains a list of spectra that can be used in material definitions.  These control how the graphical material is changed when graphics are coloured by a data field. 
+* Spectrum manager - contains a list of spectra that can be used in material definitions.  These control how the graphical material is changed when graphics are coloured by a data field.
 
 * Graphics object list - contains simple graphics objects which are not tied to a model representation, but can be drawn in a scene.  These can animate with time.
 

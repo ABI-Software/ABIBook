@@ -17,14 +17,14 @@ The Physiome Model Repository has a basic search function that can be accessed b
 
 .. figure:: /PMR/images/PMR-downloading-searches1.png
    :align: center
-   
+
    The index page of the model repository provides two methods for finding models. There is a box for entering search terms, or you can click on categories based on model keywords to see all models in those categories.
-   
+
 If your search is yielding too many results, you may either try to narrow it down by choosing more or different keywords (*eg.* ``goldbeter 1991`` instead of just ``goldbeter``), or you can click the *Advanced Search* link just under the search box on the results page. This will take you to a search page where you can select specific item types (*eg.* exposures or workspaces), statuses, and other specifics.
 
 .. figure:: /PMR/images/PMR-tut1-advancedsearch.png
    :align: center
-   
+
    In this search I have chosen to only have published exposures in my results.
 
 Once you have found the model you are interested in, there are several ways you can view or download it.
@@ -38,14 +38,14 @@ Below is an example of a CellML exposure page. It contains documentation about t
 
 .. figure:: /PMR/images/PMR-exposureeg1.png
    :align: center
-   
+
    An example of a CellML exposure page.
 
 If you click on one of the model variant navigation links, you will be taken to a sub-page of the exposure which will allow you to view the actual CellML model in a number of ways.
 
 .. figure:: /PMR/images/PMR-exposureeg2.png
    :align: center
-   
+
    An example of a CellML exposure sub-page.
 
 On this page there are a number of options under a *Views available* panel at the right hand side.
@@ -63,7 +63,7 @@ The OpenCell session that is loaded when clicking on the Simulate using OpenCell
 
 .. figure:: /PMR/images/PMR-sessionexample1.png
    :align: center
-   
+
    An OpenCell session. Objects such as membrane channels in the diagram can be clicked - this will toggle the graph traces displaying the values for those objects.
 
 Obtaining models via Mercurial

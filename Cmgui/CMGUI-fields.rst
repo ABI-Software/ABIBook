@@ -20,7 +20,7 @@ These finite elements have a local coordinate system of limited span, which is c
 
 .. figure:: /cmgui/images/xispace_distorted.png
    :align: center
-   
+
    **Figure 1: Coordinates and ξ space of a 3D element.** A) This shows the unit cube ξ space, where each dimension of the element ranges from 0-1.  It is easy to imagine that the coordinates of this cube could also be 0-1 in the x, y, and z axes.  B) The cube element in this picture has been distorted, such that its coordinates are no longer 0-1 in the x, y, and z axes.  Despite this, the element's ξ values are still 0-1 in each ξ direction.  This cube has a "temperature" field that is rendered as a rainbow spectrum.
 
 We must define a coordinate field over the domain in order to give it its true position in 3-dimensional space. This applies even to the simple cube model: it can be treated as a unit cube in ξ space, but the coordinate field allows its real position to be transformed such that it is not aligned with the global coordinate system, and in fact can be generally distorted as shown in the figure 1B, above.  About the only thing special about a coordinate field is that - provided it is of the same dimension as the element ξ space - it is usually bijective with it - this means if you have one you can find the other, eventually. (I say usually because the relation cannot generally be enforced: it is possible for coordinates of parts of the mesh to penetrate other parts of the mesh, including within a single element where the jacobian is zero or negative.)
@@ -33,12 +33,12 @@ The zero dimensional counterpart to elements and faces are called nodes. There i
 
 .. figure:: /cmgui/images/labelled_cube_element.png
    :align: center
-   
+
    **Figure 2: How nodes, lines and faces make up a mesh** The simple cube mesh again; nodes (yellow), elements (red), faces (green), and lines (blue) are numbered.  A single cube element requires 8 nodes, 12 lines, and 6 faces.
 
 .. figure:: /cmgui/images/element_sharing.png
    :align: center
-   
+
    **Figure 3: Node, face and line sharing between connected elements** In more complex meshes, connected elements share nodes, lines and faces (shared nodes lines and faces are shown in red).  In panel A, this two-cube mesh has only 12 nodes; 4 of the nodes are shared by both elements.  In panel B, an eight-cube mesh is made up of only 27 nodes - many of the nodes are shared by more than one of the elements.  The central node in this example is shared by all 8 elements.  Field values are continuous across these shared parts.
 
 Getting back to the original statement of what a field is, we can generally state that a domain is a set of 0..N-dimensional manifolds_, i.e. there can be any number of manifolds of any dimension. In CMGUI finite element meshes, nodes supply the point manifolds and elements supply all the higher dimensional manifolds. There is no requirement for the domain to be connected.  CMGUI fields are not limited to returning real numbers; there are fields that can return integers, strings, element-ξ locations and other values.
