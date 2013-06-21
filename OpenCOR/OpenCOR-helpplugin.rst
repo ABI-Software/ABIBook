@@ -11,7 +11,6 @@ The Help plugin provides some user documentation which looks as follows:
     :width: 360px
     :height: 270px
     :alt: Help plugin: default view
-    :target: ../_images/HelpScreenshot01.png
 
 The documentation includes a menu which gets shown whenever you move your mouse pointer over the information icon (top right):
 
@@ -20,7 +19,6 @@ The documentation includes a menu which gets shown whenever you move your mouse 
     :width: 360px
     :height: 270px
     :alt: Help plugin: context menu
-    :target: ../_images/HelpScreenshot02.png
 
 The Help plugin also displays special links which when clicked send a command to OpenCOR. For example, open the documentation for the Help plugin page in OpenCOR. Now, if you check the bold text below, you will see that its contents is slightly different, depending on whether you are reading this in OpenCOR or from here:
 

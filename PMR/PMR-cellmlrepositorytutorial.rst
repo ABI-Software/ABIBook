@@ -35,7 +35,7 @@ PMR and the CellML model repository use a certain amount of jargon - some is spe
 :term:`Exposure`
   An exposure is a publicly viewable presentation of a particular revision of a model. An exposure can present one or many files from your workspace, along with documentation and other information about your model.
 
-The Mercurial DVCS has a range of terms that are useful to know, and definitions of these terms can be found in the Mercurial glossary: http://mercurial.selenic.com/wiki/Glossary. 
+The Mercurial DVCS has a range of terms that are useful to know, and definitions of these terms can be found in the Mercurial glossary: http://mercurial.selenic.com/wiki/Glossary.
 
 .. index::
    single: PMR web interface
@@ -84,14 +84,14 @@ Registering an account and logging in
 
 First, navigate to the staging instance of the Physiome model repository at `http://184.169.251.126/welcome <http://184.169.251.126/welcome>`_.
 
-.. note:: 
+.. note::
    The staging instance of the repository is a mirror of the main repository site found at http://models.physiomeproject.org, running the latest development version of the PMR2 software.
-   
+
    Any changes you make to the contents of the staging instance are not permanent, and will be overwritten with the contents of the main repository whenever the staging instance is upgraded to the latest PMR2 release. For this reason, you can feel free to experiment and make mistakes when pushing to the staging instance. Please subscribe to the `cellml-discussion <http://lists.cellml.org/mailman/listinfo>`_ mailing list to receive notifications of when the staging instance will be refreshed.
 
 In order to make changes to models in the CellML repository, you must first register for an account. The *Log in* and *Register* links can be found near the top right corner of the page. Your account will have the appropriate access privileges so that you can push any changes you have made to a model back into the repository.
 
-Click on the Register link near the top right, and fill in the registration form. Enter your username and desired password. After completing the email validation step, you can now log in to the repository. 
+Click on the Register link near the top right, and fill in the registration form. Enter your username and desired password. After completing the email validation step, you can now log in to the repository.
 
 .. note::
    This username and password are also the credentials you use to interact with the repository via Mercurial.
@@ -103,7 +103,7 @@ Mercurial username configuration
 
 .. important::
    **Username setup for Mercurial**
-   
+
    Since you are about to make changes, your name needs to be recorded as part of the workspace revision history. When commit your changes using Mercurial, it is initially "offline" and independent of the central PMR2 instance.  This means that you have to set-up your username for the Mercurial client software, even though you have registered a username on the PMR2 site.
 
    You only need to do this once.
@@ -126,7 +126,7 @@ Mercurial username configuration
    username = Firstname Lastname <firstname.lastname@example.net>
 
 .. _tut1forkingaworkspace:
-   
+
 Forking an existing workspace
 -----------------------------
 
@@ -151,22 +151,22 @@ In order to make changes to your workspace, you have to :term:`clone` it to your
 
 .. figure:: /PMR/images/PMR-tut1-cloneurl.png
    :align: center
-   
+
    Copying the URI for cloning your workspace.
-   
+
 In Windows explorer, find the folder where you want to create the clone of the workspace. Then right click to bring up the context menu, and select :menuselection:`TortoiseHG --> Clone` as shown below:
 
 .. figure:: /PMR/images/PMR-tut1-tortoisehgclone.png
    :align: center
-   
+
 Paste the copied URL into the *Source:* area and then click the *Clone* button. This will create a folder called ``beeler_reuter_1977_tut`` that contains all the files and history of your forked workspace. The folder will be created inside the folder in which you instigated the clone command.
 
 **Command line equivalent** ::
 
    hg clone [URI]
-   
+
 You will need to enter your username and password to clone the workspace, as the fork will be set to *private* when it is created.
-   
+
 The repository will be cloned within the current directory of your command line window.
 
 Making changes to workspace contents
@@ -177,7 +177,7 @@ Your cloned workspace is now ready for you to edit the model file and make a com
 .. figure:: /PMR/images/PMR-tut1-editcellmlfile.png
    :align: center
 
-Save the file. If you are using TortoiseHg, you will notice that the icon overlay has changed to a red exclamation mark. This indicates that the file now has uncommitted changes. 
+Save the file. If you are using TortoiseHg, you will notice that the icon overlay has changed to a red exclamation mark. This indicates that the file now has uncommitted changes.
 
 Committing changes
 ------------------
@@ -206,7 +206,7 @@ Right click on your workspace folder in Windows explorer, and select :menuselect
 **Command line equivalent** ::
 
    hg push
-   
+
 Now navigate to your workspace and click on the history toolbar button. This will show entries under the Most recent changes, complete with the commit messages you entered for each commit, as shown below:
 
 .. figure:: /PMR/images/PMR-tut1-newhistoryentry.png
@@ -222,4 +222,4 @@ There are two ways of making an exposure - creating a new exposure from scratch,
 As you are working in a forked repository, you will need to create a new exposure from scratch. To learn how to create exposures, please refer to :ref:`PMR-exposing-cellml`.
 
 
-   
+

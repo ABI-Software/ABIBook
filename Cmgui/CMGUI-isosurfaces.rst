@@ -19,4 +19,4 @@ As with :ref:`surfaces <CMGUI-surfaces>`, the detail level of iso-surfaces is de
    **Figure 2: How tessellation affects iso-surface detail:**  The *tessellation* setting of the iso-surface sets the number of divisions in each xi direction within each element.  Here, an iso-surface is used to connect every point within the element cube where "temperature" is 20.  The "temperature" field is shown on the surface of the element cube using a spectrum in panel A.  In B, the iso-surface is shown in wireframe (green) and a single face of the cube is divided up according to the *tessellation* setting.  You can see that the iso-surface links the discretization divisions at points where the iso-scalar is at the chosen value.  These intersections are indicated by yellow circles. Panel C shows how different *tessellation* settings affect this iso-surface; settings of 2, 3, 4, and 8 minimum divisions are shown.
 
 
- 
+

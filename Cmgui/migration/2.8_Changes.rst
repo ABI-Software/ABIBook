@@ -85,7 +85,7 @@ The following makes a filter that shows all graphics satisfying the above defaul
   gfx define graphics_filter default_or_bob normal_match operator_or add_filters default bob;
   gfx define scene default filter default_or_bob;
 
-Note it is easy for us to add new filter types as needed by users. 
+Note it is easy for us to add new filter types as needed by users.
 
 Drawing static graphics
 -----------------------

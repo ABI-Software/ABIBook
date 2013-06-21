@@ -11,7 +11,7 @@ OpenCOR
     Provide a link to a webpage from which people will be able to download the version of OpenCOR we want to use for this tutorial.
 
 OpenCOR provides two types of user interfaces:
-   
+
 .. toctree::
     :maxdepth: 1
 

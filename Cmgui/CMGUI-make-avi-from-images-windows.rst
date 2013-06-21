@@ -50,7 +50,7 @@ VirtualDub will automatically load the entire numbered sequence of images in as 
 
    **Figure 1: The main VirtualDub window** This window displays the play controls (which also include marking tools for editing the video), the input and output panels, and the menus.
 
-| 
+|
 
 The next step is to set up the compression and codec settings of the movie you are going to save.
 
@@ -63,10 +63,10 @@ The next step is to set up the compression and codec settings of the movie you a
 
 .. figure:: /cmgui/images/virtualdub3.png
    :align: center
-   
+
    **Figure 3: Selecting a codec** The codecs listed may differ from those shown here.  Select *ffdshow Video Codec*.
 
-| 
+|
 
 * Notice the *Format restrictions* box on the right hand side - this will inform you of any requirements your selected codec has for input.  For the ffdshow codec, your video resolution must be a multiple of 2 in both width and height.
 
@@ -77,7 +77,7 @@ The next step is to set up the compression and codec settings of the movie you a
 
    **Figure 4: The codec configuration window** This window displays the controls for how the codec will compress your movie.  The ffdshow codec actually enables you to encode your movie in any of a large number of different codecs; the codec is chosen from the *codec selection* drop-down menu.
 
-| 
+|
 
 From this settings window you can set up which codec you wish to use to compress your movie, and how much compression you wish to apply.  Different codecs have different pros and cons; these days it is often best to stick to the more modern codecs, as a majority of computers on all platforms should be able to play them.  Good codecs to choose are MPEG-2, MPEG4, and H.264.  MPEG-2 is an older codec that offers good backwards compatibility, but encodes lower quality videos with larger file sizes.  MPEG4 and its successor H.264 generally offer substantially better quality and/or smaller file sizes.  The following steps will produce an AVI using the MPEG4 codec, which is widely supported.  If you wish to use another codec, the steps are essentially the same.
 
@@ -108,7 +108,7 @@ An alternative to using Virtualdub is to use the command line tool `FFMPEG2`_. T
 An example command line for creating a movie from image files using FFMPEG is::
 
    ffmpeg -f image2 -i image%d.jpg output.mpg
-   
+
 For more information, please refer to the documentation linked to above.
 
 Converting your movie to other formats
@@ -124,7 +124,7 @@ Converting to mp4 using Handbrake
 Convert your movie to another format using WinFF
 ------------------------------------------------
 
-WinFF is a useful tool for optimizing the file size or quality of your movies, as well as for converting from AVI to other file formats such as mp4 or mov. When converting using WinFF, it is useful to have an uncompressed movie file to work with.  To create an uncompressed AVI from VirtualDub, select the *Uncompressed RGB/YCbCr* codec when creating the AVI file as detailed above.  
+WinFF is a useful tool for optimizing the file size or quality of your movies, as well as for converting from AVI to other file formats such as mp4 or mov. When converting using WinFF, it is useful to have an uncompressed movie file to work with.  To create an uncompressed AVI from VirtualDub, select the *Uncompressed RGB/YCbCr* codec when creating the AVI file as detailed above.
 
 The following steps detail how to encode an H.264 codec mp4 file from an AVI:
 

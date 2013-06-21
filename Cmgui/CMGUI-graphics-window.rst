@@ -24,27 +24,27 @@ The graphics window tools
   Essentially, where you initially click in the view is the "handle" that you then move around by moving the mouse.  In CMGUI this handle is different to most applications, in that it is like "grabbing" a point on a sphere that bounds the object in the 3D window.  This allows manipulations using the rotate function that are not possible in most 3D views, such as rotating the object around an arbitrary axis, or rotating it in a circular fashion around the centre of the view.  These abilities can be useful when looking at data that has aligned features.
 
   The four other tools available are used for the selection and limited editing of the type of item they refer to.  Selected items are able to be targeted by commands input to the command line, or edited from within the graphics window.
-  
+
   When any of the following four tools is selected, holding down the ``Ctrl`` key will temporarily switch you back into transformation mode in order to manipulate the view.
 
 * **Node Tool**
-  
+
   The node tool allows the selection and editing of individual nodes from within the graphics window.  Selected nodes will turn red by default - the selected colour of a node is editable via the :ref:`scene editor <CMGUI-scene-editor-window>` window.  There are a range of other options to allow the editing, (moving nodes within the scene viewer) deletion, or creation of nodes.  It is also possible to create 1D, 2D or even 3D (lines, surfaces and volumes) elements using the node tool; this functionality is somewhat experimental and is of limited use in most cases.
-  
+
   NOTE: It is somewhat easier to edit nodes (or indeed any of the other editable items) when they are represented by an easily clickable glyph such as a sphere or cube, rather than a point.
 
 * **Data Tool**
-  
+
   The data tool allows you to select data points and edit them in the same ways that nodes are editable, with the exception of element creation/destruction which is only available in the node tool.
 
 * **Element Tool**
-  
+
   The element tool allows you to select and destroy elements.  You can also set up filters that allow only the selection of line, face or volume elements.  It is worth noting that volume elements have no indication of their selection unless they contain element points, which will turn red when the volume element they exist in is selected.
 
 * **Element Point Tool**
-  
+
   The element point tool allows the selection of element points within the scene viewer/s.
 
-| 
+|
 
 All of the tools that allow selection are useful for creating *groups* via the command line.  You can add selected items to a group using the commands

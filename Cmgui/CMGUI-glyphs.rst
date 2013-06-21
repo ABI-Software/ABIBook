@@ -29,7 +29,7 @@ Open the *scene editor* and make sure cube is selected in the *scene object list
 
 .. figure:: /cmgui/images/sceneEditor_Glyphs1.png
    :align: center
-   
+
    **Figure 2: The scene editor.**
 
 Use the drop-down menu to select another type of glyph for the node points: select *sphere*. In the graphics window, large orange spheres will appear at the corners (node points) of the cube. As the cube in this example is 1*1*1 and the default size of the glyphs is also 1*1*1, the glyphs will be far too large to be useful. For unscaled glyphs, you control the size by entering your desired size in the *Base glyph size* text-box, which will currently contain 1*1*1 (x*y*z dimensions). Change this to 0.1*0.1*0.1. If you enter a single value in the base glyph size box, it will use this value for all three dimensions. After changing the glyphs to these dimensions, you will notice that the spheres have shrunk to a more practical size (Figure 3). For unscaled glyphs, the final size is determined entirely by the *Base glyph size*.
@@ -38,7 +38,7 @@ Final glyph size = b1*b2*b3
 
 .. figure:: /cmgui/images/glyph_editing_2.png
    :align: center
-   
+
    **Figure 3: Changing the glyph and its base size.**
 
 This is the most basic use of glyphs - to indicate points such as nodes. Other uses of glyphs allow you to represent data in addition to simple location by using the size, shape, and colour of glyphs.
@@ -105,7 +105,7 @@ Variable scale glyphs use an extra "variable scale" field to give a signed magni
 .. figure:: /cmgui/images/mirror_glyphs.png
    :align: center
 
-   **Figure 5: Mirror glyphs and glyph reversal using the variable scale field.**   
+   **Figure 5: Mirror glyphs and glyph reversal using the variable scale field.**
    A) Mirror-cone glyphs being used in the large strain example, with the magnitude and sign of strain indicated by the length and direction of the glyphs respectively.
    B) How glyphs are represented with differently signed variable scale fields. Un-mirrored glyphs are not as useful for representing this information.
 

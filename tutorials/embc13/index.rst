@@ -10,12 +10,12 @@ Documentation for the software used in this tutorial is available `online <https
 
 .. todo::
    Confirm the actual URL we want to use for the documentation.
-   
+
 This tutorial guides the particpant through three common computational modelling scenarios faced by scientists working toward the virtual physiologial human. We use these scenarios to achieve scientific outputs using the above tools and demonstrating practices we believe will help ensure reproducible and reusable science. Each of the scenarios listed below can be worked through in any order and in each scenario we provide examples using both OpenCOR and the MAP Client.
 
 .. toctree::
    :maxdepth: 5
-   
+
    scenario1/index
    scenario2/index
    scenario3/index

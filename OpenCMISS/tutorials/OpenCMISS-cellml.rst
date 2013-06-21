@@ -37,7 +37,7 @@ With all desired fields set-up appropriately, the user then just needs to add th
 The CellML environment
 ----------------------
 
-The OpenCMISS type for the CellML environment is ``CMISSCellMLType``. As with most OpenCMISS types, a user-number is provided to uniquely identify this CellML environment to the user. The basic creation block is given below. 
+The OpenCMISS type for the CellML environment is ``CMISSCellMLType``. As with most OpenCMISS types, a user-number is provided to uniquely identify this CellML environment to the user. The basic creation block is given below.
 
 .. code-block:: fortran
 
@@ -50,22 +50,22 @@ The OpenCMISS type for the CellML environment is ``CMISSCellMLType``. As with mo
   CALL CMISSCellML_Initialise(CellML,Err)
   ! and then we are able to trigger the start of creation
   CALL CMISSCellML_CreateStart(CellMLUserNumber,Region,CellML,Err)
-  
+
   ! import models
-  
+
   ! flag variables
-  
+
   ! terminate the creation process
   CALL CMISSCellML_CreateFinish(CellML,Err)
-  
+
 It is important to note that all required models must be imported and all desired variables flagged before terminating the CellML environment creation process. This is because the create finish method will proceed to make use of OpenCMISS(cellml) to instantiate each of the imported CellML models into executable code, and the generation of that executable code requires all knowledge of the flagged variables.
- 
+
 Models are imported into the CellML environment with the code shown below.
 
 .. code-block:: fortran
 
   INTEGER(CMISSIntg) :: modelIndex
-  
+
   ! Import the specified model into the CellML environment
   CALL CMISSCellML_ModelImport(CellML,"model.xml",modelIndex,Err)
 
@@ -117,7 +117,7 @@ When identifying variables from CellML models in OpenCMISS, the convention is to
   </model>
 
 the ``i_K1`` variable in the ``membrane`` component is identified with the string ``membrane/i_K1``. Similarly, ``membrane/i_stimulus`` identifies the stimulus current, ``membrane/T`` identifies the temperature variable in the membrane component, and ``temperature/temperature`` identifies the temperature variable in the temperature component. Due to the connection between the temperature variables in the membrane and temperature components, ``membrane/T`` and ``temperature/temperature`` can be treated interchangeably. (Internally, OpenCMISS(cellml) will always resolve variable references to the `source variable`_ and hence ``membrane/T`` will resolve to ``temperature/temperature``.) Given the rules for naming CellML components and variables, these identifier strings are guaranteed to be unique for a specified model.
- 
+
 Using this method to identify variables in CellML models, it is not possible to address variables which are not described in the top-level model being imported into the OpenCMISS CellML environment. For example, the above CellML model imports the component ``source_component`` from the model ``http://models.cellml.org/bob/model.xml`` but the variables in that component are not available to the OpenCMISS user unless they are connected to variables in the model (i.e., there are connections that map the component ``imported_component`` to the component ``membrane`` or ``temperature`` in the above model).
 
 .. _source variable: http://cellml-api.sourceforge.net/1.12/interfacecellml__api_1_1_cell_m_l_variable.html#a205169a627dc9ff691897cacc6119b1c
@@ -135,10 +135,10 @@ The basic mapping process is as follows.
 
   ! Start the creation of CellML <--> OpenCMISS field maps
   CALL CMISSCellML_FieldMapsCreateStart(CellML,Err)
-  
+
   ! and set up the field variable component <--> CellML model variable mappings.
-  
-  ! Map the first component of the dependent field to the membrane potential in the CellML model 
+
+  ! Map the first component of the dependent field to the membrane potential in the CellML model
   CALL CMISSCellML_CreateFieldToCellMLMap(CellML,DependentField,CMISS_FIELD_U_VARIABLE_TYPE,1,CMISS_FIELD_VALUES_SET_TYPE, &
     & modelIndex,"membrane/Vm",CMISS_FIELD_VALUES_SET_TYPE,Err)
 
@@ -148,7 +148,7 @@ The basic mapping process is as follows.
 
   ! Finish the creation of CellML <--> OpenCMISS field maps
   CALL CMISSCellML_FieldMapsCreateFinish(CellML,Err)
-  
+
 For a mechanical constitutive application, the mapping may look more like
 
 .. code-block:: fortran
@@ -206,4 +206,4 @@ Really need a better title! Explain how CellML environments get added into contr
 Miscellaneous utilities
 -----------------------
 
-Collect all the other bits and pieces here? these are typically the OpenCMISS(cellml) functions that are used internally by OpenCMISS(cm) but maybe should be (and are?) exposed via the OpenCMISS(cm) API? 
+Collect all the other bits and pieces here? these are typically the OpenCMISS(cellml) functions that are used internally by OpenCMISS(cm) but maybe should be (and are?) exposed via the OpenCMISS(cm) API?

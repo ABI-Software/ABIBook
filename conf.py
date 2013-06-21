@@ -42,7 +42,7 @@ master_doc = 'index'
 intersphinx_mapping = {
   'python': ('http://python.readthedocs.org/en/latest/', None),
   'django': ('http://django.readthedocs.org/en/latest/', None),
-  'sphinx': ('http://sphinx.readthedocs.org/en/latest/', None)  
+  'sphinx': ('http://sphinx.readthedocs.org/en/latest/', None)
     }
 
 # General information about the project.

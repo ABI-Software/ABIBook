@@ -17,5 +17,5 @@ General
 
 Within sections
 ===============
-   
+
 .. todolist::

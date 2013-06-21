@@ -11,7 +11,6 @@ The FileBrowser plugin offers a convenient way to access your physical files, re
     :width: 360px
     :height: 270px
     :alt: FileBrowser plugin: default view
-    :target: ../_images/FileBrowserScreenshot01.png
 
 As you would expect, to double click on a folder will expand its contents, as can be seen by double clicking on the Windows directory:
 
@@ -20,7 +19,6 @@ As you would expect, to double click on a folder will expand its contents, as ca
     :width: 360px
     :height: 270px
     :alt: FileBrowser plugin: double clicking on a folder
-    :target: ../_images/FileBrowserScreenshot02.png
 
 On the other hand, to double click on a file will result in it being opened in OpenCOR. The rendering of the file will depend on the current view being selected. In the case of the :ref:`CellML annotation <OpenCOR-cellmlannotationviewplugin>` view, it will look as follows:
 
@@ -29,7 +27,6 @@ On the other hand, to double click on a file will result in it being opened in O
     :width: 360px
     :height: 270px
     :alt: FileBrowser plugin: double clicking on a file
-    :target: ../_images/FileBrowserScreenshot03.png
 
 Folders and files can also be dragged from the File Browser window and dropped onto the :ref:`file organiser <OpenCOR-fileorganiserplugin>` window.
 
