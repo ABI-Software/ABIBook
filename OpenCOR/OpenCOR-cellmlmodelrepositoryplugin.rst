@@ -1,8 +1,8 @@
 .. _OpenCOR-cellmlmodelrepositoryplugin:
 
-============================
-CellMLModelRepository plugin
-============================
+==============================
+CellML model repository plugin
+==============================
 
 The **CellMLModelRepository** plugin offers an interface to the `CellML Model Repository <http://models.cellml.org/>`_. By default, it lists all the CellML models found in the repository:
 
