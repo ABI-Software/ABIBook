@@ -27,7 +27,7 @@ Version
 ::
 
     $ ./OpenCOR -v
-    OpenCOR 0.2 (32-bit)
+    OpenCOR [2013-06-22] (32-bit)
 
 About
 -----
@@ -35,7 +35,7 @@ About
 ::
 
     $ ./OpenCOR -a
-    OpenCOR 0.2 (32-bit)
+    OpenCOR [2013-06-22] (32-bit)
     GNU/Linux 3.5.0-34-generic
     Copyright 2011-2013
 

@@ -8,7 +8,7 @@ OpenCOR
 
 .. todo::
 
-    Provide a link to a webpage from which people will be able to download the version of OpenCOR we want to use for this tutorial.
+    Provide a link to a webpage from which people will be able to download the 2013-06-22 version (snapshot) of OpenCOR.
 
 OpenCOR provides two types of user interfaces:
 

@@ -28,7 +28,7 @@ In order to go through this demonstration, you will need;
 .. todo::
    Need to consolidate downloads somewhere convenient and maybe make a workspace in the repository for the demonstration models.
 
-Install MAP, and get the MAP plugins.  See notes on MAP-install-setup_.
+Install MAP, and get the MAP plugins.  See notes on :ref:`MAP-install-setup`.
 
 In this demonstration we will cover the features of MAP.  We will start with a quick tour and then create a new workflow that will help us segment a region of interest from a stack of images.
 
@@ -65,7 +65,7 @@ Getting Started
 
 To get started with MAP we need to create a new workflow.  To do this we use File -> New -> Workflow menu option (Ctrl-N shortcut).  This option will present the user with a directory selection dialog.  Use the dialog to select a directory where the workflow can be saved.  Once we have chosen a directory the step box and workflow canvas become enabled.
 
-To create the intended workflow we will need to use some external plugins.  To load these plugins we will use the Plugin Manager tool.  The Plugin Manager tool can be found under the Tools menu.  Use the Plugin Manager to add the directory location of the MAP plugins. After confirming the changes to the Plugin Manager you should see a few new additions to the Step box. 
+To create the intended workflow we will need to use some external plugins.  To load these plugins we will use the Plugin Manager tool.  The Plugin Manager tool can be found under the Tools menu.  Use the Plugin Manager to add the directory location of the MAP plugins. After confirming the changes to the Plugin Manager you should see a few new additions to the Step box.
 
 Creating the Workflow
 =====================
@@ -80,7 +80,7 @@ The Image Source step requires a location.  This location contains the images to
 
 First each step requires a unique id.  This id is used to create a directory under the workflow project directory.  The step directory is used to hold input or output data, the step configuration information and any annotations XXXX.
 
-Next change to the PMR tab and we will see an ellipses button for bringing up the PMR tool dialog.  
+Next change to the PMR tab and we will see an ellipses button for bringing up the PMR tool dialog.
 
 Physiome Model Repository (PMR) Tool
 ------------------------------------
@@ -96,7 +96,7 @@ If you want the PMR tool to have access to privileged information (your non-publ
 .. figure:: /MAP/feature-demonstration/images/PMRTool_1.png
    :align: center
 
-  
+
 
 
 MAP is not setup to work with streamed resources so we must download the workspace from PMR.

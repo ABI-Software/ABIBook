@@ -42,6 +42,7 @@ Indices and tables
    Cmgui/CMGUI-exporting-ipfiles
    Cmgui/mathtest
    MAP/index
+   MAP/MAP-install-setup
    PMR/PMR-bestpractice-embeddedworkspaces
    PMR/PMR-cellmlcuration
    PMR/PMR-glossary
