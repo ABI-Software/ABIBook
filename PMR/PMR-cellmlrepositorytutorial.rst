@@ -6,10 +6,12 @@ CellML Model Repository tutorial
 
 .. sectionauthor:: David Nickerson, Randall Britten, Dougal Cowan
 
+.. _teaching instance: http://teaching.physiomeproject.org
+
 About this tutorial
 ===================
 
-The CellML model repository is an instance of the Physiome Model Repository (PMR) customised for CellML models. PMR currently relies on the distributed version control system Mercurial (Hg), which allows the repository to maintain a complete history of all changes made to every file it contains. This tutorial demonstrates how to work with the repository using TortoiseHg, which provides a Windows explorer integrated system for working with Mercurial repositories.
+The CellML model repository is an instance of the Physiome Model Repository (PMR) customised for CellML models. PMR currently relies on the distributed version control system :term:`Mercurial` (Hg), which allows the repository to maintain a complete history of all changes made to every file it contains. This tutorial demonstrates how to work with the repository using TortoiseHg, which provides a Windows explorer integrated system for working with Mercurial repositories.
 
 ::
 
@@ -74,6 +76,8 @@ You can search for the model that you wish to work on by entering a search term 
 
 Click on an exposure result to view information about the model and to get links for downloading or simulating the model. Click on workspaces to see the contents of the model workspace and the revision history of the model.
 
+.. _PMR-cellmlrepositorytutorial-hg:
+
 Working with the repository using Mercurial
 ===========================================
 
@@ -82,12 +86,9 @@ This part of the tutorial will teach you how to clone a workspace from the model
 Registering an account and logging in
 -------------------------------------
 
-First, navigate to the staging instance of the Physiome model repository at `http://184.169.251.126/welcome <http://184.169.251.126/welcome>`_.
+First, navigate to the `teaching instance`_ of the physiome model repository at `<http://teaching.physiomeproject.org/>`_.
 
-.. note::
-   The staging instance of the repository is a mirror of the main repository site found at http://models.physiomeproject.org, running the latest development version of the PMR2 software.
-
-   Any changes you make to the contents of the staging instance are not permanent, and will be overwritten with the contents of the main repository whenever the staging instance is upgraded to the latest PMR2 release. For this reason, you can feel free to experiment and make mistakes when pushing to the staging instance. Please subscribe to the `cellml-discussion <http://lists.cellml.org/mailman/listinfo>`_ mailing list to receive notifications of when the staging instance will be refreshed.
+.. include:: PMR-teaching-instance-warning.rst 
 
 In order to make changes to models in the CellML repository, you must first register for an account. The *Log in* and *Register* links can be found near the top right corner of the page. Your account will have the appropriate access privileges so that you can push any changes you have made to a model back into the repository.
 
@@ -221,5 +222,23 @@ There are two ways of making an exposure - creating a new exposure from scratch,
 
 As you are working in a forked repository, you will need to create a new exposure from scratch. To learn how to create exposures, please refer to :ref:`PMR-exposing-cellml`.
 
+.. _migrating-from-teaching-to-live-repo:
 
+Migrating content to the main repository
+========================================
 
+As noted above, the `teaching instance`_ used in this tutorial is not suitable for permanent storage of your work. One of the advantages of using a distributed version control system to manage PMR :term:`workspaces` is that it is straightforward to move the entire workspace, including the full history and provenance record, from one location to another. Recent releases of PMR2 have also provided the feature to export exposures so that they can then be imported into another PMR2 instance.
+
+If you would like to move your work from the teaching instance of the model repository into a *new* workspace on the main repository, you should follow these steps:
+
+#. Ensure that you have pushed all your commits to the teaching instance;
+#. :ref:`Create the new workspace <PMR-creatingNewWorkspace>` in the main repository;
+#. Navigate to the workspace created and choose the :guilabel:`synchronize` action from the workspace toolbar, as shown below.
+   
+.. figure:: /PMR/images/PMR-synchronize-form.png
+   :align: center
+   :width: 100%
+   
+#. Fill in the URI of your workspace on the teaching instance (*e.g.,* )
+#. Click the 
+   

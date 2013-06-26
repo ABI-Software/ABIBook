@@ -13,6 +13,7 @@ If you wish to deploy an instance of the repository software, PMR2, please see t
 
    PMR-introduction
    PMR-downloading-viewing
+   PMR-workingwithworkspaces
    PMR-cellmlrepositorytutorial
    PMR-exposing-cellml
    PMR-exposing-fieldml
@@ -22,6 +23,10 @@ If you wish to deploy an instance of the repository software, PMR2, please see t
    PMR-cellmlcuration
    PMR-glossary
 
+.. toctree::
+   :hidden:
+
+   PMR-teaching-instance-warning
 
 .. todo::
 

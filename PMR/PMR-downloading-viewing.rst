@@ -1,4 +1,4 @@
-﻿.. _PMR-downloading-viewing:
+.. _PMR-downloading-viewing:
 
 .. _OpenCell: http://www.cellml.org/tools/opencell/
 
@@ -66,5 +66,12 @@ The OpenCell session that is loaded when clicking on the Simulate using OpenCell
 
    An OpenCell session. Objects such as membrane channels in the diagram can be clicked - this will toggle the graph traces displaying the values for those objects.
 
-Obtaining models via Mercurial
-==============================
+Downloading models via Mercurial
+================================
+
+All data in PMR are stored in :term:`workspaces` and each :term:`workspace` is a :term:`Mercurial` repository. The most comprehensive method of downloading content from PMR is to clone the workspace containing the desired data. In this manner you will have a local copy of the entire history of that data, including all provenance data, and the ability to step back through the history of the workspace to a state that may not be available via the download links in the exposure pages discussed above. If you would like to modify the contents of workspace, making use of Mercurial will ensure accurate provenance records are maintained as well as all the other benefits of using a version control system.
+
+As software tools like :ref:`OpenCOR-index` and :ref:`MAP <MAP-feature-demonstration>` evolve, they will be able to hide a lot of the Mercurial details and present the user with a user interface suitable for their specific application areas. Directly using Mercurial is, however, currently the most powerful way to leverage the full capabilities of PMR. Instructions for working with Mercurial can be found in the :ref:`CellML repository tutorial <PMR-cellmlrepositorytutorial-hg>`.
+ 
+.. todo::
+   Need to check this section on obtaining models via mercurial.
