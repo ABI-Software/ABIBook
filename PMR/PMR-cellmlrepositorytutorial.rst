@@ -81,7 +81,7 @@ Click on an exposure result to view information about the model and to get links
 Working with the repository using Mercurial
 ===========================================
 
-This part of the tutorial will teach you how to clone a workspace from the model repository using a Mercurial client, create your own workspace, and then push the cloned workspace into your new workspace in the repository. We will be using a *fork* of an existing workspace, which provides you with a personal copy of a workspace that you can edit and push changes to.
+This part of the tutorial will teach you how to :term:`clone` a workspace from the model repository using a Mercurial client, create your own workspace, and then push the cloned workspace into your new workspace in the repository. We will be using a :term:`fork` of an existing workspace, which provides you with a personal copy of a workspace that you can edit and push changes to.
 
 Registering an account and logging in
 -------------------------------------
@@ -134,11 +134,11 @@ Forking an existing workspace
 .. important::
    It is essential to use a Mercurial client to obtain models from the repository for editing. The Mercurial client is not only able to keep track of all the changes you make (allowing you to back-track if you make any errors), but using a Mercurial client is the only way to add any changes you have made back into the repository.
 
-For this tutorial we will *fork* an existing workspace. This creates new workspace owned by you, containing a copy of all the files in the workspace you forked including their complete history. This is equivalent to cloning the workspace, creating a new workspace for yourself, and then pushing the contents of the cloned workspace into your new workspace.
+For this tutorial we will :term:`fork` an existing workspace. This creates new workspace owned by you, containing a copy of all the files in the workspace you forked including their complete history. This is equivalent to cloning the workspace, creating a new workspace for yourself, and then pushing the contents of the cloned workspace into your new workspace.
 
 Forking a workspace can be done using the Physiome model repository web interface. The first step is to find the workspace you wish to fork. We will use the Beeler, Reuter 1977 :term:`workspace` which can be found at: `<http://teaching.physiomeproject.org/workspace/beeler_reuter_1977>`_.
 
-Now click on the *fork* option in the toolbar, as shown below.
+Now click on the :guilabel:`fork` option in the toolbar, as shown below.
 
 .. figure:: /PMR/images/PMR-fork1.png
    :align: center
