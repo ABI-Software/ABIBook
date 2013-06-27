@@ -17,9 +17,7 @@ If you wish to deploy an instance of the repository software, PMR2, please see t
    PMR-cellmlrepositorytutorial
    PMR-exposing-cellml
    PMR-exposing-fieldml
-   PMR-using-SED-ML
    PMR-embeddedworkspaces
-.. PMR-installing-the-software
    PMR-cellmlcuration
    PMR-glossary
 
@@ -27,6 +25,7 @@ If you wish to deploy an instance of the repository software, PMR2, please see t
    :hidden:
 
    PMR-teaching-instance-warning
+   PMR-using-SED-ML
 
 .. todo::
 

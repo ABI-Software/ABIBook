@@ -1,4 +1,4 @@
-﻿.. _PMR-glossary:
+.. _PMR-glossary:
 
 ============
 PMR glossary
@@ -11,7 +11,8 @@ PMR glossary
       Clone is a Mercurial term that means to make a complete copy of a Mercurial repository. This is done in order to have a local copy of a repository to work in.
 
    Embedded workspace
-      A Mercurial concept that allows workspaces to be virtually embedded within other workspaces.
+   Embedded workspaces
+      A Mercurial concept that allows workspaces to be nested within other workspaces.
 
    Exposure
    Exposures
@@ -24,11 +25,6 @@ PMR glossary
 
    Synchronize
       Used to pull the contents or changes from other :term:`Mercurial` repositories into a workspace via a URI.
-
-   User folder
-      A folder on the Physiome Model Repository, created automatically when you register your user-name, which is used to store all of your workspaces.
-
-      The purpose of the user folder is to avoid workspace name clashes - users Jane and Bob can both have a workspace called *great_model_1*, for example.
 
    Workspace
    Workspaces

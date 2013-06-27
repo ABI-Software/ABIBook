@@ -136,14 +136,14 @@ Forking an existing workspace
 
 For this tutorial we will *fork* an existing workspace. This creates new workspace owned by you, containing a copy of all the files in the workspace you forked including their complete history. This is equivalent to cloning the workspace, creating a new workspace for yourself, and then pushing the contents of the cloned workspace into your new workspace.
 
-Forking a workspace can be done using the Physiome model repository web interface. The first step is to find the workspace you wish to fork. We will use the Beeler, Reuter 1977 :term:`workspace` which can be found at: `http://184.169.251.126/workspace/beeler_reuter_1977 <http://184.169.251.126/workspace/beeler_reuter_1977>`_.
+Forking a workspace can be done using the Physiome model repository web interface. The first step is to find the workspace you wish to fork. We will use the Beeler, Reuter 1977 :term:`workspace` which can be found at: `<http://teaching.physiomeproject.org/workspace/beeler_reuter_1977>`_.
 
 Now click on the *fork* option in the toolbar, as shown below.
 
 .. figure:: /PMR/images/PMR-fork1.png
    :align: center
 
-You will be asked to create a new ID for the workspace. Typically this is something like the existing workspace name plus initials, a text tag that indicates the purpose of the fork, or some other short addition to the original name. Create a fork called ``beeler_reuter_1977_username``, for example. You will then be shown the page for your forked workspace.
+You will be asked to confirm the *fork* action by clicking the :guilabel:`Fork` button. You will then be shown the page for your forked workspace.
 
 Cloning your forked workspace
 -----------------------------
@@ -229,16 +229,35 @@ Migrating content to the main repository
 
 As noted above, the `teaching instance`_ used in this tutorial is not suitable for permanent storage of your work. One of the advantages of using a distributed version control system to manage PMR :term:`workspaces` is that it is straightforward to move the entire workspace, including the full history and provenance record, from one location to another. Recent releases of PMR2 have also provided the feature to export exposures so that they can then be imported into another PMR2 instance.
 
-If you would like to move your work from the teaching instance of the model repository into a *new* workspace on the main repository, you should follow these steps:
+If you would like to move your work from the teaching instance of the model repository into a *new* workspace on the main repository (or from any PMR2 instance to another one), you should follow these steps:
 
-#. Ensure that you have pushed all your commits to the teaching instance;
-#. :ref:`Create the new workspace <PMR-creatingNewWorkspace>` in the main repository;
+1. Ensure that you have pushed all your commits to the source instance;
+#. :ref:`Create the new workspace <PMR-creatingNewWorkspace>` in the destination repository;
 #. Navigate to the workspace created and choose the :guilabel:`synchronize` action from the workspace toolbar, as shown below.
    
 .. figure:: /PMR/images/PMR-synchronize-form.png
    :align: center
    :width: 100%
    
-#. Fill in the URI of your workspace on the teaching instance (*e.g.,* )
-#. Click the 
+4. Fill in the URI of your workspace on the source instance (*e.g.,* `<http://models.physiomeproject.org/w/andre/cortassa-ECME-2006>`_)
+#. Click the :guilabel:`Synchronize` button.
+
+In a similar manner, you are able to copy :term:`exposures` you might have made on the teaching instance over to the main repository, or from the main to the teaching instance if you want to test things out. Follow these steps to migrate an :term:`exposure` from one repository to another.
+
+1. Navigate to the exposure you would like to migrate in the source repository.
+#. Choose the :guilabel:`wizard` item from the toolbar as shown below.
+
+.. figure:: /PMR/images/exposure-wizard-highlight-export.png
+   :align: center
+   :width: 100%
    
+3. In the destination repository, navigate to the desired revision of the (published) workspace and choose the :guilabel:`Create exposure` action as described in the directions for :ref:`creating an exposure from scratch <createExposureChooseRevision>`
+#. Rather than building a new exposure, choose the :guilabel:`Exposure Import via URI` tab in the exposure creation wizard, as shown below.
+
+.. figure:: /PMR/images/exposure-wizard-import-from-uri.png
+   :align: center
+   :width: 100%
+   
+5. Copy and paste the URI from the source exposure wizard, highlighted above, into the :guilabel:`Exposure Export URI` field in the exposure creation wizard shown above.
+#. Click the :guilabel:`Add` button. This will take you back to the standard :ref:`exposure build page <buildingTheExposure>`, but now with all the fields pre-populated from the source exposure.
+#. Navigate to the bottom of the page and click the :guilabel:`Build` button to actually build the exposure pages. You are free to reconfigure the exposure if desired, some :ref:`help is available <buildingTheExposure>` for this if needed.
