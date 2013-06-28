@@ -1,4 +1,4 @@
-.. _PMR-bestpractice-embeddedworkspaces
+.. _PMR-bestpractice-embeddedworkspaces:
 
 =======================================
 PMR best practice - embedded workspaces

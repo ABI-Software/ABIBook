@@ -13,18 +13,38 @@ Contents:
    :titlesonly:
 
    PMR/index
-   OpenCOR <OpenCOR/feature-demonstration/index>
+   OpenCOR/index
    MAP <MAP/feature-demonstration/index>
    EMBC13 Tutorial <tutorials/embc13/index>
    relatedSoftware
+   glossary
    ABIBook-TODO
 
 
-   
+
 Indices and tables
 ==================
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+.. The below is to avoid warnings about the listed document(s)
+.. not being included in any toctree
+
+.. toctree::
+   :hidden:
+
+   ABICaseStudies/index
+   AboutABI/index
+   CAP/index
+   CM/index
+   CellMLAPI/index
+   Cmgui/CMGUI-exporting-ipfiles
+   Cmgui/mathtest
+   MAP/index
+   MAP/MAP-install-setup
+   PMR/PMR-bestpractice-embeddedworkspaces
+   PMR/PMR-cellmlcuration
+   PMR/PMR-webinterfacereference
 

@@ -10,6 +10,6 @@ Contents:
    :maxdepth: 1
    :titlesonly:
 
-   cmgui/index
+   Cmgui/index
    OpenCMISS/index
 

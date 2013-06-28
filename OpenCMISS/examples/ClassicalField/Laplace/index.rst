@@ -8,7 +8,7 @@ Laplace examples
    :maxdepth: 1
    :titlesonly:
    :numbered:
-   
+
    42master
    analytic-laplace
    laplace-ellipsoid

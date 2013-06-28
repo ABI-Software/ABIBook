@@ -1,4 +1,4 @@
-﻿.. _PMR-downloading-viewing:
+.. _PMR-downloading-viewing:
 
 .. _OpenCell: http://www.cellml.org/tools/opencell/
 
@@ -17,14 +17,14 @@ The Physiome Model Repository has a basic search function that can be accessed b
 
 .. figure:: /PMR/images/PMR-downloading-searches1.png
    :align: center
-   
+
    The index page of the model repository provides two methods for finding models. There is a box for entering search terms, or you can click on categories based on model keywords to see all models in those categories.
-   
+
 If your search is yielding too many results, you may either try to narrow it down by choosing more or different keywords (*eg.* ``goldbeter 1991`` instead of just ``goldbeter``), or you can click the *Advanced Search* link just under the search box on the results page. This will take you to a search page where you can select specific item types (*eg.* exposures or workspaces), statuses, and other specifics.
 
 .. figure:: /PMR/images/PMR-tut1-advancedsearch.png
    :align: center
-   
+
    In this search I have chosen to only have published exposures in my results.
 
 Once you have found the model you are interested in, there are several ways you can view or download it.
@@ -38,14 +38,14 @@ Below is an example of a CellML exposure page. It contains documentation about t
 
 .. figure:: /PMR/images/PMR-exposureeg1.png
    :align: center
-   
+
    An example of a CellML exposure page.
 
 If you click on one of the model variant navigation links, you will be taken to a sub-page of the exposure which will allow you to view the actual CellML model in a number of ways.
 
 .. figure:: /PMR/images/PMR-exposureeg2.png
    :align: center
-   
+
    An example of a CellML exposure sub-page.
 
 On this page there are a number of options under a *Views available* panel at the right hand side.
@@ -63,8 +63,15 @@ The OpenCell session that is loaded when clicking on the Simulate using OpenCell
 
 .. figure:: /PMR/images/PMR-sessionexample1.png
    :align: center
-   
+
    An OpenCell session. Objects such as membrane channels in the diagram can be clicked - this will toggle the graph traces displaying the values for those objects.
 
-Obtaining models via Mercurial
-==============================
+Downloading models via Mercurial
+================================
+
+All data in PMR are stored in :term:`workspaces` and each :term:`workspace` is a :term:`Mercurial` repository. The most comprehensive method of downloading content from PMR is to clone the workspace containing the desired data. In this manner you will have a local copy of the entire history of that data, including all provenance data, and the ability to step back through the history of the workspace to a state that may not be available via the download links in the exposure pages discussed above. If you would like to modify the contents of workspace, making use of Mercurial will ensure accurate provenance records are maintained as well as all the other benefits of using a version control system.
+
+As software tools like :ref:`OpenCOR-index` and :ref:`MAP <MAP-feature-demonstration>` evolve, they will be able to hide a lot of the Mercurial details and present the user with a user interface suitable for their specific application areas. Directly using Mercurial is, however, currently the most powerful way to leverage the full capabilities of PMR. Instructions for working with Mercurial can be found in the :ref:`CellML repository tutorial <PMR-cellmlrepositorytutorial-hg>`.
+ 
+.. todo::
+   Need to check this section on obtaining models via mercurial.

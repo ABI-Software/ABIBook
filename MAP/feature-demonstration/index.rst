@@ -84,7 +84,7 @@ The Image Source step requires a location.  This location contains the images to
 
 First each step requires a unique id.  This id is used to create a directory under the workflow project directory.  The step directory is used to hold input or output data, the step configuration information and any annotations.
 
-Next change to the PMR tab and we will see an ellipses button for bringing up the PMR tool dialog.  
+Next change to the PMR tab and we will see an ellipses button for bringing up the PMR tool dialog.
 
 
 Tools

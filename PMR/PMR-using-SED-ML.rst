@@ -1,4 +1,4 @@
-﻿.. _PMR-using-SED-ML
+﻿.. _PMR-using-SED-ML:
 
 ===================================
 Using SED-ML to specify simulations

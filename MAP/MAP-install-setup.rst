@@ -39,4 +39,3 @@ There are a number of binaries available for any given platform and you must mat
 
 Additionally the version of the PyZinc binaries you download must match the version of the Zinc library binaries.
 
-
