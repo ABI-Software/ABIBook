@@ -4,11 +4,7 @@
 OpenCOR
 =======
 
-`OpenCOR <http://www.opencor.ws/>`_ is an `open source <http://opencor.ws/user/licensing.html>`_, cross-platform and `CellML <http://www.cellml.org/>`_-based modelling environment. The following documentation refers to `this <x.y.z>`_ version of OpenCOR, for which supported platforms can be found :ref:`here <OpenCOR-supportedplatforms>`.
-
-.. todo::
-
-    Provide a link to a webpage from which people will be able to download the 2013-06-22 version (snapshot) of OpenCOR.
+`OpenCOR <http://www.opencor.ws/>`_ is an `open source <http://opencor.ws/user/licensing.html>`_, cross-platform and `CellML <http://www.cellml.org/>`_-based modelling environment. The following documentation refers to the ``2013-06-22`` version of OpenCOR, for which supported platforms can be found :ref:`here <OpenCOR-supportedplatforms>`. This version of OpenCOR for each of the supported platforms is available from the `tutorial download page <http://www.cellml.org/getting-started/tutorials/embc13/downloads/downloads#OpenCOR-downloads>`_.
 
 OpenCOR provides two types of user interfaces:
 
