@@ -19,7 +19,6 @@ If you wish to deploy an instance of the repository software, PMR2, please see t
    PMR-exposing-fieldml
    PMR-embeddedworkspaces
    PMR-cellmlcuration
-   PMR-glossary
 
 .. toctree::
    :hidden:

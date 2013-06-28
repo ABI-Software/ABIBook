@@ -1,8 +1,8 @@
-.. _PMR-glossary:
+.. _glossary:
 
-============
-PMR glossary
-============
+========
+Glossary
+========
 
 .. glossary::
    :sorted:

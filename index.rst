@@ -17,6 +17,7 @@ Contents:
    MAP <MAP/feature-demonstration/index>
    EMBC13 Tutorial <tutorials/embc13/index>
    relatedSoftware
+   glossary
    ABIBook-TODO
 
 
@@ -45,7 +46,5 @@ Indices and tables
    MAP/MAP-install-setup
    PMR/PMR-bestpractice-embeddedworkspaces
    PMR/PMR-cellmlcuration
-   PMR/PMR-glossary
    PMR/PMR-webinterfacereference
-   PMR/PMR-workingwithworkspaces
 
