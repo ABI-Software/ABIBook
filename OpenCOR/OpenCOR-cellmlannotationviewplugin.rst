@@ -20,6 +20,8 @@ All the CellML elements which can be annotated are listed to the left of the vie
     :height: 270px
     :alt: CellMLAnnotationView plugin: context menu
 
+.. _OpenCOR-annotateACellmlElement:
+
 Annotate a CellML element
 -------------------------
 

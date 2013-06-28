@@ -4,6 +4,8 @@
 Glossary
 ========
 
+.. _Mercurial basics: http://hgbook.red-bean.com/read/a-tour-of-mercurial-the-basics.html
+
 .. glossary::
    :sorted:
 
@@ -31,4 +33,10 @@ Glossary
       A `Mercurial` repository hosted on the Physiome Model Repository. This is essentially a folder or directory in which files are stored, with the added feature of being version controlled by the distributed version control system called `Mercurial <http://mercurial.selenic.com/>`_.
 
    Mercurial
-      `Mercurial <http://mercurial.selenic.com/>`_ is a distributed version control system, used by the Physiome Model Repository software to maintain a history of changes to files in :term:`workspaces`.
+      `Mercurial <http://mercurial.selenic.com/>`_ is a distributed version control system, used by the Physiome Model Repository software to maintain a history of changes to files in :term:`workspaces`. See a tour of the `Mercurial basics`_ for some good introductory material.
+
+   Push
+      The term used with distibuted version control systems for the action of pushing changes from one clone of the repository into another. With PMR, this usually implies pushing from a workspace clone on your local machine back to the workspace in the model repository, but could be into any other clone of the workspace. See a tour of the `Mercurial basics`_ for some good introductory material.
+    
+   Pull
+      The term used with distributed version control systems for the action of pulling changes from one clone of the repository into another. With PMR, this usually implies pulling from a workspace in the model repository into a clone of the workspace on your local machine.
