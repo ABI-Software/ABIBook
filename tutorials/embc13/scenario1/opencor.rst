@@ -39,6 +39,7 @@ The repository will be cloned within the current directory of your command line 
 
 You will need to enter your username and password to clone the workspace, as the workspace will be set to *private* when it is created.
 
+.. _EMBC13-OpenCOR-addingContent:
    
 Populate with content
 ---------------------

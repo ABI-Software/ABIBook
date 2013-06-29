@@ -67,12 +67,11 @@ When working in a collaborative team you would generally enable the **Can hg pus
 Uploading files to your workspace
 =================================
 
-* Clone new workspace
-* Add files to cloned workspace
-* Commit files (Hg)
-* Push to repository (Hg)
+The basic process for adding content to a :term:`workspace` consists of the following steps:
 
-Alternatively, use OpenCOR.
+#. :term:`Clone` the workspace to your local machine.
+#. Add files to cloned workspace.
+#. Commit the files using a :term:`Mercurial` client.
+#. :term:`Push` the workspace back to the repository.
 
-.. todo::
-   Work on this section?
+An example demonstrating these steps can be found in in this tutorial step: :ref:`EMBC13-OpenCOR-addingContent`.
