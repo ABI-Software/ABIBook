@@ -1,9 +1,13 @@
+.. _embc13-scenario1-opencor:
+
 A new CellML-based piece of work
 ================================
 
 .. _teaching instance: http://teaching.physiomeproject.org
 
 In this section we are going to create a new :term:`workspace` into which we will add a CellML model, annotate the model using :ref:`OpenCOR <OpenCOR-index>`, and simulate the model to check that it produces the expected results. We will be using the seminal `Noble (1962) <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1359535/>`_ cardiac cellular electrophysiology model as the demonstration model for this part of the tutorial.
+
+.. _embc13-scenario1-opencor-newWorkspace:
 
 Create a new workspace
 ----------------------
