@@ -30,7 +30,7 @@ In order to go through this demonstration, you will need;
 .. todo::
    Need to consolidate downloads somewhere convenient and maybe make a workspace in the repository for the demonstration models.
 
-Install MAP, and get the MAP plugins.  See notes on :doc:`MAP install and setup <../MAP-install-setup>`.
+Install MAP, and get the MAP plugins.  See notes on :doc:`MAP install and setup <MAP-install-setup>`.
 
 In this demonstration we will cover the features of MAP.  We will start with a quick tour and then create a new workflow that will help us segment a region of interest from a stack of images.
 
@@ -39,7 +39,7 @@ Quick Tour
 
 When you first load MAP, it will look something like this:
 
-.. figure:: /MAP/feature-demonstration/images/blank_MAP_1.png
+.. figure:: /MAP/images/blank_MAP_1.png
    :align: center
    :width: 75%
 
