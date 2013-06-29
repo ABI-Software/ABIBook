@@ -123,11 +123,42 @@ We have prepared a copy of the `Noble (1962) <http://www.ncbi.nlm.nih.gov/pmc/ar
    
    The arrows highlight the :guilabel:`Ending point` which should be set to *5000ms* and the variable V to be plotted.
 
-As long as your results look similar to the above, everything is working as expected. Now is a good time to add the CellML model to the workspace record.
+As long as your results look similar to the above, everything is working as expected. Now is a good time to add the CellML model to the workspace record. The first step is to choose the :menuselection:`TortoiseHG --> Add Files...` option from the context menu for your workspace folder (1).
 
-.. todo::
-   Add the description and pictures for TortoiseHG.
+.. figure:: images/addModel-1.png
+   :align: center
+   :width: 80%
    
+This will bring up the :guilabel:`hg add` dialog box, showing the files which can be added (in this case only the ``n62.cellml`` file is available and it is selected by default). Clicking the :guilabel:`Add` button (2) will inform Mercurial that you want to add the selected file(s) to the workspace.
+
+.. figure:: images/addModel-2.png
+   :align: center
+   :width: 80%
+   
+In windows explorer you will see the file icon for the ``n62.cellml`` model now overlaid with the Mercurial **+** icon (3) to indicate that you have added the file but not yet committed it to the workspace.
+
+.. figure:: images/addModel-3.png
+   :align: center
+   :width: 80%
+
+You can now commit the added file to the workspace by choosing :menuselection:`Hg Commit...` from the context menu in your workspace folder (4).
+
+.. figure:: images/addModel-4.png
+   :align: center
+   :width: 80%
+
+This will bring up the :guilabel:`commit` dialog, which lets you explore and select all the possible changes in this workspace that you can commit. In this case, there is just the addition of the ``n62.cellml`` file to be committed. Before committing, a useful log message should be entered - this will help you keep track of the changes you make to the workspace and possibly the reasons for why a given set of changes were made (for example, due to feedback from reviewers). After entering the log message, click the :guilabel:`Commit` button to commit the changes (5). The dialog will stay visible in case you have further changes to commit, but in this case you can just close the dialog.
+
+.. figure:: images/addModel-5.png
+   :align: center
+   :width: 80%
+   
+Once you have successfully committed the change, you will see that the icon for the ``n62.cellml`` file has now changed to a green tick (6) to indicate that the file is up-to-date with no modifications.
+
+.. figure:: images/addModel-6.png
+   :align: center
+   :width: 80%
+
 **Command line equivalent** ::
 
    hg add n62.cellml
@@ -149,22 +180,52 @@ We can then add desireable terms from the search results by choosing the :guilab
    
 Have a play annotating other variables and components in the model. When done annotating, make sure to save the model (:menuselection:`File --> Save`). With the CellML model updated, now is a good time to commit the changes to the workspace.
 
-.. todo::
-   Add the description for diffing and commiting using tortoiseHG
+As above, choose :menuselection:`Hg Commit...` from the context menu in your workspace folder to bring up the Mercurial :guilabel:`commit` dialog. This time you will see that there is one file modified that can be committed, ``n62.cellml`` (1). As we mentioned previously, it is important to enter a good log message to keep a record of the changes you make (2), and the changes made to the currently selected file are shown to help remind you as to your changes (3). In this case, OpenCOR has made many changes to the whitespace in the file as well as adding the RDF annotations at the bottom of the file.
+
+.. figure:: images/commitAnnotations.png
+   :align: center
+   :width: 80%
    
 **Command line equivalent** ::
 
    hg diff
-   hg commit -m "adding some annotations to the Noble 1962 model"
+   hg commit -m "Using OpenCOR to add some annotations to my copy of the Noble 1962 model."
    
 Push back to the repository
 ---------------------------
 
-Having added content and performed some modifications, it is time to :term:`push` the changes back to the model repository. 
+Having added content and performed some modifications, it is time to :term:`push` the changes back to the model repository, achieved in TortoiseHG with the synchronization action. First select :menuselection:`TortoiseHG --> Synchronize` from the context menu for your workspace folder.
+
+.. figure:: images/synchronize-1.png
+   :align: center
+   :width: 80%
+   
+This will bring up the :guilabel:`TortoiseHG Sync` dialog. In this dialog, you will see that by default you will be synchronizing with the workspace on the teaching repository from which you originally created this clone. This is usually what you want to do, but it is possible to synchronize with other Mercurial repositories. In this case we want to :term:`push` the changes we have made to the model repository, so choose the corresponding action from the toolbar (highlighted below).
+   
+.. figure:: images/synchronize-2.png
+   :align: center
+   :width: 80%
+
+Once you choose the push action, you will be asked to confirm that you want to push to your remote repository and then asked for your username and password (these are the credentials you created when registering for an account in the model repository). You will then see a listing of the transaction as your changes are pushed to the repository and a message stating the push has completed.
+
+**Command line equivalent** ::
+
+   hg push
+   
+If you now return to browsing your workspace in your web browser, and refresh the page, you will see that your workspace now has some content - ``n62.cellml`` - and if you view the workspace history you will see the log messages that you entered when committing your changes above.
+
+.. figure:: images/updatedWorkspace.png
+   :align: center
+   :width: 80%
+   
+Now might be a good time to think about :ref:`sharing your workspace <PMR-sharingWorkspaces>` with your neighbors.
 
 Best practice tips
 ==================
 
+.. todo::
+   Complete or remove this section
+   
 Creating a new piece of work from scratch -> encouraging best practices!
    - create workspace, commit often, useful log messages
    - provenance data (making sure user name/ID is set correctly)

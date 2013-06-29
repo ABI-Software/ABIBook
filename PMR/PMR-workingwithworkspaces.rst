@@ -41,7 +41,28 @@ Clicking the :guilabel:`Add` button with then create the workspace, which will i
    :align: center
    :width: 80%
    
-In the figure above, the URI of the newly created workspace has been highlighted. This is the URI that will be used when operating on the workspace using Mercurial. 
+In the figure above, the URI of the newly created workspace has been highlighted. This is the URI that will be used when operating on the workspace using Mercurial.
+
+.. _PMR-sharingWorkspaces:
+
+Working with collaborators
+==========================
+
+PMR makes use of :term:`Mercurial` to manage individual workspaces. Mercurial is a Distributed Version Control System (DVCS), and as such encourages collaborative development of your model, dataset, results, *etc*. Using Mercurial, each member of the development team is able to have their own clone of the workspace which can be kept synchronized with the other members of the development team, while ensuring that each team member's contributions are accurately recorded in the workspace history.
+
+Once a PMR :term:`workspace` has been published, any user of the repository is able to access and clone the workspace, including team members and the anonymous public. Only privileged PMR members are able to make changes to the workspace, including :term:`pushing` changes into the Mercurial repository. Private PMR workspaces, however, can only be viewed by those PMR members that have been granted access.
+
+PMR provides access controls to manage the ability of PMR members and anonymous users to interact with workspaces. The access control is managed via the :guilabel:`Sharing` tab for a given workspace, as shown below.
+
+.. figure:: /PMR/images/sharingTab.png
+   :align: center
+   :width: 80%
+   
+By default, you will initially see the list of repository administrators and curators will have some permissions to access your workspace. Most of these can be turned off if you choose, but is generally not recommended as they will need access in most cases if you need help with your workspace. Using the :guilabel:`Sharing` tab you are able to search for other PMR members, such as the names of people in your development team. These members would then appear in the list of members and you are able to set their access as required.
+
+Using the :guilabel:`Sharing` controls there are currently four possible permissions that can be controlled. The **Can add** and **Can edit** permissions relate to the storage container of the workspace in the website database and are generally left in the default state. When selected for a given member, the **Can view** permission allows that member to view the workspace on the website, even if the workspace is private. Similarly, when the **Can hg push** permission is enabled the selected member is able to :term:`push` into the workspace - this is the most important permission as enabling this allows members to add, modify, and delete the actual content of the workspace. One benefit of using Mercurial means that even if one of the privileged members accidentally modifies the workspace in a detrimental manner, you are able to revert the workspace back to the previous state.
+
+When working in a collaborative team you would generally enable the **Can hg push** and **Can view** permissions for all team members and only enable the **Can add** and **Can edit** permissions for the team members responsible for the workspace presentation in the PMR website.
 
 Uploading files to your workspace
 =================================

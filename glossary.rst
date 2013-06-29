@@ -36,7 +36,9 @@ Glossary
       `Mercurial <http://mercurial.selenic.com/>`_ is a distributed version control system, used by the Physiome Model Repository software to maintain a history of changes to files in :term:`workspaces`. See a tour of the `Mercurial basics`_ for some good introductory material.
 
    Push
+   Pushing
       The term used with distibuted version control systems for the action of pushing changes from one clone of the repository into another. With PMR, this usually implies pushing from a workspace clone on your local machine back to the workspace in the model repository, but could be into any other clone of the workspace. See a tour of the `Mercurial basics`_ for some good introductory material.
     
    Pull
+   Pulling
       The term used with distributed version control systems for the action of pulling changes from one clone of the repository into another. With PMR, this usually implies pulling from a workspace in the model repository into a clone of the workspace on your local machine.
