@@ -147,4 +147,4 @@ If you now return to browsing your workspace in your web browser, and refresh th
    :align: center
    :width: 80%
    
-Now might be a good time to think about :ref:`sharing your workspace <PMR-sharingWorkspaces>` with your neighbors.
+Now might be a good time to think about :ref:`sharing your workspace <PMR-sharingWorkspaces>` with your neighbors. You might also want to have a look at creating an :term:`exposure` for your workspace. To learn how to create exposures, please refer to :ref:`PMR-exposing-cellml`.
