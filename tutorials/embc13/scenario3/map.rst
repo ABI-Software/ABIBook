@@ -1,7 +1,7 @@
-.. _embc13-scenario1-bestpracticetips:
+.. _embc13-scenario3-map:
 
-Best practice tips
-==================
+Fitting an exisiting model to a dataset using MAP
+=================================================
 
 .. todo::
    Complete this section

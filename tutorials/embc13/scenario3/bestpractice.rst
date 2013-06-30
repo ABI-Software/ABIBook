@@ -1,4 +1,4 @@
-.. _embc13-scenario1-bestpracticetips:
+.. _embc13-scenario3-bestpracticetips:
 
 Best practice tips
 ==================
