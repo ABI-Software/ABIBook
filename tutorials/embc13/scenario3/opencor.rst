@@ -15,13 +15,13 @@ For this tutorial, we will :term:`fork` an existing workspace. This creates a ne
 
 Forking a workspace can be done using the Physiome Model Repository web interface. The first step is to find the workspace you wish to fork. We will use the *EMBC 2013 Tutorial - Noble 1962* :term:`workspace` from the exposure referenced above, which can be found at: `<http://teaching.physiomeproject.org/workspace/182>`_.
 
-Now click on the :guilabel:`fork` option in the toolbar, as shown below.
+Now click on the :guilabel:`fork` option in the toolbar, as shown below (1).
 
 .. figure:: images/forkN62.png
    :align: center
    :width: 80%
 
-You will be asked to confirm the *fork* action by clicking the :guilabel:`Fork` button. You will then be shown the page for your forked workspace.
+You will be asked to confirm the *fork* action by clicking the :guilabel:`Fork` button (2). You will then be shown the page for your forked workspace.
 
 Cloning your forked workspace
 -----------------------------
