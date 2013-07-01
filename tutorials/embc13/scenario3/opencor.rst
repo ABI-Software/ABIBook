@@ -27,3 +27,14 @@ Cloning your forked workspace
 -----------------------------
 
 In order to make changes to your workspace, you have to :term:`clone` it to your own computer. To do this, follow the procedure as described in the :ref:`earlier tutorial <embc13-scenario1-opencor-newWorkspace>`.
+
+Extending the model
+-------------------
+
+The version of the Noble 1962 model you have just forked and cloned is a model of a Purkinje fibre cell. These cells are capable of acting as pacemaker cells, although usually entrained by the sinoatrial node of the heart. The Noble model reproduces this behavior but is also able to simulate a non-pacing version of the cell model. This is accomplished by decreasing the potassium current which gives rise to the gradual depolarization of the member potential seen the figures from OpenCOR for the model in the previous tutorials. Once the cell is in a quiesent state, we are able to then apply an electrical stimulus to impose our own pacing regime.
+
+If you load the ``n62.cellml`` file from the workspace you have just cloned into OpenCOR, set the duration of the simulation to *5000 ms*, and plot the membrane potential ``V``, you will be able to see the effect of altering the value of the variable ``g_K_add`` in the ``parameters`` component. As you increase this value you should see the resting potential decrease and the abolution of the self-exciting mechanism. A value of *0.001 mS_per_mmsq* keeps the resting potential in the physiological range and makes the cell quiesent. 
+extend
+commit
+push
+expose
