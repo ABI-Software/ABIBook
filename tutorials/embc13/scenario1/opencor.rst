@@ -48,13 +48,13 @@ You will need to enter your username and password to clone the workspace, as the
 Populate with content
 ---------------------
 
-We have prepared a copy of the `Noble (1962) <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1359535/>`_ model encoded in CellML ready for your use. You can download the model :download:`n62.cellml <../cellml-models/n62.cellml>` and save it into your cloned workspace folder created above. To verify that the model works, you can load it into the :ref:`OpenCOR single cell view <OpenCOR-singlecellviewplugin>` and simulate the model for *5000ms*. You can plot the variable *V* in the *membrane* component and you should see results as shown below:
+We have prepared a copy of the `Noble (1962) <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1359535/>`_ model encoded in CellML ready for your use. You can download the model :download:`n62.cellml <../cellml-models/n62.cellml>` and save it into your cloned workspace folder created above. To verify that the model works, you can load it into the :ref:`OpenCOR single cell view <OpenCOR-singlecellviewplugin>` and simulate the model for *5000 ms*. You can plot the variable *V* in the *membrane* component and you should see results as shown below:
 
 .. figure:: images/n62-initial-results.png
    :align: center
    :width: 80%
    
-   The arrows highlight the :guilabel:`Ending point` which should be set to *5000ms* and the variable V to be plotted.
+   The arrows highlight the :guilabel:`Ending point` which should be set to *5000 ms* and the variable V to be plotted.
 
 As long as your results look similar to the above, everything is working as expected. Now is a good time to add the CellML model to the workspace record. The first step is to choose the :menuselection:`TortoiseHG --> Add Files...` option from the context menu for your workspace folder (1).
 
@@ -62,13 +62,13 @@ As long as your results look similar to the above, everything is working as expe
    :align: center
    :width: 80%
    
-This will bring up the :guilabel:`hg add` dialog box, showing the files which can be added (in this case only the ``n62.cellml`` file is available and it is selected by default). Clicking the :guilabel:`Add` button (2) will inform Mercurial that you want to add the selected file(s) to the workspace.
+This will bring up the :guilabel:`hg add` dialog box, showing the files which can be added (in this case only the ``n62.cellml`` file is available and it is selected by default). Clicking the :guilabel:`Add` button (2) will inform Mercurial that you want to add the selected file to the workspace.
 
 .. figure:: images/addModel-2.png
    :align: center
    :width: 80%
    
-In windows explorer you will see the file icon for the ``n62.cellml`` model now overlaid with the Mercurial **+** icon (3) to indicate that you have added the file but not yet committed it to the workspace.
+In Windows Explorer, you will see the file icon for the ``n62.cellml`` model now overlaid with the Mercurial **+** icon (3) to indicate that you have added the file but not yet committed it to the workspace.
 
 .. figure:: images/addModel-3.png
    :align: center
@@ -95,9 +95,9 @@ Once you have successfully committed the change, you will see that the icon for 
 **Command line equivalent** ::
 
    hg add n62.cellml
-   hg commit -m "adding an initial copy of the Noble (1962) cardiac cellular electrophysiology model to the workspace."
+   hg commit -m "Adding an initial copy of the Noble (1962) cardiac cellular electrophysiology model to the workspace."
    
-While we have the model open in OpenCOR, we should have a go at annotating some of the variables in the model. Full instructions for this can be found in the :ref:`OpenCOR CellML annotation view <OpenCOR-cellmlannotationviewplugin>`. First we will follow the :ref:`example given in those instructions <OpenCOR-annotateACellmlElement>` for annotating the ``sodium_channel`` component.
+While we have the model open in OpenCOR, we should have a go at annotating some of the variables in the model. Full instructions for this can be found in the :ref:`OpenCOR CellML annotation view <OpenCOR-cellmlannotationviewplugin>`. First, we will follow the :ref:`example given in those instructions <OpenCOR-annotateACellmlElement>` for annotating the ``sodium_channel`` component.
 
 The first step is to switch to the :guilabel:`Editing` mode (1) and select the ``sodium_channel`` component for annotation (2). We will be using the ``bio:isVersionOf`` as the qualifier for this annotation (3) and searching for terms related to ``sodium`` (4).
 
@@ -110,10 +110,13 @@ We can then add desireable terms from the search results by choosing the :guilab
 .. figure:: images/INa-annotation-step2.png
    :align: center
    :width: 80%
-   
+
+.. todo::
+    Might want to update the figure so that the pubchem.substance:4541 annotation doesn't show up in the list of existing annotations...
+
 Have a play annotating other variables and components in the model. When done annotating, make sure to save the model (:menuselection:`File --> Save`). With the CellML model updated, now is a good time to commit the changes to the workspace.
 
-As above, choose :menuselection:`Hg Commit...` from the context menu in your workspace folder to bring up the Mercurial :guilabel:`commit` dialog. This time you will see that there is one file modified that can be committed, ``n62.cellml`` (1). As we mentioned previously, it is important to enter a good log message to keep a record of the changes you make (2), and the changes made to the currently selected file are shown to help remind you as to your changes (3). In this case, OpenCOR has made many changes to the whitespace in the file as well as adding the RDF annotations at the bottom of the file.
+As above, choose :menuselection:`Hg Commit...` from the context menu in your workspace folder to bring up the Mercurial :guilabel:`commit` dialog. This time you will see that there is one file modified that can be committed, ``n62.cellml`` (1). As we mentioned previously, it is important to enter a good log message to keep a record of the changes you make (2), and the changes made to the currently selected file are shown to help remind you as to your changes (3). In this case, OpenCOR has made many changes to the whitespace in the file, as well as adding the RDF annotations at the bottom of the file.
 
 .. figure:: images/commitAnnotations.png
    :align: center
@@ -127,19 +130,19 @@ As above, choose :menuselection:`Hg Commit...` from the context menu in your wor
 Push back to the repository
 ---------------------------
 
-Having added content and performed some modifications, it is time to :term:`push` the changes back to the model repository, achieved in TortoiseHG with the synchronization action. First select :menuselection:`TortoiseHG --> Synchronize` from the context menu for your workspace folder.
+Having added content and performed some modifications, it is time to :term:`push` the changes back to the model repository, achieved in TortoiseHG with the synchronization action. First, select :menuselection:`TortoiseHG --> Synchronize` from the context menu for your workspace folder.
 
 .. figure:: images/synchronize-1.png
    :align: center
    :width: 80%
    
-This will bring up the :guilabel:`TortoiseHG Sync` dialog. In this dialog, you will see that by default you will be synchronizing with the workspace on the teaching repository from which you originally created this clone. This is usually what you want to do, but it is possible to synchronize with other Mercurial repositories. In this case we want to :term:`push` the changes we have made to the model repository, so choose the corresponding action from the toolbar (highlighted below).
+This will bring up the :guilabel:`TortoiseHG Sync` dialog. In this dialog, you will see that by default you will be synchronizing with the workspace on the teaching repository from which you originally created this clone. This is usually what you want to do, but it is possible to synchronize with other Mercurial repositories. In this case, we want to :term:`push` the changes we have made to the model repository, so choose the corresponding action from the toolbar (highlighted below).
    
 .. figure:: images/synchronize-2.png
    :align: center
    :width: 80%
 
-Once you choose the push action, you will be asked to confirm that you want to push to your remote repository and then asked for your username and password (these are the credentials you created when registering for an account in the model repository). You will then see a listing of the transaction as your changes are pushed to the repository and a message stating the push has completed.
+Once you choose the *push* action, you will be asked to confirm that you want to push to your remote repository and then asked for your username and password (these are the credentials you created when registering for an account in the model repository). You will then see a listing of the transaction as your changes are pushed to the repository and a message stating the push has completed.
 
 **Command line equivalent** ::
 
