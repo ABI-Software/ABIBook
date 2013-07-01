@@ -8,7 +8,7 @@ OpenCOR
 
 .. _OpenCOR-downloadLinks:
 
-This version of OpenCOR for each of the supported platforms is available from the `tutorial download page <http://www.cellml.org/getting-started/tutorials/embc13/downloads/downloads#OpenCOR-downloads>`_.
+This version of OpenCOR can be downloaded from the `tutorial download page <http://www.cellml.org/getting-started/tutorials/embc13/downloads/downloads#OpenCOR-downloads>`_.
 
 OpenCOR provides two types of user interfaces:
 
