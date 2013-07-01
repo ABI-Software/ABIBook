@@ -11,7 +11,7 @@ Following on from the :ref:`previous tutorial <embc13-scenario1-opencor>`, we ma
    :align: center
    :width: 80%
 
-As you can see highlighted in the :guilabel:`Exposure` column of the history above, there are two exposures for this workspace. For the purposes of this tutorial, we will assume that the `earlier exposure <http://models.cellml.org/e/173>`_ corresponds to a study that has been published in a scientific journal. The `later exposure <http://models.cellml.org/e/174>`_ is the result of further work on this model following the publication of the journal article. The later exposure illustrates the difference between these two versions of the model. In this tutorial we aim to reproduce the results as shown in the published journal article - corresponding to the earlier exposure.
+As you can see highlighted in the :guilabel:`Exposure` column of the history above, there are two exposures for this workspace. For the purposes of this tutorial, we will assume that the `earlier exposure <http://models.cellml.org/e/173>`_ corresponds to a study that has been published in a scientific journal. The `later exposure <http://models.cellml.org/e/174>`_ is the result of further work on this model following the publication of the journal article. The later exposure illustrates the difference between these two versions of the model. In this tutorial, we aim to reproduce the results as shown in the published journal article - corresponding to the earlier exposure.
 
 .. important::
    It is essential to use a Mercurial client to obtain models from the repository for editing. The Mercurial client is not only able to keep track of all the changes you make (allowing you to back-track if you make any errors), but using a Mercurial client is the only way to add any changes you have made back into the repository.
@@ -27,22 +27,22 @@ The first step is to :term:`clone` the workspace containing the model we want to
 Check the model
 ---------------
 
-Now that we have the model, we want to ensure that we are able to produce the current results that it should produce. Load the ``n62.cellml`` file in the newly cloned folder into OpenCOR and run a simulation for *5000ms* and plot the membrane potential, ``V``. This should result in a similar graph to that shown in upper figure of the exposure page, reproduced here for convenience.
+Now that we have the model, we want to ensure that we are able to produce the current results that it should produce. Load the ``n62.cellml`` file in the newly cloned folder into OpenCOR and run a simulation for *5000 ms* and plot the membrane potential, ``V``. This should result in a similar graph to that shown in the upper figure of the exposure page, reproduced here for convenience.
 
 .. figure:: images/originalResults.png
    :align: center
    :width: 80%
 
-Notice that in the *5000ms* simulation there are **five** action potentials.
+Notice that in the *5000 ms* simulation there are **five** action potentials.
 
 Revert to an earlier version of the model
 -----------------------------------------
 
 Now that we are happy the current version of the model reproduces the results that it should, we want to go back to the version of the model that was published in a journal article. This is commonly required because the new work you might want to do with the model will be based on the published model, not its latest version which may have deviated from the validated model which was published.
 
-Using :term:`Mercurial` there are several methods by which you can jump around the history of a :term:`workspace`. The particular method that works best depends a lot on what you want to do with the workspace once you change back to a revision that is not the most recent. Searching the internet for information on the Mercurial (hg) commands: ``revert``, ``update``, and ``branch``; is probably a good place to start working out which is best for your situation. In this case we have a fairly simple requirement to go back to the revision prior to the current one so that we can reproduce some simulation results. If we were actually going to do further development in this workspace we would need a more elaborate solution than that described below.
+Using :term:`Mercurial`, there are several methods by which you can jump around the history of a :term:`workspace`. The particular method that works best depends a lot on what you want to do with the workspace once you change back to a revision that is not the most recent. Searching the internet for information on the Mercurial (hg) commands: ``revert``, ``update``, and ``branch``; is probably a good place to start working out which is best for your situation. In this case, we have a fairly simple requirement to go back to the revision prior to the current one so that we can reproduce some simulation results. If we were actually going to do further development in this workspace, we would need a more elaborate solution than that described below.
 
-Here we need to update our local clone of the workspace to a state matching the published journal article. In order to do this we need to find the appropriate revision identifier to use with our Mercurial client. We can find the revision identifier by navigating the to workspace history tab in the model and choosing the :guilabel:`[files]` link for the revision corresponding to the earlier exposure, shown below.
+Here, we need to update our local clone of the workspace to a state matching the published journal article. In order to do this, we need to find the appropriate revision identifier to use with our Mercurial client. We can find the revision identifier by navigating to the workspace history tab in the model and choosing the :guilabel:`[files]` link for the revision corresponding to the earlier exposure, shown below.
 
 .. figure:: images/sourceHistoryFilesLink.png
    :align: center
@@ -54,13 +54,13 @@ From the files page, you will see the required revision identifier as highlighte
    :align: center
    :width: 80%
 
-You should copy this identifies to the clipboard ready for use in the next step. In your local clone of the workspace, select :menuselection:`TortoiseHG --> Update...` from the context menu. This will bring up the :guilabel:`Update` dialog.
+You should copy this identifier to the clipboard ready for use in the next step. In your local clone of the workspace, select :menuselection:`TortoiseHG --> Update...` from the context menu. This will bring up the :guilabel:`Update` dialog.
 
 .. figure:: images/hgUpdate-1.png
    :align: center
    :width: 80%
 
-In this dialog you should paste the revision identifier copied above into the :guilabel:`Update to:` field (1) and then click the :guilabel:`Update` button (2).
+In this dialog, you should paste the revision identifier copied above into the :guilabel:`Update to:` field (1) and then click the :guilabel:`Update` button (2).
 
 .. figure:: images/hgUpdate-2.png
    :align: center
@@ -68,9 +68,9 @@ In this dialog you should paste the revision identifier copied above into the :g
 
 **Command line equivalent** ::
 
-   hg update -r [revision identifier]
+   hg update -r 9cad4365b0b8
 
-You will now see in your local clone that the files have reverted back to that previous version. Loading this version of ``n62.cellml`` into OpenCOR and simulating for *5000ms* should result in the figure matching that presented in the earlier exposure page and reproduced here for convenience.
+You will now see in your local clone that the files have reverted back to that previous version. Loading this version of ``n62.cellml`` into OpenCOR and simulating for *5000 ms* should result in the figure matching that presented in the earlier exposure page and reproduced here for convenience.
 
 .. figure:: images/revertedResults.png
    :align: center
