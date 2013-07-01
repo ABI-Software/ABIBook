@@ -13,7 +13,7 @@ First, navigate to the `teaching instance`_ of the Physiome Model Repository at 
 
 .. include:: /PMR/PMR-teaching-instance-warning.rst
 
-In order to make changes to models in the repository, you must first register for an account. For this, go to the `main repository site <http://models.physiomeproject.org/>`_, click on the *Register* link near the top right corner, and provide both a username and password. Once registered, go back to the `teaching repository <http://teaching.physiomeproject.org/>`_ site and log in to it by clicking on the *Log in* link (also near the top right corner). Your account has the appropriate access privileges so that you can push any changes you have made to a model back into the repository.
+In order to make changes to models in the repository, you must first register for an account. If you already have an account on the `main repository site <http://models.physiomeproject.org/>`_, your account will also be on the teaching instance. Otherwise, you need to register for an account on the `teaching repository <http://teaching.physiomeproject.org/>`_. You can register by navigating to the :guilabel:`Log in` link at the top right of the menu bar and then looking for the :guilabel:`New user` section of the log in page.
 
 .. note::
    Your username and password are also the credentials you use to interact with the repository via Mercurial.
