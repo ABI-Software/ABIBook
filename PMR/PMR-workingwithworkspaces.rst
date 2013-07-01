@@ -8,13 +8,13 @@ Working with PMR workspaces
 
 .. _teaching instance: http://teaching.physiomeproject.org/
 
-All models in the Physiome model repository exist in :term:`workspaces`, which are `Mercurial <http://mercurial.selenic.com/>`_ repositories that can be used to store any kind of file. Mercurial is a distributed version control system (DVCS).
+All models in the Physiome Model Repository exist in :term:`workspaces`, which are `Mercurial <http://mercurial.selenic.com/>`_ repositories that can be used to store any kind of file. Mercurial is a distributed version control system (DVCS).
 
 In order to create your own workspaces, you will first need to create a repository account by registering at `models.physiomeproject.org <http://models.physiomeproject.org>`_. Near the top right of the repository page there will be links labelled *Log in* and *Register*. Click on the register link, and follow the instructions.
 
-Workspaces in the physiome model repository are permanent once they are created. There is a `teaching instance`_ of the model repository which may be used for *experimenting* with PMR without worrying about creating permanent workspaces that might have errors in them. Users accounts from the main PMR instance will be copied to the `teaching instance`_ each time it is recreated, but users may register for an account just on the `teaching instance`_ if they prefer. Such accounts will need to be recreated each time the teaching instance is recreated.
+Workspaces in the Physiome Model Repository are permanent once they are created. There is a `teaching instance`_ of the model repository which may be used for *experimenting* with PMR without worrying about creating permanent workspaces that might have errors in them. Users accounts from the main PMR instance will be copied to the `teaching instance`_ each time it is recreated, but users may register for an account just on the `teaching instance`_ if they prefer. Such accounts will need to be recreated each time the teaching instance is recreated.
 
-.. include:: PMR-teaching-instance-warning.rst  
+.. include:: PMR-teaching-instance-warning.rst
 
 .. _PMR-creatingNewWorkspace:
 
@@ -32,7 +32,7 @@ The first paragraph includes a link to your dashboard to add a new workspace, sh
 .. figure:: /PMR/images/add-workspace-dashboard.png
    :align: center
    :width: 80%
-   
+
 Currently :term:`Mercurial` is the only avialable option for the storage method for a new workspace, but this may be expanded to include other storage methods in future. A workspace should be given a meaningful title and a brief description to help locate the workspace using the repository search. Both these fields can be edited later, so don't worry if you don't get it perfect the first time.
 
 Clicking the :guilabel:`Add` button with then create the workspace, which will initially be empty, as shown below:
@@ -40,7 +40,7 @@ Clicking the :guilabel:`Add` button with then create the workspace, which will i
 .. figure:: /PMR/images/new-workspace.png
    :align: center
    :width: 80%
-   
+
 In the figure above, the URI of the newly created workspace has been highlighted. This is the URI that will be used when operating on the workspace using Mercurial.
 
 .. _PMR-sharingWorkspaces:
@@ -57,7 +57,7 @@ PMR provides access controls to manage the ability of PMR members and anonymous 
 .. figure:: /PMR/images/sharingTab.png
    :align: center
    :width: 80%
-   
+
 By default, you will initially see the list of repository administrators and curators will have some permissions to access your workspace. Most of these can be turned off if you choose, but is generally not recommended as they will need access in most cases if you need help with your workspace. Using the :guilabel:`Sharing` tab you are able to search for other PMR members, such as the names of people in your development team. These members would then appear in the list of members and you are able to set their access as required.
 
 Using the :guilabel:`Sharing` controls there are currently four possible permissions that can be controlled. The **Can add** and **Can edit** permissions relate to the object that represents the workspace in the website database and are generally left in the default state. When selected for a given member, the **Can view** permission allows that member to view the workspace on the website, even if the workspace is private. Similarly, when the **Can hg push** permission is enabled the selected member is able to :term:`push` into the workspace - this is the most important permission as enabling this allows members to add, modify, and delete the actual content of the workspace. One benefit of using Mercurial means that even if one of the privileged members accidentally modifies the workspace in a detrimental manner, you are able to revert the workspace back to the previous state.

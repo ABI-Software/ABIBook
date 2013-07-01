@@ -17,17 +17,17 @@ You can find instructions for creating a new workspace on the `teaching instance
 .. figure:: images/newWorkspace.png
    :align: center
    :width: 80%
-   
+
    Creating a new workspace to begin a scientific study based on the Noble 1962 cardiac cellular electrophysiology model.
-   
+
 Once you have created the workspace, you will be taken to the workspace listing page. Take particular note of the :guilabel:`URI for mercurial clone/pull/push`, as highlighted by the arrow below.
 
 .. figure:: images/emptyWorkspace.png
    :align: center
    :width: 80%
-   
+
    A view of the newly created and empty workspace. The URI to be used for Mercurial actions is highlighted by the arrow. Note: the workspace URI is unique to every workspace, so yours will be different to the one shown above.
-   
+
 In order to make changes to your workspace, you have to :term:`clone` it to your own computer. In order to do this, copy the URI for mercurial clone/pull/push as shown above. In Windows explorer, find the folder where you want to create the clone of the workspace. Then right click to bring up the context menu, and select :menuselection:`TortoiseHG --> Clone` as shown below:
 
 .. figure:: /PMR/images/PMR-tut1-tortoisehgclone.png
@@ -44,7 +44,7 @@ The repository will be cloned within the current directory of your command line 
 You will need to enter your username and password to clone the workspace, as the workspace will be set to *private* when it is created.
 
 .. _EMBC13-OpenCOR-addingContent:
-   
+
 Populate with content
 ---------------------
 
@@ -53,7 +53,7 @@ We have prepared a copy of the `Noble (1962) <http://www.ncbi.nlm.nih.gov/pmc/ar
 .. figure:: images/n62-initial-results.png
    :align: center
    :width: 80%
-   
+
    The arrows highlight the :guilabel:`Ending point` which should be set to *5000 ms* and the variable V to be plotted.
 
 As long as your results look similar to the above, everything is working as expected. Now is a good time to add the CellML model to the workspace record. The first step is to choose the :menuselection:`TortoiseHG --> Add Files...` option from the context menu for your workspace folder (1).
@@ -61,13 +61,13 @@ As long as your results look similar to the above, everything is working as expe
 .. figure:: images/addModel-1.png
    :align: center
    :width: 80%
-   
+
 This will bring up the :guilabel:`hg add` dialog box, showing the files which can be added (in this case only the ``n62.cellml`` file is available and it is selected by default). Clicking the :guilabel:`Add` button (2) will inform Mercurial that you want to add the selected file to the workspace.
 
 .. figure:: images/addModel-2.png
    :align: center
    :width: 80%
-   
+
 In Windows Explorer, you will see the file icon for the ``n62.cellml`` model now overlaid with the Mercurial **+** icon (3) to indicate that you have added the file but not yet committed it to the workspace.
 
 .. figure:: images/addModel-3.png
@@ -85,7 +85,7 @@ This will bring up the :guilabel:`commit` dialog, which lets you explore and sel
 .. figure:: images/addModel-5.png
    :align: center
    :width: 80%
-   
+
 Once you have successfully committed the change, you will see that the icon for the ``n62.cellml`` file has now changed to a green tick (6) to indicate that the file is up-to-date with no modifications.
 
 .. figure:: images/addModel-6.png
@@ -96,7 +96,7 @@ Once you have successfully committed the change, you will see that the icon for 
 
    hg add n62.cellml
    hg commit -m "Adding an initial copy of the Noble (1962) cardiac cellular electrophysiology model to the workspace."
-   
+
 While we have the model open in OpenCOR, we should have a go at annotating some of the variables in the model. Full instructions for this can be found in the :ref:`OpenCOR CellML annotation view <OpenCOR-cellmlannotationviewplugin>`. First, we will follow the :ref:`example given in those instructions <OpenCOR-annotateACellmlElement>` for annotating the ``sodium_channel`` component.
 
 The first step is to switch to the :guilabel:`Editing` mode (1) and select the ``sodium_channel`` component for annotation (2). We will be using the ``bio:isVersionOf`` as the qualifier for this annotation (3) and searching for terms related to ``sodium`` (4).
@@ -121,12 +121,12 @@ As above, choose :menuselection:`Hg Commit...` from the context menu in your wor
 .. figure:: images/commitAnnotations.png
    :align: center
    :width: 80%
-   
+
 **Command line equivalent** ::
 
    hg diff
    hg commit -m "Using OpenCOR to add some annotations to my copy of the Noble 1962 model."
-   
+
 Push back to the repository
 ---------------------------
 
@@ -135,9 +135,9 @@ Having added content and performed some modifications, it is time to :term:`push
 .. figure:: images/synchronize-1.png
    :align: center
    :width: 80%
-   
+
 This will bring up the :guilabel:`TortoiseHG Sync` dialog. In this dialog, you will see that by default you will be synchronizing with the workspace on the teaching repository from which you originally created this clone. This is usually what you want to do, but it is possible to synchronize with other Mercurial repositories. In this case, we want to :term:`push` the changes we have made to the model repository, so choose the corresponding action from the toolbar (highlighted below).
-   
+
 .. figure:: images/synchronize-2.png
    :align: center
    :width: 80%
@@ -147,11 +147,11 @@ Once you choose the *push* action, you will be asked to confirm that you want to
 **Command line equivalent** ::
 
    hg push
-   
+
 If you now return to browsing your workspace in your web browser, and refresh the page, you will see that your workspace now has some content - ``n62.cellml`` - and if you view the workspace history you will see the log messages that you entered when committing your changes above.
 
 .. figure:: images/updatedWorkspace.png
    :align: center
    :width: 80%
-   
+
 Now might be a good time to think about :ref:`sharing your workspace <PMR-sharingWorkspaces>` with your neighbors. You might also want to have a look at creating an :term:`exposure` for your workspace. To learn how to create exposures, please refer to :ref:`PMR-exposing-cellml`.

@@ -4,14 +4,14 @@ Working with the repository using Mercurial
 
 .. _teaching instance: http://teaching.physiomeproject.org
 
-This part of the tutorial will teach you how to create a :term:`workspace` in the repository, :term:`clone` the workspace from the model repository using a :term:`Mercurial` client, add content to the workspace, and then push the cloned workspace to the repository. 
+This part of the tutorial will teach you how to create a :term:`workspace` in the repository, :term:`clone` the workspace from the model repository using a :term:`Mercurial` client, add content to the workspace, and then push the cloned workspace to the repository.
 
 Registering an account and logging in
 -------------------------------------
 
-First, navigate to the `teaching instance`_ of the physiome model repository at `<http://teaching.physiomeproject.org/>`_.
+First, navigate to the `teaching instance`_ of the Physiome Model Repository at `<http://teaching.physiomeproject.org/>`_.
 
-.. include:: /PMR/PMR-teaching-instance-warning.rst 
+.. include:: /PMR/PMR-teaching-instance-warning.rst
 
 In order to make changes to models in the repository, you must first register for an account. For this, go to the `main repository site <http://models.physiomeproject.org/>`_, click on the *Register* link near the top right corner, and provide both a username and password. Once registered, go back to the `teaching repository <http://teaching.physiomeproject.org/>`_ site and log in to it by clicking on the *Log in* link (also near the top right corner). Your account has the appropriate access privileges so that you can push any changes you have made to a model back into the repository.
 
@@ -28,7 +28,7 @@ Mercurial username configuration
 
    Since you are about to make changes, your name needs to be recorded as part of the workspace revision history. When you commit your changes using Mercurial, it is initially "offline" and independent of the central PMR2 instance.  This means that you have to set-up your username for the Mercurial client software, even though you have registered a username on the PMR2 site.
 
-   You only need to do this once. The MAP PMR tool will help complete these details for you automatically, but it is a good idea to ensure sensible default values are configured, just in case.  
+   You only need to do this once. The MAP PMR tool will help complete these details for you automatically, but it is a good idea to ensure sensible default values are configured, just in case.
 
 **Steps for TortoiseHg:**
 
@@ -46,4 +46,4 @@ Mercurial username configuration
 
    [ui]
    username = Firstname Lastname <firstname.lastname@example.net>
-   
+

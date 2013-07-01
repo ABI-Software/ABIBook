@@ -3,14 +3,14 @@
 Reproducing model behavior in OpenCOR
 =====================================
 
-In this tutorial we will be demonstrating how to reproduce the results from and CellML model as they were originally published. Because the Physiome model repository makes use of :term:`Mercurial`, even if a :term:`workspace` has continued being developed after a particular revision is published, we are able to step back through the workspace history to reproduce those original published results.
+In this tutorial, we will be demonstrating how to reproduce the results from a CellML model as they were originally published. Because the Physiome Model Repository makes use of :term:`Mercurial`, even if a :term:`workspace` has continued being developed after a particular revision is published, we are able to step back through the workspace history to reproduce those original published results.
 
 Following on from the :ref:`previous tutorial <embc13-scenario1-opencor>`, we make use of the `Noble (1962) <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1359535/>`_ cardiac cellular electrophysiology model. In this tutorial, we will use the version of this model published in the CellML model repository and available here: `<http://models.cellml.org/e/174>`_. If you navigate from that :term:`exposure` to the :term:`workspace` you can check the history as `shown below <http://models.cellml.org/w/andre/embc13-n62/@@shortlog>`_.
 
 .. figure:: images/sourceHistory.png
    :align: center
    :width: 80%
-   
+
 As you can see highlighted in the :guilabel:`Exposure` column of the history above, there are two exposures for this workspace. For the purposes of this tutorial, we will assume that the `earlier exposure <http://models.cellml.org/e/173>`_ corresponds to a study that has been published in a scientific journal. The `later exposure <http://models.cellml.org/e/174>`_ is the result of further work on this model following the publication of the journal article. The later exposure illustrates the difference between these two versions of the model. In this tutorial we aim to reproduce the results as shown in the published journal article - corresponding to the earlier exposure.
 
 .. important::
@@ -32,7 +32,7 @@ Now that we have the model, we want to ensure that we are able to produce the cu
 .. figure:: images/originalResults.png
    :align: center
    :width: 80%
-   
+
 Notice that in the *5000ms* simulation there are **five** action potentials.
 
 Revert to an earlier version of the model
@@ -47,25 +47,25 @@ Here we need to update our local clone of the workspace to a state matching the 
 .. figure:: images/sourceHistoryFilesLink.png
    :align: center
    :width: 80%
-   
+
 From the files page, you will see the required revision identifier as highlighted in the image below.
 
 .. figure:: images/sourceFilesPublished.png
    :align: center
    :width: 80%
-   
+
 You should copy this identifies to the clipboard ready for use in the next step. In your local clone of the workspace, select :menuselection:`TortoiseHG --> Update...` from the context menu. This will bring up the :guilabel:`Update` dialog.
 
 .. figure:: images/hgUpdate-1.png
    :align: center
    :width: 80%
-   
+
 In this dialog you should paste the revision identifier copied above into the :guilabel:`Update to:` field (1) and then click the :guilabel:`Update` button (2).
 
 .. figure:: images/hgUpdate-2.png
    :align: center
    :width: 80%
-   
+
 **Command line equivalent** ::
 
    hg update -r [revision identifier]
@@ -75,5 +75,5 @@ You will now see in your local clone that the files have reverted back to that p
 .. figure:: images/revertedResults.png
    :align: center
    :width: 80%
-   
+
 Note in particular that there should now be the same **six** action potentials that were present in the published version of the model.

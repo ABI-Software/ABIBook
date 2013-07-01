@@ -33,7 +33,7 @@ Creating standard CellML exposures
 
 .. note:: In order to create an exposure of a workspace, the workspace must be *published*. You will  need to submit your workspace for publication and await review. It is not possible to create exposures in private workspaces.
 
-In this example I will use a :term:`fork` of the the Beeler Reuter 1977 workspace. Creating a *fork* of a workspace creates a *clone* of that workspace that you own, and can push changes to. You can *fork* any publicly available workspace in the Physiome model repository. For more information on this feature of PMR, refer to the information on features or collaboration, or see the :ref:`relevant section of the tutorial <tut1forkingaworkspace>`.
+In this example I will use a :term:`fork` of the the Beeler Reuter 1977 workspace. Creating a *fork* of a workspace creates a *clone* of that workspace that you own, and can push changes to. You can *fork* any publicly available workspace in the Physiome Model Repository. For more information on this feature of PMR, refer to the information on features or collaboration, or see the :ref:`relevant section of the tutorial <tut1forkingaworkspace>`.
 
 At this point you will need to submit the workspace for publication, using the *state:* menu at the top right of the workspace view page.
 
@@ -157,4 +157,4 @@ The new exposure will be created and displayed. When a new exposure is created, 
 
 The state will change to "pending review". The administrator or curators of the repository will then review and publish the exposure, as well as expiring the old exposure.
 
-.. _Physiome model repository: http://models.physiomeproject.org
+.. _Physiome Model Repository: http://models.physiomeproject.org
