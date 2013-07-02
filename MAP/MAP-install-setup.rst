@@ -43,20 +43,23 @@ MAP Plugins
 
 .. _github project: https://github.com/mapclient-plugins
 
-Plugins sitting on `github project`_ under map client. Just need to download them and then use the MAP client plugin manager (reference plugin tool in feature demonstration).
+The installation of MAP plugins simply requires obtaining the plugins and then using the :ref:`MAP plgin manager <MAP-plugin-manager-tool>` to let the MAP client know where to look for plugins. Furthermore, there is a `github project`_ which is used to provide a common collection of MAP plugins. For the purposes of this tutorial, the ``autosegmentationstep`` plugin will be used. You can `download <https://github.com/mapclient-plugins/autosegmentationstep/archive/master.zip>`_ a copy of the plugin, extract it, and then follow the instructions for adding the folder in which you extracted the plugin to the :ref:`MAP plgin manager <MAP-plugin-manager-tool>`.
 
 Zinc and PyZinc
 ===============
 
-ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/embc2013/*  pyzinc-r9959-amd64-Windows-Python-2.7.zip
+`Zinc <http://physiomeproject.org/software/zinclibrary/>`_ is an advanced field manipulation and visualisation library and `PyZinc <http://physiomeproject.org/software/pyzinc/>`_ provides :term:`Python` bindings to the Zinc library. Binaries are available for `download <ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/embc2013/>`_ for Linux, Windows, and OS X. The MAP client is able to make use of Zinc for advanced visualisation and image processing steps. To get PyZinc installed, follow these steps:
 
-Zinc is an advanced visualisation library and PyZinc is the Python bindings for this library.  Binaries are available from `Physiome Zinc Downloads`_ and `Physiome PyZinc Downloads`_.  
+#. Install Zinc using either: the Windows installer (ensuring that you enable the option for the installer to add Zinc to the system PATH); or unzip the archive and manually copy library file to somewhere on your PATH (which could include the PyZinc installation folder).
+#. Unzip the downloaded PyZinc archive.
+#. In a command window, change into folder PyZinc extracted into.
+#. Execute the following command: ``python setup.py install`` (this uses a similar mechanism as the ``easy_instal`` software above..
 
-#. Install zinc using installer (check put me on the path checkbox); or unzip it and manually copy dll to somewhere on your PATH (could include the pyzinc installation folder).
-#. unzip and change into folder
-#. ``python setup.py install`` - done.
+You can check that you have Zinc and PyZinc correctly installed and functional by running the ``volume_fitting.py`` application provided with the tutorial materials. If Zinc and PyZinc are working you should get an application window similar to that shown below with the interactive three-dimensional model viewer shown. *Note* you will need to restart the command window after installing PyZinc in order to refresh the system PATH.
 
-restart command window to refresh PATH, then run volume_fitting.py to show stuff works.
+.. figure:: images/volumeFitting.png
+   :align: center
+   :width: 80%
 
 Which Binary?
 -------------

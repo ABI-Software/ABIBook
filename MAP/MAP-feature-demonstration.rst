@@ -59,6 +59,7 @@ Tools
 
 MAP currently has three tools that may be used to aide the management of the workflow.  They are the Plugin Manager tool, the Physiome Model Repository (PMR) tool and the Annotation tool.  For a description of each tool see the relevant sections.
 
+.. _MAP-plugin-manager-tool:
 
 Plugin Manager Tool
 -------------------
