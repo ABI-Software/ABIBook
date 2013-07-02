@@ -14,10 +14,22 @@ MAP Tutorial - Create Plugin
 
 This document details takes the reader through the process of creating a new plugin for the MAP Client.  The :doc:`MAP-create-plugin` document defines the plugin interface that the new plugin must adhere to.
 
-Getting Started
-===============
+A Simple Source Step Example
+============================
 
-start with skeleton, and then add the code for the fitting example. Need steps for file input or leave current magic.
+We need to create a source step for supplying Zinc model files.  
 
-zinc model input step - with icon. (torso from volume fitting example)
-zinc node input step - with icon.
+First copy the skeletonstep directory to another directory.  To make this step our own we first change the skeletonstep name to zincmodelsourcestep.  The places we have to change are:
+
+ #. The topmost directory
+ #. The inner directory, this directory is used to namespace our new step.
+ #. In __init__.py file in the topmost directory, we also need to uncomment the lines::
+ 
+   from zincmodelsourcestep import step
+   print("Plugin '{0}' version {1} by {2} loaded".format(tail, __version__, __author__))
+   
+ #. In __init__.py file in the inner directory.  We have to change the name of the class to 'ZincModelSourceStep' and change the name of the step to 'Zinc Model Source'. 
+ 
+Now we need to be able to configure the step.  To do this we can use qt-designer to create a 'configuredialog.ui' file that we can convert into Python code using 'pyside-uic'.  We want the configuredialog.ui to look like this:
+
+  
