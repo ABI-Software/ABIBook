@@ -127,6 +127,8 @@ As above, choose :menuselection:`Hg Commit...` from the context menu in your wor
    hg diff
    hg commit -m "Using OpenCOR to add some annotations to my copy of the Noble 1962 model."
 
+.. _embc13-scenario1-opencor-push:
+
 Push back to the repository
 ---------------------------
 

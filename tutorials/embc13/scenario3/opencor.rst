@@ -28,8 +28,8 @@ Cloning your forked workspace
 
 In order to make changes to your workspace, you have to :term:`clone` it to your own computer. To do this, follow the procedure as described in the :ref:`earlier tutorial <embc13-scenario1-opencor-newWorkspace>`.
 
-Extending the model
--------------------
+Quietening the self excitation
+------------------------------
 
 The version of the Noble 1962 model you have just forked and cloned is a model of a Purkinje fibre cell. These cells are capable of acting as pacemaker cells, although usually entrained by the sinoatrial node of the heart. The Noble model reproduces this behavior but is also able to simulate a non-pacing version of the cell model. This is accomplished by decreasing the potassium current which gives rise to the gradual depolarization of the member potential seen the figures from OpenCOR for the model in the previous tutorials. Once the cell is in a quiesent state, we are able to then apply an electrical stimulus to impose our own pacing regime.
 
@@ -49,7 +49,51 @@ Set the ``initial_value`` attribute to the value you determined most suitable in
    
 Now would be a good time to :ref:`commit your changes <EMBC13-OpenCOR-addingContent>` to your clone of the workspace
 
-extend
-commit
-push
-expose
+Adding an electrical stimulation protocol
+-----------------------------------------
+
+Now that we have a quiesent version of the Noble (1962) model, we are able to consider adding our own electrical stimulation protocol. If you open your current version of the ``n62.cellml`` document in your text editor again, you will see a component with the name ``stimulus_protocol`` as shown below.
+
+.. figure:: images/n62-stimulusProtocol-code.png
+   :align: center
+   :width: 80%
+   
+As you can see in this snippet of the XML source, there is a stimulus current variable, ``IStim``, which is given a value of *0.0 uA_per_mm2*. In this extension to the model we will replace this simple assignment of no stimulus current with a definition of a periodic applied stimulus. The code example below shows one way to encode such a periodic stimulus current in CellML.
+
+.. code-block:: xml
+
+   <component cmeta:id="stimulus_protocol" name="stimulus_protocol">
+     <variable name="IStim" public_interface="out" units="uA_per_mmsq"/>
+     <variable name="time" public_interface="in" units="ms"/>
+     <variable name="stimPeriod" initial_value="750" units="ms"/>
+     <variable name="stimDuration" initial_value="1" units="ms"/>
+     <variable name="stimCurrent" initial_value="400" units="uA_per_mmcu"/>
+     <variable name="Am" initial_value="200" units="per_mm"/>
+     <math xmlns="http://www.w3.org/1998/Math/MathML">
+         <apply id="stimulus_calculation"><eq />
+             <ci>IStim</ci>
+             <piecewise>
+                 <piece>
+                     <apply><divide/>
+                         <ci>stimCurrent</ci>
+                         <ci>Am</ci>
+                     </apply>
+                     <apply><lt/>
+                         <apply><rem/>
+                             <ci>time</ci>
+                             <ci>stimPeriod</ci>
+                         </apply>
+                         <ci>stimDuration</ci>
+                     </apply>
+                 </piece>
+                 <otherwise>
+                     <cn cellml:units="uA_per_mmsq">0.0</cn>
+                 </otherwise>
+             </piecewise>
+         </apply>
+     </math>
+   </component>
+
+In the above example, we have introduced some new variable to control the frequency, duration, and magnitude of the applied stimulus current. If you replace the ``stimululs_protocol`` component in the ``n62.cellml`` model with the one above, you are able to load the new version of the model into OpenCOR and have a play with those variables to ensure they are behaving as expected. **Note:** you may need to decrease the :guilabel:`Point interval` and change to the Forward Euler integrator in OpenCOR to ensure that your specified stimulus in correctly detected by the numerical integration scheme.
+
+Now would be a good time to :ref:`commit your changes <EMBC13-OpenCOR-addingContent>` to your clone of the workspace and :ref:`push <embc13-scenario1-opencor-push>` them back to the model repository. You might also want to think about :ref:`sharing your workspace <PMR-sharingWorkspaces>` with your neighbors or to have a look at creating an :term:`exposure` for your workspace. To learn how to create exposures, please refer to :ref:`PMR-exposing-cellml`.
