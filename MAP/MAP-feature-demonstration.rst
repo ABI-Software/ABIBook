@@ -8,7 +8,6 @@ MAP Features Demonstration
 
 .. _MAP: https://simtk.org/home/map
 .. _launchpad project: http://launchpad.net/mapclient
-.. _github project: https://github.com/mapclient-plugins
 .. _physiome: http://physiomeproject.org/zinclibrary
 .. _project downloads: https://launchpad.net/mapclient/+download
 
@@ -17,14 +16,7 @@ MAP Features Demonstration
 
 This document details the features of `MAP`_, a cross-platform framework for managing workflows. MAP is a plugin-based application that can be used to create workflows from a collection of workflow steps.
 
-In order to go through this demonstration, you will need;
-
-- version 0.9.0 of MAP, available from the `project downloads`_.
-- the plugins which are available from the `github project`_.
-- the Zinc library and the PyZinc extension module from `physiome`_
-- the MAP client dependencies.
-
-Directions for installing MAP and getting the MAP plugins are available in the :ref:`MAP-install-setup`.
+In this demonstration is based on version 0.9.0 of MAP, available from the `project downloads`_. Directions for installing MAP and getting the MAP plugins are available in the :ref:`MAP-install-setup`.
 
 In this demonstration we will cover the features of MAP.  We will start with a quick tour and then create a new workflow that will help us segment a region of interest from a stack of images.
 

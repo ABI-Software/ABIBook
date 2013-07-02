@@ -17,3 +17,7 @@ This document details takes the reader through the process of creating a new plu
 Getting Started
 ===============
 
+start with skeleton, and then add the code for the fitting example. Need steps for file input or leave current magic.
+
+zinc model input step - with icon. (torso from volume fitting example)
+zinc node input step - with icon.

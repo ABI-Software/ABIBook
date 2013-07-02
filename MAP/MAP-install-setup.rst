@@ -41,10 +41,22 @@ Now that the barebones MAP application is installed and running we can move on t
 MAP Plugins
 ===========
 
+.. _github project: https://github.com/mapclient-plugins
+
+Plugins sitting on `github project`_ under map client. Just need to download them and then use the MAP client plugin manager (reference plugin tool in feature demonstration).
+
 Zinc and PyZinc
 ===============
 
+ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/embc2013/*  pyzinc-r9959-amd64-Windows-Python-2.7.zip
+
 Zinc is an advanced visualisation library and PyZinc is the Python bindings for this library.  Binaries are available from `Physiome Zinc Downloads`_ and `Physiome PyZinc Downloads`_.  
+
+#. Install zinc using installer (check put me on the path checkbox); or unzip it and manually copy dll to somewhere on your PATH (could include the pyzinc installation folder).
+#. unzip and change into folder
+#. ``python setup.py install`` - done.
+
+restart command window to refresh PATH, then run volume_fitting.py to show stuff works.
 
 Which Binary?
 -------------
