@@ -4,6 +4,14 @@
 Reproducing published data
 ==========================
 
+In the Physiome Model Repository (PMR), a complete piece of work is stored in a :term:`workspace`. Each workspace is a :term:`Mercurial` repository, which allows PMR to maintain a complete history of all changes made to every file it contains. In this tutorial, we take you through the process of reproducing an existing piece of *"published"* work - commonly, the first stage in establishing a new project which builds on previous discoveries.
+
+.. toctree::
+
+   opencor
+   map
+   bestpractice
+
 Showing how to take some previous work from the repository and reproduce results as they might have been published.
-   - highlight the benefits of using standards and making data available in public repositories (code, models, data, tools, etc)
+   - highlight the benefits of using standards and making data available in public repositories (code, models, data, tools, etc.)
    - evolving standards (SED-ML, FieldML, etc.)

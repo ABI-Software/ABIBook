@@ -8,9 +8,7 @@ MAP Features Demonstration
 
 .. _MAP: https://simtk.org/home/map
 .. _launchpad project: http://launchpad.net/mapclient
-.. _github project: https://github.com/mapclient-plugins
 .. _physiome: http://physiomeproject.org/zinclibrary
-.. _pyside: https://pypi.python.org/pypi/PySide
 .. _project downloads: https://launchpad.net/mapclient/+download
 
 .. note::
@@ -18,19 +16,7 @@ MAP Features Demonstration
 
 This document details the features of `MAP`_, a cross-platform framework for managing workflows. MAP is a plugin-based application that can be used to create workflows from a collection of workflow steps.
 
-In order to go through this demonstration, you will need;
-
-- version X.Y.Z of MAP, available from the `project downloads`_.
-- the plugins which are available from the `github project`_.
-- the Zinc library and the PyZinc extension module from `physiome`_
-- PySide the Qt widget toolkit bindings
-- the Requests Python library available from PyPi.
-- the OAuthlib Python library available from PyPi, note: not the OAuth Python library.
-
-.. todo::
-   Need to consolidate downloads somewhere convenient and maybe make a workspace in the repository for the demonstration models.
-
-Install MAP, and get the MAP plugins.  See notes on :doc:`MAP install and setup <MAP-install-setup>`.
+In this demonstration is based on version 0.9.0 of MAP, available from the `project downloads`_. Directions for installing MAP and getting the MAP plugins are available in the :ref:`MAP-install-setup`.
 
 In this demonstration we will cover the features of MAP.  We will start with a quick tour and then create a new workflow that will help us segment a region of interest from a stack of images.
 
@@ -73,6 +59,7 @@ Tools
 
 MAP currently has three tools that may be used to aide the management of the workflow.  They are the Plugin Manager tool, the Physiome Model Repository (PMR) tool and the Annotation tool.  For a description of each tool see the relevant sections.
 
+.. _MAP-plugin-manager-tool:
 
 Plugin Manager Tool
 -------------------

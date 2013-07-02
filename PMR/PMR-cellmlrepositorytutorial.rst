@@ -45,12 +45,12 @@ The Mercurial DVCS has a range of terms that are useful to know, and definitions
 Working with the repository web interface
 =========================================
 
-This part of the tutorial will teach you how to find models in the Physiome model repository `(http://models.physiomeproject.org) <http://models.physiomeproject.org>`_, how to view a range of information about those models, and how to download models. The first page in the repository consists of basic navigation, a link to the main model listing, a search box at the top right, and a list of model category links as shown below.
+This part of the tutorial will teach you how to find models in the Physiome Model Repository `(http://models.physiomeproject.org) <http://models.physiomeproject.org>`_, how to view a range of information about those models, and how to download models. The first page in the repository consists of basic navigation, a link to the main model listing, a search box at the top right, and a list of model category links as shown below.
 
 .. figure:: /PMR/images/PMR-tut1-mainscreen.png
    :align: center
 
-   The front page of the Physiome model repository.
+   The front page of the Physiome Model Repository.
 
 Model listings
 --------------
@@ -86,9 +86,9 @@ This part of the tutorial will teach you how to :term:`clone` a workspace from t
 Registering an account and logging in
 -------------------------------------
 
-First, navigate to the `teaching instance`_ of the physiome model repository at `<http://teaching.physiomeproject.org/>`_.
+First, navigate to the `teaching instance`_ of the Physiome Model Repository at `<http://teaching.physiomeproject.org/>`_.
 
-.. include:: PMR-teaching-instance-warning.rst 
+.. include:: PMR-teaching-instance-warning.rst
 
 In order to make changes to models in the CellML repository, you must first register for an account. The *Log in* and *Register* links can be found near the top right corner of the page. Your account will have the appropriate access privileges so that you can push any changes you have made to a model back into the repository.
 
@@ -136,7 +136,7 @@ Forking an existing workspace
 
 For this tutorial we will :term:`fork` an existing workspace. This creates new workspace owned by you, containing a copy of all the files in the workspace you forked including their complete history. This is equivalent to cloning the workspace, creating a new workspace for yourself, and then pushing the contents of the cloned workspace into your new workspace.
 
-Forking a workspace can be done using the Physiome model repository web interface. The first step is to find the workspace you wish to fork. We will use the Beeler, Reuter 1977 :term:`workspace` which can be found at: `<http://teaching.physiomeproject.org/workspace/beeler_reuter_1977>`_.
+Forking a workspace can be done using the Physiome Model Repository web interface. The first step is to find the workspace you wish to fork. We will use the Beeler, Reuter 1977 :term:`workspace` which can be found at: `<http://teaching.physiomeproject.org/workspace/beeler_reuter_1977>`_.
 
 Now click on the :guilabel:`fork` option in the toolbar, as shown below.
 
@@ -234,11 +234,11 @@ If you would like to move your work from the teaching instance of the model repo
 1. Ensure that you have pushed all your commits to the source instance;
 #. :ref:`Create the new workspace <PMR-creatingNewWorkspace>` in the destination repository;
 #. Navigate to the workspace created and choose the :guilabel:`synchronize` action from the workspace toolbar, as shown below.
-   
+
 .. figure:: /PMR/images/PMR-synchronize-form.png
    :align: center
    :width: 100%
-   
+
 4. Fill in the URI of your workspace on the source instance (*e.g.,* `<http://models.physiomeproject.org/w/andre/cortassa-ECME-2006>`_)
 #. Click the :guilabel:`Synchronize` button.
 
@@ -250,14 +250,14 @@ In a similar manner, you are able to copy :term:`exposures` you might have made 
 .. figure:: /PMR/images/exposure-wizard-highlight-export.png
    :align: center
    :width: 100%
-   
+
 3. In the destination repository, navigate to the desired revision of the (published) workspace and choose the :guilabel:`Create exposure` action as described in the directions for :ref:`creating an exposure from scratch <createExposureChooseRevision>`
 #. Rather than building a new exposure, choose the :guilabel:`Exposure Import via URI` tab in the exposure creation wizard, as shown below.
 
 .. figure:: /PMR/images/exposure-wizard-import-from-uri.png
    :align: center
    :width: 100%
-   
+
 5. Copy and paste the URI from the source exposure wizard, highlighted above, into the :guilabel:`Exposure Export URI` field in the exposure creation wizard shown above.
 #. Click the :guilabel:`Add` button. This will take you back to the standard :ref:`exposure build page <buildingTheExposure>`, but now with all the fields pre-populated from the source exposure.
 #. Navigate to the bottom of the page and click the :guilabel:`Build` button to actually build the exposure pages. You are free to reconfigure the exposure if desired, some :ref:`help is available <buildingTheExposure>` for this if needed.
