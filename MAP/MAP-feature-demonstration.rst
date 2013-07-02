@@ -50,7 +50,7 @@ In the Step box we will only see two steps, this is because we have only loaded 
 Menu Bar
 --------
 
-The Menu bar provides a selection of drop down menus for accessing the applications functions.  The File menu provides access to opening, closing workspaces as well as quitting the application.  The Edit menu provides access to the undo/redo functionality.  The Tools menu provides access to the Plugin Manager tool, Physiome Model Repository (PMR) tool and the Annotation tool.  The Help menu provides access to the about box which contains information on contributors and the license that the MAP application is released under.
+The Menu bar provides a selection of drop down menus for accessing the applications functions.  The File menu provides access to opening, importing, closing workspaces as well as quitting the application.  The Edit menu provides access to the undo/redo functionality.  The Tools menu provides access to the Plugin Manager tool, Physiome Model Repository (PMR) tool and the Annotation tool.  The Help menu provides access to the about box which contains information on contributors and the license that the MAP application is released under.
 
 Step Box
 --------
@@ -62,43 +62,24 @@ Workflow canvas
 
 The workflow canvas is where we construct our workflow.  We do this by adding the steps to the workflow canvas from the step box that make up our workflow.  We then make connections between the workflow steps to define the complete workflow.
 
-Getting Started
-===============
+When a step is added to the workflow the icon which is visible in the Step box is augmented with visualisations of the Steps ports and the steps configured status.  The annotation of the steps ports will show when the mouse is hovered over a port.  The image below shows the Image Source step with the annotation for the port displayed.
 
-To get started with MAP we need to create a new workflow.  To do this we use File -> New -> Workflow menu option (Ctrl-N shortcut).  This option will present the user with a directory selection dialog.  Use the dialog to select a directory where the workflow can be saved.  Once we have chosen a directory the step box and workflow canvas will become enabled.
-
-To create a meaningful workflow we will need to use some external plugins.  To load these plugins we will use the Plugin Manager tool.  The Plugin Manager tool can be found under the Tools menu.  Use the Plugin Manager to add the directory location of the MAP plugins. After confirming the changes to the Plugin Manager you should see a few new additions to the Step box. 
-
-Creating the Workflow
-=====================
-
-To create a workflow we use Drag 'n' Drop to drag steps from the Step box and drop the step onto the workflow canvas.  When steps are first dropped onto the canvas they show a red cog icon to indicate that the step is not configured.  At a minimum a step requires an identifier to be set before it can be used.
- 
-Drag the steps `Image Source`, `Data Store` and `Segmentation` onto the workflow canvas.  All the steps will show a red cog this indicates that the step needs to be configured.  To configure a step we can right click on it to bring up a context menu and then from this menu select the configure option.
-
-
-Configuring the Image Source Step
----------------------------------
-
-The Image Source step requires a location.  This location contains the images to import.  The location may be a directory on the local hard disk or a workspace on PMR.  Here we will show how to configure the Image Source step with images that have been stored in a workspace on PMR.
-
-First each step requires a unique id.  This id is used to create a directory under the workflow project directory.  The step directory is used to hold input or output data, the step configuration information and any annotations.
-
-Next change to the PMR tab and we will see an ellipses button for bringing up the PMR tool dialog.
-
-
+.. figure:: /MAP/images/step_with_port_info_displayed_1.png
+   :align: center
+   :width: 40%
+  
 Tools
 =====
 
-MAP currently has three tools that may be used to aide the management of the workflow.  They are the Plugin tool, the Physiome Model Repository (PM) tool and the Annotation tool.  For a description of each tool see the relevant sections below.
+MAP currently has three tools that may be used to aide the management of the workflow.  They are the Plugin Manager tool, the Physiome Model Repository (PMR) tool and the Annotation tool.  For a description of each tool see the relevant sections.
 
 
-Plugin Tool
------------
+Plugin Manager Tool
+-------------------
 
-The plugin tool is a simple tool that enables the user to add or remove additional plugin directories.  MAP comes with some default plugins which the user can decide to load or not.  External directories are added with the add directory button.  Directories are removed by selecting the required directory in the Plugin directories list and the remove directory button.
+The plugin tool is a simple tool that enables the user to add or remove additional plugin directories.  MAP comes with some default plugins which the user can decide to load or not.  External directories are added with the add directory button.  Directories are removed by selecting the required directory in the Plugin directories list and clicking the remove directory button.
 
-Whilst additions to the plugin path will be visible immediately in the Step box deletions will not show up until the next time MAP is started.  This behaviour may change in coming releases.  
+Whilst additions to the plugin path will be visible immediately in the Step box deletions will not be apparent until the next time the MAP Client is started.  This behaviour is a side-effect of the Python programming language.  
 
 .. figure:: /MAP/images/plugin_manager_1.png
    :align: center
@@ -108,7 +89,7 @@ Whilst additions to the plugin path will be visible immediately in the Step box 
 Physiome Model Repository (PMR) Tool
 ------------------------------------
 
-The PMR tool uses webservices to communicate between itself (the consumer) and the PMR website (the server).  Using this tool we can search for and find suitable resources on PMR.
+The PMR tool uses webservices and OAuth to communicate between itself (the consumer) and the PMR website (the server).  Using this tool we can search for and find suitable resources on PMR.
 
 The PMR website uses OAuth to authenticate a consumer and determine consumer access privileges.  Here we will discuss the parts of OAuth that are relevant to getting you (the user) able to access resources on PMR.
 
@@ -120,11 +101,19 @@ If you want the PMR tool to have access to privileged information (your non-publ
    :align: center
    :width: 25%
 
-MAP is not setup to work with streamed resources so we must download the workspace from PMR.
-
 Annotation Tool
 ---------------
 
-The Annotation tool is a very simple tool to help a user annotate the Step input and outputs as well as the Step ports.  At this stage there is a limited vocabulary that the Annotation tool knows about, but this is intended to be extended in coming releases.
+The Annotation tool is a very simple tool to help a user annotate the Workflow itself and the Step data directories that are linked to PMR.  At this stage there is a limited vocabulary that the Annotation tool knows about, but this is intended to be extended in coming releases.  The vocabulary that the annotation is aware of is available in the three combo-boxes near the top of the dialog.
 
+.. figure:: /MAP/images/top_annotation_1.png
+   :align: center
+   :width: 40%
 
+The main part of the Annotation tool shows the current annotation from the current target.  
+
+.. figure:: /MAP/images/main_annotation_1.png
+   :align: center
+   :width: 25%
+
+In the above image we can see the list of annotations that have been added to the current target.  This is a simplified view of the annotation with the prefix of the terms removed for clarity.
