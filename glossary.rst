@@ -42,3 +42,6 @@ Glossary
    Pull
    Pulling
       The term used with distributed version control systems for the action of pulling changes from one clone of the repository into another. With PMR, this usually implies pulling from a workspace in the model repository into a clone of the workspace on your local machine.
+
+   Python
+      Python is a programming language that lets you work more quickly and integrate your systems more effectively. See `<http://python.org>`_ for all the details.
