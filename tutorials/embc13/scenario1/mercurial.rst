@@ -6,6 +6,8 @@ Working with the repository using Mercurial
 
 This part of the tutorial will teach you how to create a :term:`workspace` in the repository, :term:`clone` the workspace from the model repository using a :term:`Mercurial` client, add content to the workspace, and then push the cloned workspace to the repository.
 
+.. _embc13-registerWithPMR:
+
 Registering an account and logging in
 -------------------------------------
 

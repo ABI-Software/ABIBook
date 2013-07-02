@@ -38,12 +38,16 @@ which should result in an application window similar to that shown below.
    
 Now that the barebones MAP application is installed and running we can move on to some useful plugins.
 
+.. _embc13-MAP-plugins-install:
+
 MAP Plugins
 ===========
 
 .. _github project: https://github.com/mapclient-plugins
 
-The installation of MAP plugins simply requires obtaining the plugins and then using the :ref:`MAP plgin manager <MAP-plugin-manager-tool>` to let the MAP client know where to look for plugins. Furthermore, there is a `github project`_ which is used to provide a common collection of MAP plugins. For the purposes of this tutorial, the ``autosegmentationstep`` plugin will be used. You can `download <https://github.com/mapclient-plugins/autosegmentationstep/archive/master.zip>`_ a copy of the plugin, extract it, and then follow the instructions for adding the folder in which you extracted the plugin to the :ref:`MAP plgin manager <MAP-plugin-manager-tool>`.
+The installation of MAP plugins simply requires obtaining the plugins and then using the :ref:`MAP plugin manager <MAP-plugin-manager-tool>` to let the MAP client know where to look for plugins. Furthermore, there is a `github project`_ which is used to provide a common collection of MAP plugins. For the purposes of this tutorial, the ``autosegmentationstep`` plugin will be used. You can `download <https://github.com/mapclient-plugins/autosegmentationstep/archive/master.zip>`_ a copy of the plugin, extract it, and then follow the instructions for adding the folder in which you extracted the plugin to the :ref:`MAP plugin manager <MAP-plugin-manager-tool>`.
+
+.. _MAP-install-zinc:
 
 Zinc and PyZinc
 ===============

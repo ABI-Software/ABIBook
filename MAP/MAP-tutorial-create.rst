@@ -17,9 +17,9 @@ This document details takes the reader through the process of creating a workflo
 Getting Started
 ===============
 
-To get started with MAP we need to create a new workflow.  To do this we use File -> New -> Workflow menu option (Ctrl-N shortcut).  This option will present the user with a directory selection dialog.  Use the dialog to select a directory where the workflow can be saved.  Once we have chosen a directory the step box and workflow canvas will become enabled.
+To get started with MAP we need to create a new workflow.  To do this we use :menuselection:`File --> New --> Workflow` menu option (Ctrl-N shortcut).  This option will present the user with a directory selection dialog.  Use the dialog to select a directory where the workflow can be saved.  Once we have chosen a directory the step box and workflow canvas will become enabled.
 
-To create a meaningful workflow we will need to use some external plugins.  To load these plugins we will use the Plugin Manager tool.  The Plugin Manager tool can be found under the Tools menu.  Use the Plugin Manager to add the directory location of the MAP plugins. After confirming the changes to the Plugin Manager you should see a few new additions to the Step box. 
+To create a meaningful workflow we will need to use some external plugins.  To load these plugins we will use the Plugin Manager tool.  The Plugin Manager tool can be found under the Tools menu.  Use the Plugin Manager to add the directory location of the :ref:`embc13-MAP-plugins-install`. After confirming the changes to the Plugin Manager you should see a few new additions to the Step box. 
 
 Creating the Workflow
 =====================
@@ -39,7 +39,7 @@ The Image Source step requires a location.  This location contains the images to
 
 First each step requires a unique id.  The id is used to create a file containing the step configuration information.  This id for the Image Source step is used to create a directory under the workflow project directory.  In the identifier edit box enter a directory name.  Once a valid identifier is entered the red highlight around the edit box will be turned off.
 
-Next change to the PMR tab and we will see an ellipses button for bringing up the PMR tool dialog.  You need to register the PMR tool to access certain webservices the details on how to do this are available :doc:`here <MAP-feature-demonstration>`.  The remainder of this tutorial will assume you have setup access to PMR properly.  In the search box of the PMR dialog we need to enter the search term 'blood-vessels'.  The result of the search should look like the image below.
+Next change to the PMR tab and we will see an ellipses button for bringing up the PMR tool dialog.  You need to register the PMR tool to access certain webservices the details on how to do this are available :ref:`here <embc13-MAP-PMR-tool>`.  The remainder of this tutorial will assume you have setup access to PMR properly.  In the search box of the PMR dialog we need to enter the search term 'blood-vessels'.  The result of the search should look like the image below.
 
 .. figure:: /MAP/images/PMRTool_2.png
    :align: center
