@@ -11,4 +11,8 @@ In the Physiome Model Repository (PMR), a complete piece of work is stored in a 
    mercurial
    opencor
    map
+   
+.. toctree::
+   :hidden:
+   
    bestpractice

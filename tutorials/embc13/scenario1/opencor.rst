@@ -111,9 +111,6 @@ We can then add desireable terms from the search results by choosing the :guilab
    :align: center
    :width: 80%
 
-.. todo::
-    Might want to update the figure so that the pubchem.substance:4541 annotation doesn't show up in the list of existing annotations...
-
 Have a play annotating other variables and components in the model. When done annotating, make sure to save the model (:menuselection:`File --> Save`). With the CellML model updated, now is a good time to commit the changes to the workspace.
 
 As above, choose :menuselection:`Hg Commit...` from the context menu in your workspace folder to bring up the Mercurial :guilabel:`commit` dialog. This time you will see that there is one file modified that can be committed, ``n62.cellml`` (1). As we mentioned previously, it is important to enter a good log message to keep a record of the changes you make (2), and the changes made to the currently selected file are shown to help remind you as to your changes (3). In this case, OpenCOR has made many changes to the whitespace in the file, as well as adding the RDF annotations at the bottom of the file.
