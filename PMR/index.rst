@@ -29,4 +29,4 @@ If you wish to deploy an instance of the repository software, please see the `bu
    * Get embedded workspaces doc written.
    * Get some best practice docs written.
 
-.. _buildout repository: https://github.com/PMR2/pmr2.buildout
+.. _buildout repository: https://github.com/PMR/pmr2.buildout

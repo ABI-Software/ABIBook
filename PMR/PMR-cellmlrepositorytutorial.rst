@@ -86,9 +86,9 @@ Registering an account and logging in
 First, navigate to the staging instance of the Physiome model repository at `http://184.169.251.126/welcome <http://184.169.251.126/welcome>`_.
 .. note:: The staging instance
 
-   The staging instance of the repository is a mirror of the main repository site found at http://models.physiomeproject.org, running the latest development version of the PMR2 software.
+   The staging instance of the repository is a mirror of the main repository site found at http://models.physiomeproject.org, running the latest development version of the PMR software.
    
-   Any changes you make to the contents of the staging instance are not permanent, and will be overwritten with the contents of the main repository whenever the staging instance is upgraded to the latest PMR2 release. For this reason, you can feel free to experiment and make mistakes when pushing to the staging instance. 
+   Any changes you make to the contents of the staging instance are not permanent, and will be overwritten with the contents of the main repository whenever the staging instance is upgraded to the latest PMR release. For this reason, you can feel free to experiment and make mistakes when pushing to the staging instance. 
 
 In order to make changes to models in the CellML repository, you must first register for an account. The *Log in* and *Register* links can be found near the top right corner of the page. Your account will have the appropriate access privileges so that you can push any changes you have made to a model back into the repository.
 
@@ -105,14 +105,14 @@ Mercurial username configuration
 .. important::
    **Username setup for Mercurial**
    
-   Since you are about to make changes, your name needs to be recorded as part of the workspace revision history. When commit your changes using Mercurial, it is initially "offline" and independent of the central PMR2 instance.  This means that you have to set-up your username for the Mercurial client software, even though you have registered a username on the PMR2 site.
+   Since you are about to make changes, your name needs to be recorded as part of the workspace revision history. When commit your changes using Mercurial, it is initially "offline" and independent of the central PMR instance.  This means that you have to set-up your username for the Mercurial client software, even though you have registered a username on the PMR site.
 
    You only need to do this once.
 
 **Steps for TortoiseHg:**
 
 * Right click on any file or folder in Windows Explorer, and select :menuselection:`TortoiseHg --> Global Settings`.
-* Select *Commit* and then enter your name followed by your e-mail address in "angle brackets" (i.e. less-than "<" and greater-than ">").  Actually, you can enter anything you want here, but this is the accepted best practice.  Note that this information becomes visible publicly if the PMR2 instance that you push you changes to is public.
+* Select *Commit* and then enter your name followed by your e-mail address in "angle brackets" (i.e. less-than "<" and greater-than ">").  Actually, you can enter anything you want here, but this is the accepted best practice.  Note that this information becomes visible publicly if the PMR instance that you push you changes to is public.
 
 **Steps for command line:**
 

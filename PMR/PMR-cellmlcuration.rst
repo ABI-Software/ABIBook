@@ -1,10 +1,10 @@
 ﻿.. _PMR-cellmlcuration:
 
-=======================
-CellML Curation in PMR1
-=======================
+=============================================
+CellML Curation in Legacy Repository Software
+=============================================
 
-As PMR2 contains much of the data ported over from the PMR1 based CellML Model Repository, the curation system from that system was ported to PMR2 verbatim. This document describing the curation aspect of the repository is derived from documentation on the CellML site.
+As PMR contains much of the data ported over from the legacy software products that powered the CellML Model Repository, the curation system from that system was ported to PMR verbatim. This document describing the curation aspect of the repository is derived from documentation on the CellML site.
 
 CellML Model Curation: the Theory
 =================================
