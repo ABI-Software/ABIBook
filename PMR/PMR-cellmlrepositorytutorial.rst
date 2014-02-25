@@ -227,9 +227,9 @@ As you are working in a forked repository, you will need to create a new exposur
 Migrating content to the main repository
 ========================================
 
-As noted above, the `teaching instance`_ used in this tutorial is not suitable for permanent storage of your work. One of the advantages of using a distributed version control system to manage PMR :term:`workspaces` is that it is straightforward to move the entire workspace, including the full history and provenance record, from one location to another. Recent releases of PMR2 have also provided the feature to export exposures so that they can then be imported into another PMR2 instance.
+As noted above, the `teaching instance`_ used in this tutorial is not suitable for permanent storage of your work. One of the advantages of using a distributed version control system to manage PMR :term:`workspaces` is that it is straightforward to move the entire workspace, including the full history and provenance record, from one location to another. Recent releases of PMR Software have also provided the feature to export exposures so that they can then be imported into another PMR Software instance.
 
-If you would like to move your work from the teaching instance of the model repository into a *new* workspace on the main repository (or from any PMR2 instance to another one), you should follow these steps:
+If you would like to move your work from the teaching instance of the model repository into a *new* workspace on the main repository (or from any PMR Software instance to another one), you should follow these steps:
 
 1. Ensure that you have pushed all your commits to the source instance;
 #. :ref:`Create the new workspace <PMR-creatingNewWorkspace>` in the destination repository;
