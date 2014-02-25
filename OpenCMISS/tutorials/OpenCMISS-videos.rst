@@ -7,7 +7,7 @@ OpenCMISS tutorial videos
 Videos of OpenCMISS tutorials.
 
 **MPI tutorial**
-31 January 2012 
+31 January 2012
 Chris Bradley
 
 .. raw:: html
@@ -54,5 +54,3 @@ Nancy Yan
    />
 
 **Bidomain tutorial**
-
-**

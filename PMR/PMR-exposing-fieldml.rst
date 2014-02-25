@@ -12,12 +12,12 @@ The example screenshots below show the main documentation page view and the 3D v
 
 .. figure:: /PMR/images/PMR-fieldmlexposureexample1.png
    :align: center
-   
+
    The main documentation view of a FieldML exposure
-   
+
 .. figure:: /PMR/images/PMR-fieldmlexposureexample2.png
    :align: center
-   
+
    The main Zinc viewer view of the same FieldML exposure
 
 Creating the exposure files
@@ -34,7 +34,7 @@ The following example RDF file from comes from the `Laminar Structure of the Hea
 
 .. code-block:: xml
    :linenos:
-   
+
    <?xml version="1.0" encoding="utf-8"?>
    <rdf:RDF
          xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -59,7 +59,7 @@ The following example RDF file from comes from the `Laminar Structure of the Hea
          </dcterms:bibliographicCitation>
          <dcterms:isPartOf rdf:resource="info:pmid/9176318"/>
          <pmr2:annotation rdf:parseType="Resource">
-            <pmr2:type 
+            <pmr2:type
                   rdf:resource="http://namespace.physiomeproject.org/pmr2/note#json_zinc_viewer"/>
             <pmr2:fields>
                <rdf:Bag>
@@ -80,7 +80,7 @@ This file provides citation metadata and a reference to the resource that specif
 * Lines 3-8, namespaces used.
 * Lines 10-23, citation metadata.
 * Lines 24-37, resource description. Used to specify the JSON file that specifies the visualisation.
-   
+
 Example of the JSON file from the same (Laminar Structure of the Heart) workspace:
 
 .. code-block:: js
@@ -126,16 +126,16 @@ Example of the JSON file from the same (Laminar Structure of the Heart) workspac
                        "type": "lines",
                        "coordinatesField" : "heart.coordinates"
                    }
-               ], 
+               ],
                "elementDiscretization" : 8,
                "region_name" : "heart",
-               "group": "Structures", 
+               "group": "Structures",
                "label": "heart",
                "load": true
            }
       ]
    }
-   
+
 * Lines 2-8, sets up the camera or viewpoint for the initial Zinc viewer display.
 * Lines 12-18, specifies the FieldML model files
 * Lines 19-41, set up the actual visualisations of the mesh - in this case, two different surfaces and a set of lines.
