@@ -8,21 +8,23 @@ Visualizing element fields using lines and cylinders
 .. _example a4: http://cmiss.bioeng.auckland.ac.nz/development/examples/a/a4/index.html
 
 
-*Lines* and *cylinders* are graphical representations which can be used to visualize 1-D elements in CMGUI - line elements at the edges of 2-D faces or 3-D elements.  In general, lines or cylinders are used to visualize the basic shape of a mesh.  When you load a mesh (exnode and exelem files) into CMGUI, the mesh is by default represented by lines of the default colour and thickness: white lines 1 pixel thick.  This means that a *lines* :ref:`graphic <cmgui-graphics>` is created in the default scene (see the :ref:`scene editor <CMGUI-scene-editor-window>`), with the default settings (Figure 1).
+*Lines* and *cylinders* are graphical representations which can be used to visualize 1-D elements in CMGUI - including line elements at the edges of 2-D faces or 3-D elements. From Cmgui v3.0, cylinders are just a variant of lines specified by changing the Line shape to 'circle extrusion' combined with line scaling options; in previous versions of Cmgui, cylinders were a separate graphics type.
 
-If you wish to create these lines in the graphics window, use the go to the file menu in CMGUI and select *Read*, then *Node file*.  Read in ``cube.exnode`` from the example a2 directory.  Then using the *Read* and *Elements file* menu options, read in ``cube.exelem`` from the same directory.  If you now create a graphics window (using the *Graphics* menu item *3-D window*) you will see this cube rendered in 1 pixel thick white lines.
+In general, lines are used to visualize the basic shape of a mesh.  Note in very old versions of Cmgui lines were automatically created when region 'groups' were read from file, but this is no longer the case: all graphics must be intentionally created by the user (see the :ref:`scene editor <CMGUI-scene-editor-window>`).
 
-.. figure:: /cmgui/images/basic_cube_lines1.png
+If you wish to create lines in the graphics window, you first need to read a model containing line elements. As an example go to the file menu in CMGUI and select *Read*, then *Node file*.  Read in ``cube.exnode`` from the example a2 directory.  Then using the *Read* and *Elements file* menu options, read in ``cube.exelem`` from the same directory.  Select the *Graphics* *Scene Editor* menu item and select the region you wish to create graphics for from the list at the left; in the example it is the root region "/". Click on *add* and select *lines*. A default coordinate field will automatically be chosen, which is the minimum needed for lines graphics.  If you now create a graphics window (using the *Graphics* menu item *3-D window*) you will see this cube rendered in 1 pixel thick lines using the default (white) material.
+
+.. figure:: /Cmgui/images/basic_cube_lines1.png
    :align: center
 
-   **Figure 1: The default graphical setting lines created for a cube mesh.** This mesh was created by reading the ``cube.exnode`` and ``cube.exelem`` files from `example a2`_.  Note that the `example a2`_ com file creates cylinders to visualize the cube mesh.
+   **Figure 1: The lines graphics created for a cube mesh.** This mesh was created by reading the ``cube.exnode`` and ``cube.exelem`` files from `example a2`_.  Note that the `example a2`_ com file creates cylinders to visualize the cube mesh.
 
 .. _cmgui-lines-settings:
 
 Settings for lines
 ==================
 
-Two default scene settings are important for lines and cylinders. In the scene editor, the selected *tessellation* controls the number of line segments used to draw each line.  The *Circle discretization* value is used to control how many sides are used to draw each cylinder.  Higher numbers will give "rounder" looking cylinders (Figure 2).
+The *tessellation* option in the scene editor controls the number of line segments used along the line element to approximate a curve or control visualisation of the data field along it. With 'circle extrusion' line shape (cylinders) the Circle Divisions option on the tessellation controls the number of line segments around the cylinder with higher numbers better approximating a circle. (Prior to Cmgui v3.0 Cylinder graphics had a *Circle discretization* value for this purpose.) (Figure 2).
 
 Lines have relatively few settings for altering their appearance (Figure 2).  The following settings are available for lines:
 
@@ -41,7 +43,7 @@ Lines have relatively few settings for altering their appearance (Figure 2).  Th
 
 * **Material:** This drop down menu allows you to select which material the lines will be rendered as.  Materials are defined in the :ref:`material editor window <CMGUI-material-editor-window>`.  Note: the material for lines is unshaded.  This means that lines only use the *diffuse* colour for the selected material to draw the lines.
 
-* **Width:** You can enter a value in this box to set the thickness of the lines in pixels.  This width is independent of zoom, and remains constant through any transformation.  Setting this value to 0 results in lines of 1 pixel wide (the default).
+* **Line width:** You can enter a value in this box to set the thickness of the lines in pixels.  This width is independent of zoom, and remains constant through any transformation.  Setting this value to 0 results in lines of 1 pixel wide (the default).
 
 * **Data:** This setting allows you to choose a field which is used to colour the lines according to a spectrum.  Use the *Spectrum* drop-down menu to choose from one of the spectra defined in the spectrum editor window.
 
@@ -52,7 +54,7 @@ In addition to these settings there is a command line setting that can be very u
 **Note:** if no lines appear, you may not have added faces (and lines) to the mesh - try the ``gfx define faces`` command.
 
 
-.. figure:: /cmgui/images/basic_cube_lines_graphicalsetting1.png
+.. figure:: /Cmgui/images/basic_cube_lines_graphicalsetting1.png
    :align: center
 
    **Figure 2: The scene editor settings available for a lines graphical setting.**
@@ -62,13 +64,12 @@ In addition to these settings there is a command line setting that can be very u
 Settings for cylinders
 ======================
 
-*Cylinders* are very similar to lines, with a few additional parameters.  A cylinders graphical setting will draw cylinders along all the same elements that a lines graphical setting would.  Cylinders are different to lines in that they have a size relative to the mesh - therefore they scale with zooming just like other objects that have an actual "size" in the scene.  The number of "faces" that are used to display cylinders is set under the *General settings* under *Circle dicretization*.  The higher the number, the more circular the cylinders will appear.  The default setting is for six sides.  Cylinders have the following settings in addition to those for lines:
+Since Cmgui v3.0 cylinders are just lines using additional 'line shape' options shared with streamlines graphics, currently restricted to 'line' or 'circle extrusion' with equal scaling in all lateral directions. Note when choosing a line shape other than the default 'line', the resulting graphics scale with the model as you zoom in, whereas 'line' shape gives constant thickness in screen space.
 
-* **Constant radius:** This is the radius of the cylinders, in the same units as the coordinate system.
+Options controlling the visualisation with 'circle extrusion' line shape:
 
-* **Scalar radius:** This drop-down menu allows you to select a field to scale the radius of the cylinders.  A good example of this is shown in `example a4`_.
+* **Line base size:**  This is the base diameter of the cylinders in units of the current graphics coordinate system; scaling by field with scale factors is added to this value. It currently has 2 values which are constrained to be equal, anticipating future use. Beware that prior to Cmgui v3.0 the equivalent option was the 'Constant radius'.
 
-* **Scale factors** This box allows you to enter three values as factors for the scaling in three dimensions.  It is possible using this to exaggerate or reduce the scaling, or to restrict scaling to one or two dimensions.
+* **Line scale field:** This drop-down menu allows you to select a scalar field to scale the diameter of the cylinders across the model according to this field.  A good example of this is shown in `example a4`_. Beware that prior to Cmgui v3.0 the equivalent option was the 'scalar radius' field'.
 
-
-
+* **Line scale factors** This box allows you to enter two values as factors for the scaling the 'line scale field' lateral to the line, but note that they are currently restricted to being equal-valued. (In future, different scaling in each lateral direction is anticipated, for use with multi-component 'line scale fields'). *Important*: use a value of "2*2" if the line scale field is a radius.

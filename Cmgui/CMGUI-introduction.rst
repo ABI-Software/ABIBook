@@ -16,7 +16,7 @@ Example a1 - Graphical Element Groups - Viewing a Cube
 
 Load CMGUI to begin the first example. The first window that will present itself when loading CMGUI is the command window. This window has a selection of menus and three functional areas; a history area which shows commands that have been executed, a command line where commands may be entered directly, and an output area that shows the text output of any commands, including error and help messages.
 
-.. figure:: /cmgui/images/mainWindow.png
+.. figure:: /Cmgui/images/mainWindow.png
    :align: center
 
    **The CMGUI main window**
@@ -30,7 +30,7 @@ Double-click the first two commands in the comfile - a new window will appear, d
 
 Once you have run through all of the commands in this example (either by double-clicking them or by using the *All* button in the comfile window) you should have a blue, somewhat shiny cube, a set of blue axes, and red numbers at each corner of the cube. These are the numbers of the nodes, the points that make up the 3D model. Another window will also have appeared, called the *Node Viewer*. This window allows you to manipulate the data that define the nodes - in this case the corners of the cube. In the cube example, each node has a number and coordinates. You can click on each of these buttons (at this stage a small GUI bug means you need to manually resize the window after clicking) to show editable boxes containing the actual data contained in the nodes. This window therefore allows direct access to the node data for editing. If you edit coordinate data and click the *Apply* button, you will see changes in the shape of the cube in the graphics window.
 
-.. figure:: /cmgui/images/3DWindow.png
+.. figure:: /Cmgui/images/3DWindow.png
    :align: center
 
    **The CMGUI graphics window**
@@ -40,7 +40,7 @@ Other Interface Windows: Editors
 
 That is the end of the example file commands, but there are other windows you can now use to manipulate the cube shown in the graphics window. Go into the Graphics menu in the Command Window, and select *Material editor*. This brings up a window that allows you to create and edit materials, which define the appearance of objects in the graphics window. You can manipulate the colour, specularity (shininess), emitted light (glow), and alpha (transparency) of a material using this window. Your edited material is used to create the sphere in the preview panel at the bottom of the window - you may need to resize the window in order to get a good sized preview panel. Click on some of the already defined materials in the list at the top to see how they affect the preview sphere, then play around with the sliders to alter the material.
 
-.. figure:: /cmgui/images/materialEditorWindow.png
+.. figure:: /Cmgui/images/materialEditorWindow.png
    :alt: The CMGUI graphical material editor window
    :align: center
 
@@ -52,7 +52,7 @@ Now close the material editor and go to the Graphics menu, selecting *Scene edit
 
 |
 
-.. figure:: /cmgui/images/sceneEditorWindow.png
+.. figure:: /Cmgui/images/sceneEditorWindow.png
    :alt: The CMGUI scene editor window
    :align: center
 

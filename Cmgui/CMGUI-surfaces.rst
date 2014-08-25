@@ -8,7 +8,7 @@ Visualizing element fields using surfaces
 
 Surfaces and are created as :ref:`graphics <CMGUI-graphics>` in the :ref:`scene editor <CMGUI-scene-editor-window>`. To create a very simple surface graphic, go to the *File* menu, select *Read*, then *Node file*. Read in ``cube.exnode`` from the example a2 directory. Then using the *Read* and *Elements file* menu options, read in ``cube.exelem`` from the same directory. If you now create a :ref:`graphics window <CMGUI-graphics-window>`, you will see a simple cube rendered in the default lines graphic. Open the :ref:`scene editor <CMGUI-scene-editor-window>` window by selecting it from the *Graphics* menu. Select the *cube* scene object, then in the graphics panel select *surfaces* in the drop-down menu. Click the *Add* button to the right of this menu. A new graphical setting will appear in the list, below the lines graphical setting. In the 3D window, your cube will now be rendered with white shaded surfaces.
 
-.. figure:: /cmgui/images/addsurfaces.png
+.. figure:: /Cmgui/images/addsurfaces.png
    :align: center
 
    **Figure 1: Adding surfaces to a mesh** Using the example a2 cube, adding a surface graphical setting creates a basic surface in the default material (white).

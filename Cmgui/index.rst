@@ -16,11 +16,11 @@ This documentation is current for cmgui version 2.9.0.
    CMGUI-introduction
    CMGUI-architecture
    CMGUI-command-window
+   CMGUI-contours
    CMGUI-fields
    CMGUI-glyphs
    CMGUI-graphics
    CMGUI-graphics-window
-   CMGUI-isosurfaces
    CMGUI-lines-cylinders
    CMGUI-material-editor-window
    CMGUI-scene-editor-window
